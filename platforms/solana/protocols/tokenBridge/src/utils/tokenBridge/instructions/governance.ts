@@ -8,10 +8,10 @@ import {
   SYSVAR_CLOCK_PUBKEY,
   SYSVAR_RENT_PUBKEY,
 } from '@solana/web3.js';
-import type { VAA } from '@wormhole-foundation/sdk-connect';
-import { toChainId } from '@wormhole-foundation/sdk-connect';
-import { utils } from '@wormhole-foundation/sdk-solana';
-import { utils as CoreUtils } from '@wormhole-foundation/sdk-solana-core';
+import type { VAA } from '@xertra/wormhole-sdk-connect';
+import { toChainId } from '@xertra/wormhole-sdk-connect';
+import { utils } from '@xertra/wormhole-sdk-solana';
+import { utils as CoreUtils } from '@xertra/wormhole-sdk-solana-core';
 import {
   deriveEndpointKey,
   deriveTokenBridgeConfigKey,

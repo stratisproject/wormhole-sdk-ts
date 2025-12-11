@@ -1,6 +1,6 @@
-import type { Chain, Network } from "@wormhole-foundation/sdk-base";
-import { time } from "@wormhole-foundation/sdk-base";
-import { circle, encoding, finality, guardians, toChain } from "@wormhole-foundation/sdk-base";
+import type { Chain, Network } from "@xertra/wormhole-sdk-base";
+import { time } from "@xertra/wormhole-sdk-base";
+import { circle, encoding, finality, guardians, toChain } from "@xertra/wormhole-sdk-base";
 import type {
   Attestation,
   AttestationId,
@@ -14,14 +14,14 @@ import type {
   UniversalOrNative,
   UnsignedTransaction,
   WormholeMessageId,
-} from "@wormhole-foundation/sdk-definitions";
+} from "@xertra/wormhole-sdk-definitions";
 import {
   CircleBridge,
   isCircleMessageId,
   isCircleTransferDetails,
   isTransactionIdentifier,
   isWormholeMessageId,
-} from "@wormhole-foundation/sdk-definitions";
+} from "@xertra/wormhole-sdk-definitions";
 
 import { signSendWait } from "../../common.js";
 import { DEFAULT_TASK_TIMEOUT } from "../../config.js";
@@ -44,7 +44,7 @@ import {
 } from "../../types.js";
 import { Wormhole } from "../../wormhole.js";
 import type { WormholeTransfer } from "../wormholeTransfer.js";
-import { chainToPlatform } from "@wormhole-foundation/sdk-base";
+import { chainToPlatform } from "@xertra/wormhole-sdk-base";
 
 export class CircleTransfer<N extends Network = Network>
   implements WormholeTransfer<CircleTransfer.Protocol>

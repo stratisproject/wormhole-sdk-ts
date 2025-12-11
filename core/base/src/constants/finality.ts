@@ -83,6 +83,7 @@ const finalityThresholds = [
   ["BaseSepolia", 512],
   ["OptimismSepolia", 512],
   ["PolygonSepolia", 2],
+  ["Auroria", 72],
 ] as const satisfies MapLevel<Chain, number>;
 
 /**
@@ -152,6 +153,7 @@ const blockTimeMilliseconds = [
   ["Stacks",           15_000],
   ["Moca",              1_000],
   ["MegaETH",           1_000],
+  ["Auroria",          15_000],
 ] as const satisfies MapLevel<Chain, number>;
 
 /** The amount of time between block production, in milliseconds  */

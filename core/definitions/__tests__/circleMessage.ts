@@ -1,4 +1,4 @@
-import { deserializeLayout, circle, encoding, contracts } from "@wormhole-foundation/sdk-base";
+import { deserializeLayout, circle, encoding, contracts } from "@xertra/wormhole-sdk-base";
 import { UniversalAddress } from "./../src/index.js";
 import { circleMessageLayout } from "./../src/protocols/circleBridge/index.js";
 

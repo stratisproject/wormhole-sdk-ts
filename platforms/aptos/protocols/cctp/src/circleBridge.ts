@@ -2,34 +2,25 @@ import type {
   Aptos,
   InputGenerateTransactionPayloadData,
   InputScriptData,
-  UserTransactionResponse} from "@aptos-labs/ts-sdk";
-import {
-  AccountAddress as AptosAccountAddress,
-  MoveVector,
-  U32,
-  U64
+  UserTransactionResponse,
 } from "@aptos-labs/ts-sdk";
+import { AccountAddress as AptosAccountAddress, MoveVector, U32, U64 } from "@aptos-labs/ts-sdk";
 import {
   AptosPlatform,
   AptosUnsignedTransaction,
   type AptosChains,
-} from "@wormhole-foundation/sdk-aptos";
+} from "@xertra/wormhole-sdk-aptos";
 import type {
   AccountAddress,
   ChainAddress,
   ChainsConfig,
   Network,
   Platform,
-
   CircleTransferMessage,
-  Contracts} from "@wormhole-foundation/sdk-connect";
-import {
-  CircleBridge,
-  circle,
-  encoding,
-  keccak256,
-} from "@wormhole-foundation/sdk-connect";
-import type { AptosCCTPMoveScripts} from "./moveScripts.js";
+  Contracts,
+} from "@xertra/wormhole-sdk-connect";
+import { CircleBridge, circle, encoding, keccak256 } from "@xertra/wormhole-sdk-connect";
+import type { AptosCCTPMoveScripts } from "./moveScripts.js";
 import { aptosCCTPMoveScripts } from "./moveScripts.js";
 
 export class AptosCircleBridge<N extends Network, C extends AptosChains>
@@ -130,38 +121,38 @@ export class AptosCircleBridge<N extends Network, C extends AptosChains>
 
     let lastError: Error | undefined;
     let circleMessageSentEvent;
-    
+
     for (let attempts = 0; attempts < retries; attempts++) {
       try {
         const tx = await this.provider.getTransactionByHash({ transactionHash: digest });
-        
+
         const messageTransmitterId = this.messageTransmitterId.replace(/^0x0+/, "0x"); // remove any leading zeros to match event
         circleMessageSentEvent = (tx as UserTransactionResponse).events?.find(
           (e) => e.type === `${messageTransmitterId}::message_transmitter::MessageSent`,
         );
-        
+
         if (circleMessageSentEvent) {
           // Success - break out of retry loop and continue processing
           break;
         }
-        
+
         // Event not found, treat as retriable error
         lastError = new Error(`MessageSent event not found in transaction ${digest}`);
-        
+
         // Log retry attempt if not last attempt
         if (attempts < retries - 1) {
-          await new Promise(resolve => setTimeout(resolve, delay));
+          await new Promise((resolve) => setTimeout(resolve, delay));
         }
       } catch (err) {
         // Network or RPC error - save and retry
         lastError = err as Error;
-        
+
         if (attempts < retries - 1) {
-          await new Promise(resolve => setTimeout(resolve, delay));
+          await new Promise((resolve) => setTimeout(resolve, delay));
         }
       }
     }
-    
+
     if (!circleMessageSentEvent) {
       throw lastError || new Error(`No MessageSent event found after ${retries} attempts`);
     }

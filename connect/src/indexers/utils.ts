@@ -1,4 +1,4 @@
-import { encoding } from "@wormhole-foundation/sdk-base";
+import { encoding } from "@xertra/wormhole-sdk-base";
 
 export function parseBalance(balance: string | undefined): bigint | null {
   try {

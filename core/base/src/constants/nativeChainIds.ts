@@ -18,7 +18,7 @@ const chainNetworkNativeChainIdEntries = [
       ["Injective", "injective-1"],
       ["Osmosis",   "osmosis-1"],
       ["Sei",       "pacific-1"],
-      ["Wormchain", "wormchain"],
+      ["Wormchain", "wormxertra"],
       ["Kujira",    "kaiyo-1"],
       ["Solana",    "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d"],
       ["Sui",       "35834a8a"],
@@ -60,6 +60,7 @@ const chainNetworkNativeChainIdEntries = [
       ["Fogo",      "CDLtwKnaCoK157uaHQDj4fHu72AyD2519Cphmpiq6hvT"], // genesis hash
       ["Moca",      2288n],
       ["MegaETH",   4326n],
+      ["Xertra",    105105n],
     ],
   ],
   [
@@ -73,7 +74,7 @@ const chainNetworkNativeChainIdEntries = [
       ["Injective",       "injective-888"],
       ["Osmosis",         "osmo-test-5"],
       ["Sei",             "atlantic-2"],
-      ["Wormchain",       "wormchain-testnet-0"],
+      ["Wormchain",       "wormxertra-testnet-0"],
       ["Kujira",          "harpoon-4"],
       ["Solana",          "EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG"],
       ["Sui",             "4c78adac"],
@@ -119,6 +120,7 @@ const chainNetworkNativeChainIdEntries = [
       ["Stacks",          2147483648n],
       ["Moca",            222888n],
       ["MegaETH",         6343n],
+      ["Auroria",         205205n],
     ],
   ],
   [

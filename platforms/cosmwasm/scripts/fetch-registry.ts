@@ -1,5 +1,6 @@
 import axios from "axios";
-import { Chain, chainToPlatform, chains } from "@wormhole-foundation/sdk-connect";
+import type { Chain} from "@xertra/wormhole-sdk-connect";
+import { chainToPlatform, chains } from "@xertra/wormhole-sdk-connect";
 
 const registryUrl = (chain: Chain) =>
   `https://raw.githubusercontent.com/cosmos/chain-registry/master/${chain.toLowerCase()}/chain.json`;

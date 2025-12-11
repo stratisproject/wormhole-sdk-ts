@@ -9,7 +9,7 @@ import type {
   TokenBridge,
   TokenId,
   TxHash,
-} from "@wormhole-foundation/sdk-connect";
+} from "@xertra/wormhole-sdk-connect";
 import {
   UniversalAddress,
   encoding,
@@ -18,7 +18,7 @@ import {
   toChain,
   toChainId,
   toNative,
-} from "@wormhole-foundation/sdk-connect";
+} from "@xertra/wormhole-sdk-connect";
 
 import type {
   AnyCosmwasmAddress,
@@ -26,7 +26,7 @@ import type {
   CosmwasmPlatformType,
   CosmwasmTransaction,
   WrappedRegistryResponse,
-} from "@wormhole-foundation/sdk-cosmwasm";
+} from "@xertra/wormhole-sdk-cosmwasm";
 import {
   CosmwasmAddress,
   CosmwasmPlatform,
@@ -34,7 +34,7 @@ import {
   Gateway,
   buildExecuteMsg,
   computeFee,
-} from "@wormhole-foundation/sdk-cosmwasm";
+} from "@xertra/wormhole-sdk-cosmwasm";
 
 import "@wormhole-foundation/sdk-cosmwasm-core";
 

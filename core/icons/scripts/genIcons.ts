@@ -2,12 +2,13 @@
 // Usage: npm run gen
 
 import { readFileSync, writeFileSync } from "fs";
-import { Chain, chains, encoding } from "@wormhole-foundation/sdk-base";
+import type { Chain } from "@xertra/wormhole-sdk-base";
+import { chains, encoding } from "@xertra/wormhole-sdk-base";
 
 let output = `
 // THIS FILE IS AUTO-GENERATED WITH \`npm run gen\`
 
-import { Chain } from "@wormhole-foundation/sdk-base";
+import { Chain } from "@xertra/wormhole-sdk-base";
 
 const PREFIX = "data:image/svg+xml;base64,"
 
@@ -21,8 +22,10 @@ const makeChainCondition = (chain: Chain): string => {
     return `(chain === "${chain}" || chain === "${chain}Sepolia")`;
   } else if (chain === "Sei") {
     return `(chain === "${chain}" || chain === "${chain}evm")`;
-  } else if (chain.includes("Sepolia") || chain.includes("Holesky") || chain === "Seievm") {
+  } else if (chain.includes("Sepolia") || chain.includes("Holesky") || chain === "Seievm" || chain === "Auroria") {
     return "";
+  } else if (chain === "Xertra") {
+    return `(chain === "Xertra" || chain === "Auroria")`
   } else {
     return `(chain === "${chain}")`;
   }

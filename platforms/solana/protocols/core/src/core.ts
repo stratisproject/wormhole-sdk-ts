@@ -19,22 +19,22 @@ import type {
   VAA,
   WormholeCore,
   WormholeMessageId,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 import {
   createVAA,
   toChain,
   toChainId,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 import type {
   AnySolanaAddress,
   SolanaChains,
   SolanaTransaction,
-} from '@wormhole-foundation/sdk-solana';
+} from '@xertra/wormhole-sdk-solana';
 import {
   SolanaAddress,
   SolanaPlatform,
   SolanaUnsignedTransaction,
-} from '@wormhole-foundation/sdk-solana';
+} from '@xertra/wormhole-sdk-solana';
 import { deserializePostMessage } from './postMessageLayout.js';
 import type { Wormhole as WormholeCoreContract } from './types.js';
 import type { BridgeData } from './utils/index.js';

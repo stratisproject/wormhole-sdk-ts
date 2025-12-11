@@ -5,24 +5,25 @@ import type {
   Contracts,
   Network,
   Platform,
-} from '@wormhole-foundation/sdk-connect';
-import { TBTCBridge, nativeChainIds } from '@wormhole-foundation/sdk-connect';
-import type { EvmChains } from '@wormhole-foundation/sdk-evm';
+} from '@xertra/wormhole-sdk-connect';
+import { TBTCBridge, nativeChainIds } from '@xertra/wormhole-sdk-connect';
+import type { EvmChains } from '@xertra/wormhole-sdk-evm';
 import {
   EvmAddress,
   EvmPlatform,
   EvmUnsignedTransaction,
   addChainId,
   addFrom,
-} from '@wormhole-foundation/sdk-evm';
-import { toChainId } from '@wormhole-foundation/sdk-base';
+} from '@xertra/wormhole-sdk-evm';
+import { toChainId } from '@xertra/wormhole-sdk-base';
 import {
   canonicalAddress,
   serialize,
-} from '@wormhole-foundation/sdk-definitions';
-import { Contract, Provider, TransactionRequest } from 'ethers';
+} from '@xertra/wormhole-sdk-definitions';
+import type { Provider, TransactionRequest } from 'ethers';
+import { Contract } from 'ethers';
 
-import { EvmWormholeCore } from '@wormhole-foundation/sdk-evm-core';
+import { EvmWormholeCore } from '@xertra/wormhole-sdk-evm-core';
 
 export class EvmTBTCBridge<N extends Network, C extends EvmChains = EvmChains>
   implements TBTCBridge<N, C>

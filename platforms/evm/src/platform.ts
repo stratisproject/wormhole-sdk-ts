@@ -8,7 +8,7 @@ import type {
   TokenId,
   TxHash,
   IndexerConfig,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 import {
   PlatformContext,
   Wormhole,
@@ -19,7 +19,7 @@ import {
   nativeChainIds,
   networkPlatformConfigs,
   getWalletBalances,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 
 import type { Provider } from 'ethers';
 import { JsonRpcProvider } from 'ethers';

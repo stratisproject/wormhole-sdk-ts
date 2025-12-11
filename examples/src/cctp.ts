@@ -1,8 +1,8 @@
-import type { Network, Signer, TransactionId, Wormhole } from "@wormhole-foundation/sdk";
-import { CircleTransfer, TransferState, amount, wormhole } from "@wormhole-foundation/sdk";
-import evm from "@wormhole-foundation/sdk/evm";
-import solana from "@wormhole-foundation/sdk/solana";
-import sui from "@wormhole-foundation/sdk/sui";
+import type { Network, Signer, TransactionId, Wormhole } from "@xertra/wormhole-sdk";
+import { CircleTransfer, TransferState, amount, wormhole } from "@xertra/wormhole-sdk";
+import evm from "@xertra/wormhole-sdk/evm";
+import solana from "@xertra/wormhole-sdk/solana";
+import sui from "@xertra/wormhole-sdk/sui";
 import type { SignerStuff } from "./helpers/index.js";
 import { getSigner } from "./helpers/index.js";
 

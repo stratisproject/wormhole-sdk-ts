@@ -2,7 +2,7 @@ import type {
   Layout,
   LayoutToType,
   CustomConversion,
-} from "@wormhole-foundation/sdk-base";
+} from "@xertra/wormhole-sdk-base";
 import { Signature } from '../signature.js';
 
 const signatureLayout = [

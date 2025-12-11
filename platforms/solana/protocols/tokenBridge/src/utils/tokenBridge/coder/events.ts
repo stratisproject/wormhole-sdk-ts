@@ -1,5 +1,5 @@
 import type { EventCoder, Event, Idl } from '@coral-xyz/anchor';
-import type { anchor } from '@wormhole-foundation/sdk-solana';
+import type { anchor } from '@xertra/wormhole-sdk-solana';
 
 export class TokenBridgeEventsCoder implements EventCoder {
   constructor(_idl: Idl) {}

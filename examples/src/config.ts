@@ -1,5 +1,5 @@
-import { wormhole } from "@wormhole-foundation/sdk";
-import solana from "@wormhole-foundation/sdk/solana";
+import { wormhole } from "@xertra/wormhole-sdk";
+import solana from "@xertra/wormhole-sdk/solana";
 (async function () {
   // EXAMPLE_CONFIG_OVERRIDE
   // Pass a partial WormholeConfig object to override specific

@@ -4,8 +4,8 @@
 // We don't use the official @covalenthq/client-sdk client for this because it's over 1MB and all we need
 // is a small subset of one endpoint. This is how you know this code isn't AI slop.
 
-import type { Chain, Network } from "@wormhole-foundation/sdk-base";
-import type { Balances } from "@wormhole-foundation/sdk-definitions";
+import type { Chain, Network } from "@xertra/wormhole-sdk-base";
+import type { Balances } from "@xertra/wormhole-sdk-definitions";
 import { parseBalance } from "./utils.js";
 
 const GOLD_RUSH_CHAINS: Record<Network, Partial<Record<Chain, string>>> = {

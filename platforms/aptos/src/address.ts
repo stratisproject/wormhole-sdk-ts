@@ -1,5 +1,5 @@
-import type { Address } from "@wormhole-foundation/sdk-connect";
-import { UniversalAddress, registerNative, encoding } from "@wormhole-foundation/sdk-connect";
+import type { Address } from "@xertra/wormhole-sdk-connect";
+import { UniversalAddress, registerNative, encoding } from "@xertra/wormhole-sdk-connect";
 
 import { APTOS_SEPARATOR } from "./constants.js";
 import type { AnyAptosAddress } from "./types.js";
@@ -85,7 +85,7 @@ export class AptosAddress implements Address {
   }
 }
 
-declare module "@wormhole-foundation/sdk-connect" {
+declare module "@xertra/wormhole-sdk-connect" {
   export namespace WormholeRegistry {
     interface PlatformToNativeAddressMapping {
       Aptos: AptosAddress;

@@ -1,5 +1,5 @@
-import type { Chain } from "@wormhole-foundation/sdk-base";
-import { toChainId } from "@wormhole-foundation/sdk-base";
+import type { Chain } from "@xertra/wormhole-sdk-base";
+import { toChainId } from "@xertra/wormhole-sdk-base";
 import type { SignedQuote, TxHash } from "../../index.js";
 
 export enum RelayStatus {

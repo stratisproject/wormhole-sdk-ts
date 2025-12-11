@@ -1,5 +1,5 @@
 import { expect, test } from "@jest/globals";
-import { chains, CONFIG } from "@wormhole-foundation/sdk-connect";
+import { chains, CONFIG } from "@xertra/wormhole-sdk-connect";
 import { CosmwasmPlatform } from "../../src/platform.js";
 import { CosmwasmChains } from "./../../src/index.js";
 

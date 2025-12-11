@@ -1,4 +1,4 @@
-import { lazyInstantiate, tbtc, type Chain, type Network } from "@wormhole-foundation/sdk-base";
+import { lazyInstantiate, tbtc, type Chain, type Network } from "@xertra/wormhole-sdk-base";
 import { toNative, type AccountAddress, type ChainAddress } from "../../address.js";
 import type { TokenId } from "../../types.js";
 import type { UnsignedTransaction } from "../../unsignedTransaction.js";

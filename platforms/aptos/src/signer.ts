@@ -5,18 +5,17 @@ import type {
   Signer,
   TxHash,
   UnsignedTransaction,
-} from "@wormhole-foundation/sdk-connect";
-import { encoding } from "@wormhole-foundation/sdk-connect";
+} from "@xertra/wormhole-sdk-connect";
+import { encoding } from "@xertra/wormhole-sdk-connect";
 import { AptosPlatform } from "./platform.js";
 import type { AptosChains } from "./types.js";
-import {
-  Account,
+import type {
   AnyRawTransaction,
   Aptos,
   CommittedTransactionResponse,
-  Ed25519PrivateKey,
   InputGenerateTransactionPayloadData,
 } from "@aptos-labs/ts-sdk";
+import { Account, Ed25519PrivateKey } from "@aptos-labs/ts-sdk";
 
 // returns a SignOnlySigner for the Aptos platform
 export async function getAptosSigner(

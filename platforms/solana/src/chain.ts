@@ -4,8 +4,8 @@ import type {
   Network,
   TokenAddress,
   UniversalOrNative,
-} from '@wormhole-foundation/sdk-connect';
-import { ChainContext, isNative } from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
+import { ChainContext, isNative } from '@xertra/wormhole-sdk-connect';
 import { SolanaAddress } from './address.js';
 import type { SolanaChains } from './types.js';
 import { SolanaPlatform } from './platform.js';

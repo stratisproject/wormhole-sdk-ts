@@ -4,12 +4,12 @@ import type {
   SignedTx,
   Signer,
   UnsignedTransaction,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 import {
   PlatformNativeSigner,
   chainToPlatform,
   isNativeSigner,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 import type {
   Signer as EthersSigner,
   Provider,

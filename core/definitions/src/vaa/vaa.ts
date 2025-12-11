@@ -1,4 +1,4 @@
-import type { Layout, LayoutToType } from "@wormhole-foundation/sdk-base";
+import type { Layout, LayoutToType } from "@xertra/wormhole-sdk-base";
 
 import {
   chainItem,

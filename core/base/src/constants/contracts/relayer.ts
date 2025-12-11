@@ -40,7 +40,7 @@ export const relayerContracts = [[
     ["Arbitrum",        "0xAd753479354283eEE1b86c9470c84D42f229FF43"],
     ["Optimism",        "0x01A957A525a5b7A72808bA9D10c389674E459891"],
     ["Base",            "0xea8029CD7FCAEFFcD1F53686430Db0Fc8ed384E1"],
-    ["Sepolia",         "0x7B1bD7a6b4E61c2a123AC6BC2cbfC614437D0470"],
+    ["Sepolia",         "0x901Caf77675064695908f705265e7Ef019C92d5e"],
     ["ArbitrumSepolia", "0x7B1bD7a6b4E61c2a123AC6BC2cbfC614437D0470"],
     ["BaseSepolia",     "0x93BAD53DDfB6132b0aC8E37f6029163E63372cEE"],
     ["OptimismSepolia", "0x93BAD53DDfB6132b0aC8E37f6029163E63372cEE"],
@@ -51,6 +51,7 @@ export const relayerContracts = [[
     ["XRPLEVM",         "0x362fca37E45fe1096b42021b543f462D49a5C8df"],
     ["Monad",           "0x362fca37E45fe1096b42021b543f462D49a5C8df"],
     ["PolygonSepolia",  "0x362fca37E45fe1096b42021b543f462D49a5C8df"],
+    ["Auroria",         "0x27428DD2d3DD32A4D7f7C497eAaa23130d894911"]
   ]], [
   "Devnet", [
     ["Ethereum",  "0xcC680D088586c09c3E0E099a676FA4b6e42467b4"],

@@ -8,7 +8,7 @@ import type {
   Network,
   TokenBridge,
   TokenId,
-} from "@wormhole-foundation/sdk-connect";
+} from "@xertra/wormhole-sdk-connect";
 import {
   ErrNotWrapped,
   UniversalAddress,
@@ -20,12 +20,8 @@ import {
   toChain,
   toChainId,
   toNative,
-} from "@wormhole-foundation/sdk-connect";
-import type {
-  AnyAptosAddress,
-  AptosChains,
-  AptosPlatformType,
-} from "@wormhole-foundation/sdk-aptos";
+} from "@xertra/wormhole-sdk-connect";
+import type { AnyAptosAddress, AptosChains, AptosPlatformType } from "@xertra/wormhole-sdk-aptos";
 import {
   APTOS_COIN,
   APTOS_SEPARATOR,
@@ -34,10 +30,11 @@ import {
   AptosUnsignedTransaction,
   coalesceModuleAddress,
   isValidAptosType,
-} from "@wormhole-foundation/sdk-aptos";
+} from "@xertra/wormhole-sdk-aptos";
 import { serializeForeignAddressSeeds } from "./foreignAddress.js";
 import type { OriginInfo, TokenBridgeState } from "./types.js";
-import { Aptos, AptosApiError, InputGenerateTransactionPayloadData } from "@aptos-labs/ts-sdk";
+import type { Aptos, InputGenerateTransactionPayloadData } from "@aptos-labs/ts-sdk";
+import { AptosApiError } from "@aptos-labs/ts-sdk";
 
 export class AptosTokenBridge<N extends Network, C extends AptosChains>
   implements TokenBridge<N, C>

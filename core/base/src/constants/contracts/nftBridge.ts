@@ -32,7 +32,7 @@ export const nftBridgeContracts = [[
     ["Arbitrum",        "0xEe3dB83916Ccdc3593b734F7F2d16D630F39F1D0"],
     ["Optimism",        "0x23908A62110e21C04F3A4e011d24F901F911744A"],
     ["Base",            "0xF681d1cc5F25a3694E348e7975d7564Aa581db59"],
-    ["Sepolia",         "0x6a0B52ac198e4870e5F3797d5B403838a5bbFD99"],
+    ["Sepolia",         "0x52F33369152bDB50006dc068b65C85449BEFB9EA"],
     ["Aptos",           "0x1bdffae984043833ed7fe223f7af7a3f8902d04129b14f801823e64827da7130"],
     ["ArbitrumSepolia", "0x23908A62110e21C04F3A4e011d24F901F911744A"],
     ["BaseSepolia",     "0x268557122Ffd64c85750d630b716471118F323c8"],
@@ -41,6 +41,7 @@ export const nftBridgeContracts = [[
     ["PolygonSepolia",  "0x23908A62110e21C04F3A4e011d24F901F911744A"],
     ["Mantle",          "0xD7D732C8Bf5eBF620EA55b5828eae20418eEF083"],
     ["Scroll",          "0x47B9a1406BEe29a3001BFEB7e45aE45fFFB40c18"],
+    ["Auroria",         "0x1f7ba7435F5b143318E5031f46fBdF042E906aFC"],
   ]], [
   "Devnet", [
     ["Solana",    "NFTWqJR8YnRVqPDvTJrYuLrQDitTG5AScqbeghi4zSA"],

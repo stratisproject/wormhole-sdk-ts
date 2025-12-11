@@ -1,6 +1,6 @@
-import { registerProtocol } from '@wormhole-foundation/sdk-connect';
+import { registerProtocol } from '@xertra/wormhole-sdk-connect';
 import { SolanaCircleBridge } from './circleBridge.js';
-import { _platform } from '@wormhole-foundation/sdk-solana';
+import { _platform } from '@xertra/wormhole-sdk-solana';
 
 registerProtocol(_platform, 'CircleBridge', SolanaCircleBridge);
 
@@ -16,4 +16,4 @@ export const idl = {
 
 export type { MessageTransmitter, TokenMessenger };
 export * from './circleBridge.js';
-export * from './utils/index.js'
+export * from './utils/index.js';

@@ -5,7 +5,7 @@ import type {
 } from '@solana/web3.js';
 import { PublicKey } from '@solana/web3.js';
 import { createReadOnlyTokenBridgeProgramInterface } from '../program.js';
-import { utils } from '@wormhole-foundation/sdk-solana-core';
+import { utils } from '@xertra/wormhole-sdk-solana-core';
 import {
   deriveAuthoritySignerKey,
   deriveCustodySignerKey,

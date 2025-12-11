@@ -1,10 +1,11 @@
 import * as fs from "fs";
-import { Network, Wormhole } from "@wormhole-foundation/sdk-connect";
-import { EvmPlatform } from "@wormhole-foundation/sdk-evm";
-import { SolanaPlatform } from "@wormhole-foundation/sdk-solana";
+import type { Network} from "@xertra/wormhole-sdk-connect";
+import { Wormhole } from "@xertra/wormhole-sdk-connect";
+import { EvmPlatform } from "@xertra/wormhole-sdk-evm";
+import { SolanaPlatform } from "@xertra/wormhole-sdk-solana";
 
 import { getSuggestedUpdates } from "./foreignAssets";
-import { TokensConfig } from "../types";
+import type { TokensConfig } from "../types";
 import { tokenFilePath } from "./utils";
 
 import "@wormhole-foundation/sdk-evm-tokenbridge";

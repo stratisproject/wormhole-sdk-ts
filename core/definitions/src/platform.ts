@@ -1,4 +1,4 @@
-import type { Chain, Network, Platform, PlatformToChains } from "@wormhole-foundation/sdk-base";
+import type { Chain, Network, Platform, PlatformToChains } from "@xertra/wormhole-sdk-base";
 import type { WormholeMessageId } from "./attestation.js";
 import type { ChainContext } from "./chain.js";
 import type { ProtocolInitializer, ProtocolInstance, ProtocolName } from "./protocol.js";

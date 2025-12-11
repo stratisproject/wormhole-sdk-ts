@@ -1,4 +1,4 @@
-import type { Layout } from "@wormhole-foundation/sdk";
+import type { Layout } from "@xertra/wormhole-sdk";
 import {
   UniversalAddress,
   createVAA,
@@ -7,7 +7,7 @@ import {
   encoding,
   serializeLayout,
   deserializeLayout,
-} from "@wormhole-foundation/sdk";
+} from "@xertra/wormhole-sdk";
 
 (async function () {
   // EXAMPLE_PARSE_VAA

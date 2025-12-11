@@ -1,10 +1,10 @@
-import type { Chain, Network } from "@wormhole-foundation/sdk-base";
+import type { Chain, Network } from "@xertra/wormhole-sdk-base";
 import type {
   ChainContext,
   Signer,
   TokenId,
   TransactionId,
-} from "@wormhole-foundation/sdk-definitions";
+} from "@xertra/wormhole-sdk-definitions";
 import type { Wormhole } from "../wormhole.js";
 import type { RouteTransferRequest } from "./request.js";
 import type {
@@ -16,7 +16,7 @@ import type {
   ValidatedTransferParams,
   ValidationResult,
 } from "./types.js";
-import type { ChainAddress } from "@wormhole-foundation/sdk-definitions";
+import type { ChainAddress } from "@xertra/wormhole-sdk-definitions";
 
 export abstract class Route<
   N extends Network,

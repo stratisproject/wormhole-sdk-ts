@@ -1,5 +1,5 @@
-import type { Address } from "@wormhole-foundation/sdk-connect";
-import { UniversalAddress, encoding, registerNative } from "@wormhole-foundation/sdk-connect";
+import type { Address } from "@xertra/wormhole-sdk-connect";
+import { UniversalAddress, encoding, registerNative } from "@xertra/wormhole-sdk-connect";
 import { chainToAddressPrefix } from "./constants.js";
 import type { AnyCosmwasmAddress, CosmwasmChains } from "./types.js";
 import { _platform } from "./types.js";
@@ -229,7 +229,7 @@ export class CosmwasmAddress implements Address {
   }
 }
 
-declare module "@wormhole-foundation/sdk-connect" {
+declare module "@xertra/wormhole-sdk-connect" {
   export namespace WormholeRegistry {
     interface PlatformToNativeAddressMapping {
       Cosmwasm: CosmwasmAddress;

@@ -6,27 +6,27 @@ import type {
   Contracts,
   Network,
   Platform,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 import {
   CircleBridge,
   circle,
   encoding,
   nativeChainIds,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 
 import type {
   MessageTransmitter,
   TokenMessenger,
 } from './ethers-contracts/index.js';
 
-import type { EvmChains } from '@wormhole-foundation/sdk-evm';
+import type { EvmChains } from '@xertra/wormhole-sdk-evm';
 import {
   EvmAddress,
   EvmPlatform,
   EvmUnsignedTransaction,
   addChainId,
   addFrom,
-} from '@wormhole-foundation/sdk-evm';
+} from '@xertra/wormhole-sdk-evm';
 import type { LogDescription, Provider, TransactionRequest } from 'ethers';
 import { ethers } from 'ethers';
 import { ethers_contracts } from './index.js';

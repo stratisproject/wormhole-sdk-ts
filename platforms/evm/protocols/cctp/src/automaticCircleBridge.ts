@@ -7,28 +7,28 @@ import type {
   Contracts,
   Network,
   Platform,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 import {
   chainToChainId,
   circle,
   nativeChainIds,
   toChainId,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 
 import type { Provider, TransactionRequest } from 'ethers';
 import { ethers_contracts } from './index.js';
 import type { CircleRelayer } from './ethers-contracts/index.js';
-import type { EvmChains } from '@wormhole-foundation/sdk-evm';
+import type { EvmChains } from '@xertra/wormhole-sdk-evm';
 import {
   EvmAddress,
   EvmPlatform,
   EvmUnsignedTransaction,
   addChainId,
   addFrom,
-} from '@wormhole-foundation/sdk-evm';
+} from '@xertra/wormhole-sdk-evm';
 
 import '@wormhole-foundation/sdk-evm-tokenbridge';
-import { EvmWormholeCore } from '@wormhole-foundation/sdk-evm-core';
+import { EvmWormholeCore } from '@xertra/wormhole-sdk-evm-core';
 
 export class EvmAutomaticCircleBridge<N extends Network, C extends EvmChains>
   implements AutomaticCircleBridge<N, C>

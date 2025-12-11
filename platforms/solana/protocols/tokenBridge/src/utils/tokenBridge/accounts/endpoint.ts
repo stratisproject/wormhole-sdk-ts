@@ -4,9 +4,9 @@ import type {
   PublicKeyInitData,
 } from '@solana/web3.js';
 import { PublicKey } from '@solana/web3.js';
-import type { ChainId } from '@wormhole-foundation/sdk-connect';
-import { UniversalAddress } from '@wormhole-foundation/sdk-connect';
-import { utils } from '@wormhole-foundation/sdk-solana';
+import type { ChainId } from '@xertra/wormhole-sdk-connect';
+import { UniversalAddress } from '@xertra/wormhole-sdk-connect';
+import { utils } from '@xertra/wormhole-sdk-solana';
 
 export function deriveEndpointKey(
   tokenBridgeProgramId: PublicKeyInitData,

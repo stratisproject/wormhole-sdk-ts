@@ -4,7 +4,7 @@ import type {
   SignedTx,
   Signer,
   UnsignedTransaction,
-} from "@wormhole-foundation/sdk-connect";
+} from "@xertra/wormhole-sdk-connect";
 import type algosdk from "algosdk";
 import { assignGroupID, mnemonicToSecretKey } from "algosdk";
 import type { AlgorandChains, TransactionSignerPair } from "./types.js";

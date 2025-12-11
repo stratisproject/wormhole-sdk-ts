@@ -1,4 +1,4 @@
-import { Chain } from "@wormhole-foundation/sdk-connect";
+import type { Chain } from "@xertra/wormhole-sdk-connect";
 
 export type ForeignAssetCache = {
   address: string;

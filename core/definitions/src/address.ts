@@ -1,5 +1,5 @@
-import type { Chain, ChainToPlatform, Platform } from "@wormhole-foundation/sdk-base";
-import { chainToPlatform, platformToAddressFormat } from "@wormhole-foundation/sdk-base";
+import type { Chain, ChainToPlatform, Platform } from "@xertra/wormhole-sdk-base";
+import { chainToPlatform, platformToAddressFormat } from "@xertra/wormhole-sdk-base";
 import type { WormholeRegistry } from "./registry.js";
 
 //TODO BRRRR circular include!!
@@ -112,7 +112,7 @@ export function toNative<C extends Chain>(
       // NativeAddress or UniversalAddress, and it failed to parse directly
       // as a NativeAddress, we try one more time to parse it as a UniversalAddress
       // first and then convert that to a NativeAddress.
-      return (new UniversalAddress(ua)).toNative(chain);
+      return new UniversalAddress(ua).toNative(chain);
     }
   }
 }

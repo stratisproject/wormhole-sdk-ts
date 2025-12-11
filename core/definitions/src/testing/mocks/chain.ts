@@ -4,7 +4,7 @@ import type {
   Network,
   Platform,
   PlatformToChains,
-} from "@wormhole-foundation/sdk-base";
+} from "@xertra/wormhole-sdk-base";
 import type { PlatformContext } from "./../../index.js";
 import { ChainContext } from "./../../index.js";
 

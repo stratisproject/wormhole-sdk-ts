@@ -61,7 +61,7 @@ export const tokenBridgeContracts = [[
     ["Base",            "0xA31aa3FDb7aF7Db93d18DDA4e19F811342EDF780"],
     ["BaseSepolia",     "0x86F55A04690fd7815A3D802bD587e83eA888B239"],
     ["Sei",             "sei1jv5xw094mclanxt5emammy875qelf3v62u4tl4lp5nhte3w3s9ts9w9az2"],
-    ["Sepolia",         "0xDB5492265f6038831E89f495670FF909aDe94bd9"],
+    ["Sepolia",         "0xEDf0f8d602C44D52BC5c7d53439542493Ec60C2F"],
     ["Wormchain",       "wormhole1aaf9r6s7nxhysuegqrxv0wpm27ypyv4886medd3mrkrw6t4yfcnst3qpex"],
     ["Holesky",         "0x76d093BbaE4529a342080546cAFEec4AcbA59EC6"],
     ["Mantle",          "0x75Bfa155a9D7A3714b0861c8a8aF0C4633c45b5D"],
@@ -81,6 +81,7 @@ export const tokenBridgeContracts = [[
     ["XRPLEVM",         "0x7d8eBc211C4221eA18E511E4f0fD50c5A539f275"],
     ["Moca",            "0xF97B81E513f53c7a6B57Bd0b103a6c295b3096C5"],
     ["MegaETH",         "0x3D5c2c2BEA15Af5D45F084834c535628C48c42A4"],
+    ["Auroria",         "0xc2492dc04902B5b0C334BAB7f7d899Da425cd0B9"],
   ]], [
   "Devnet", [
     ["Solana",    "B6RHG3mfcckmrYN1UhmJzyS1XX3fZKbkeUcpJe9Sy3FE"],

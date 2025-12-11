@@ -8,18 +8,19 @@ import {
   type Network,
   type Platform,
   type TBTCBridge,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
+import type {
+  SolanaTransaction} from '@xertra/wormhole-sdk-solana';
 import {
   SolanaAddress,
   SolanaPlatform,
-  SolanaTransaction,
   SolanaUnsignedTransaction,
   type SolanaChains,
-} from '@wormhole-foundation/sdk-solana';
+} from '@xertra/wormhole-sdk-solana';
 import {
   utils as coreUtils,
   SolanaWormholeCore,
-} from '@wormhole-foundation/sdk-solana-core';
+} from '@xertra/wormhole-sdk-solana-core';
 import {
   deriveAuthoritySignerKey,
   deriveEndpointKey,
@@ -27,18 +28,20 @@ import {
   deriveSenderAccountKey,
   deriveTokenBridgeConfigKey,
   deriveWrappedMetaKey,
-} from '@wormhole-foundation/sdk-solana-tokenbridge';
-import {
+} from '@xertra/wormhole-sdk-solana-tokenbridge';
+import type {
   Connection,
+  TransactionInstruction} from '@solana/web3.js';
+import {
   MessageV0,
   PublicKey,
   SYSVAR_CLOCK_PUBKEY,
   SYSVAR_RENT_PUBKEY,
-  TransactionInstruction,
   VersionedTransaction,
 } from '@solana/web3.js';
 import { Program } from '@coral-xyz/anchor';
-import { WormholeGateway, WormholeGatewayIdl } from './anchor-idl/gateway.js';
+import type { WormholeGateway} from './anchor-idl/gateway.js';
+import { WormholeGatewayIdl } from './anchor-idl/gateway.js';
 import {
   getConfigPda,
   getCoreMessagePda,

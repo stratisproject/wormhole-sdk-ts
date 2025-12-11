@@ -1,14 +1,36 @@
-import { ChainContext, ChainsConfig, chainToPlatform, ChainToPlatform, Network, networkPlatformConfigs, PlatformContext, RpcConnection, StaticPlatformMethods, TokenId, TxHash, SignedTx, isNative, decimals, TokenAddress, Wormhole } from "@wormhole-foundation/sdk-connect";
-import { _platform, StacksChains, StacksPlatformType } from "./types.js";
-import { Chain } from "@wormhole-foundation/sdk-connect";
-import { StacksChain } from "./chain.js";
-import { ChainId, networkFromName, StacksNetwork, StacksNetworkName } from "@stacks/network";
-import { StacksZeroAddress } from "./address.js";
-import { Cl, cvToValue, fetchCallReadOnlyFunction } from "@stacks/transactions";
+import type {
+  ChainContext,
+  ChainsConfig,
+  ChainToPlatform,
+  Network,
+  RpcConnection,
+  StaticPlatformMethods,
+  TokenId,
+  TxHash,
+  SignedTx,
+  TokenAddress,
+} from '@xertra/wormhole-sdk-connect';
+import {
+  chainToPlatform,
+  networkPlatformConfigs,
+  PlatformContext,
+  isNative,
+  decimals,
+  Wormhole,
+} from '@xertra/wormhole-sdk-connect';
+import type { StacksChains, StacksPlatformType } from './types.js';
+import { _platform } from './types.js';
+import type { Chain } from '@xertra/wormhole-sdk-connect';
+import { StacksChain } from './chain.js';
+import type { StacksNetwork, StacksNetworkName } from '@stacks/network';
+import { ChainId, networkFromName } from '@stacks/network';
+import { StacksZeroAddress } from './address.js';
+import { Cl, cvToValue, fetchCallReadOnlyFunction } from '@stacks/transactions';
 
-export class StacksPlatform<N extends Network> extends PlatformContext<N, StacksPlatformType> 
-  implements StaticPlatformMethods<StacksPlatformType, typeof StacksPlatform> {
-
+export class StacksPlatform<N extends Network>
+  extends PlatformContext<N, StacksPlatformType>
+  implements StaticPlatformMethods<StacksPlatformType, typeof StacksPlatform>
+{
   static _platform = _platform;
 
   constructor(network: N, config?: ChainsConfig<N, StacksPlatformType>) {
@@ -20,16 +42,19 @@ export class StacksPlatform<N extends Network> extends PlatformContext<N, Stacks
 
   override getRpc<C extends StacksChains>(chain: C): StacksNetwork {
     let rpc = networkFromName(this.network.toLowerCase() as StacksNetworkName);
-    (rpc as any).getNetwork = () => ({chainId: rpc.chainId})
+    (rpc as any).getNetwork = () => ({ chainId: rpc.chainId });
     rpc.client.baseUrl = this.config[chain]!.rpc;
-    return rpc
+    return rpc;
   }
 
-  override getChain<C extends StacksChains>(chain: C, rpc?: RpcConnection<C>): ChainContext<N, C, ChainToPlatform<C>> {
-    if(chain in this.config) {
+  override getChain<C extends StacksChains>(
+    chain: C,
+    rpc?: RpcConnection<C>,
+  ): ChainContext<N, C, ChainToPlatform<C>> {
+    if (chain in this.config) {
       return new StacksChain<N, C>(chain, this, rpc);
     }
-    throw new Error("No configuration available for chain: " + chain);
+    throw new Error('No configuration available for chain: ' + chain);
   }
 
   static isSupportedChain(chain: Chain): boolean {
@@ -63,22 +88,23 @@ export class StacksPlatform<N extends Network> extends PlatformContext<N, Stacks
     rpc: RpcConnection<C>,
     token: TokenAddress<C>,
   ): Promise<number> {
-    if (isNative(token)) return decimals.nativeDecimals(StacksPlatform._platform);
-    const [contractAddress, contractName] = token.toString().split(".")
-    if(!contractAddress || !contractName) {
-      throw new Error("Invalid token address");
+    if (isNative(token))
+      return decimals.nativeDecimals(StacksPlatform._platform);
+    const [contractAddress, contractName] = token.toString().split('.');
+    if (!contractAddress || !contractName) {
+      throw new Error('Invalid token address');
     }
     const res = await fetchCallReadOnlyFunction({
       contractName,
       contractAddress,
-      functionName: "get-decimals",
+      functionName: 'get-decimals',
       functionArgs: [],
       client: {
         baseUrl: rpc.client.baseUrl,
       },
-      senderAddress: StacksZeroAddress
-    })
-    return Number(cvToValue(res).value)
+      senderAddress: StacksZeroAddress,
+    });
+    return Number(cvToValue(res).value);
   }
 
   static async getBalance<C extends StacksChains>(
@@ -92,39 +118,43 @@ export class StacksPlatform<N extends Network> extends PlatformContext<N, Stacks
       const apiUrl = `${rpc.client.baseUrl}/extended/v1/address/${walletAddr}/stx`;
       const res = await fetch(apiUrl);
       if (!res.ok) {
-        throw new Error(`Failed to fetch STX balance: ${res.status} ${res.statusText}`);
+        throw new Error(
+          `Failed to fetch STX balance: ${res.status} ${res.statusText}`,
+        );
       }
       const data = await res.json();
-      if (typeof data.balance !== "string") {
-        throw new Error("Invalid response: missing balance field");
+      if (typeof data.balance !== 'string') {
+        throw new Error('Invalid response: missing balance field');
       }
       return BigInt(data.balance);
     }
-    const [contractAddress, contractName] = token.toString().split(".")
-    if(!contractAddress || !contractName) {
-      throw new Error("Invalid token address");
+    const [contractAddress, contractName] = token.toString().split('.');
+    if (!contractAddress || !contractName) {
+      throw new Error('Invalid token address');
     }
     const res = await fetchCallReadOnlyFunction({
       contractName,
       contractAddress,
-      functionName: "get-balance",
-      functionArgs: [
-        Cl.address(walletAddr)
-      ],
+      functionName: 'get-balance',
+      functionArgs: [Cl.address(walletAddr)],
       client: {
         baseUrl: rpc.client.baseUrl,
       },
-      senderAddress: StacksZeroAddress
-    })
-    return BigInt(cvToValue(res).value)
+      senderAddress: StacksZeroAddress,
+    });
+    return BigInt(cvToValue(res).value);
   }
 
-  static async getLatestBlock<C extends StacksChains>(rpc: RpcConnection<C>): Promise<number> {
-    throw new Error("Method not implemented.");
+  static async getLatestBlock<C extends StacksChains>(
+    rpc: RpcConnection<C>,
+  ): Promise<number> {
+    throw new Error('Method not implemented.');
   }
 
-  static async getLatestFinalizedBlock<C extends StacksChains>(rpc: RpcConnection<C>): Promise<number> {
-    throw new Error("Method not implemented.");
+  static async getLatestFinalizedBlock<C extends StacksChains>(
+    rpc: RpcConnection<C>,
+  ): Promise<number> {
+    throw new Error('Method not implemented.');
   }
 
   static async sendWait<C extends StacksChains>(
@@ -132,19 +162,24 @@ export class StacksPlatform<N extends Network> extends PlatformContext<N, Stacks
     rpc: RpcConnection<C>,
     stxns: SignedTx[],
   ): Promise<TxHash[]> {
-    throw new Error("Method not implemented.");
+    throw new Error('Method not implemented.');
   }
 
   static chainFromChainId(chainId: string): [Network, StacksChains] {
-    throw new Error("Method not implemented.");
+    throw new Error('Method not implemented.');
   }
 
-  static async chainFromRpc(rpc: StacksNetwork): Promise<[Network, StacksChains]> {
-    if(rpc.chainId == ChainId.Mainnet) {
+  static async chainFromRpc(
+    rpc: StacksNetwork,
+  ): Promise<[Network, StacksChains]> {
+    if (rpc.chainId == ChainId.Mainnet) {
       return ['Mainnet', 'Stacks'];
     }
-    if(rpc.chainId == ChainId.Testnet) {
-      if(rpc.client.baseUrl.includes('localhost') || rpc.client.baseUrl.includes('127.0.0.1')) {
+    if (rpc.chainId == ChainId.Testnet) {
+      if (
+        rpc.client.baseUrl.includes('localhost') ||
+        rpc.client.baseUrl.includes('127.0.0.1')
+      ) {
         return ['Devnet', 'Stacks'];
       }
       return ['Testnet', 'Stacks'];
@@ -152,20 +187,24 @@ export class StacksPlatform<N extends Network> extends PlatformContext<N, Stacks
     return ['Devnet', 'Stacks'];
   }
 
-  static async waitForTx(txId: string | undefined, clientBaseUrl: string, debug: boolean = false) {
-    if(!txId) {
-      throw new Error("No tx id")
+  static async waitForTx(
+    txId: string | undefined,
+    clientBaseUrl: string,
+    debug: boolean = false,
+  ) {
+    if (!txId) {
+      throw new Error('No tx id');
     }
-    const apiUrl = `${clientBaseUrl}/extended/v1/tx/${txId}`
-    const res = await fetch(apiUrl)
-    let data = await res.json()
-    let tries = 0
-    while(data.tx_status !== 'success') {
-      if(debug) console.log(`Waiting for tx ${txId} ... try: ${tries}`)
-      await new Promise(resolve => setTimeout(resolve, 1000))
-      data = await fetch(apiUrl).then(res => res.json())
-      tries++
+    const apiUrl = `${clientBaseUrl}/extended/v1/tx/${txId}`;
+    const res = await fetch(apiUrl);
+    let data = await res.json();
+    let tries = 0;
+    while (data.tx_status !== 'success') {
+      if (debug) console.log(`Waiting for tx ${txId} ... try: ${tries}`);
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      data = await fetch(apiUrl).then((res) => res.json());
+      tries++;
     }
-    if(debug) console.log(`tx mined!: ${txId}`)
+    if (debug) console.log(`tx mined!: ${txId}`);
   }
 }

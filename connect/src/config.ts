@@ -1,7 +1,7 @@
-import type { Chain, Network, Platform } from "@wormhole-foundation/sdk-base";
-import { circle, executor } from "@wormhole-foundation/sdk-base";
-import type { ChainConfig, ChainsConfig } from "@wormhole-foundation/sdk-definitions";
-import { buildConfig } from "@wormhole-foundation/sdk-definitions";
+import type { Chain, Network, Platform } from "@xertra/wormhole-sdk-base";
+import { circle, executor } from "@xertra/wormhole-sdk-base";
+import type { ChainConfig, ChainsConfig } from "@xertra/wormhole-sdk-definitions";
+import { buildConfig } from "@xertra/wormhole-sdk-definitions";
 
 export const DEFAULT_TASK_TIMEOUT = 60 * 1000; // 1 minute in milliseconds
 
@@ -20,7 +20,7 @@ export const CONFIG = {
     chains: buildConfig("Mainnet"),
   },
   Testnet: {
-    api: "https://api.testnet.wormholescan.io",
+    api: "https://test.api.wormhole.xertra.com",
     circleAPI: circle.circleAPI("Testnet"),
     executorAPI: executor.executorAPI("Testnet"),
     chains: buildConfig("Testnet"),

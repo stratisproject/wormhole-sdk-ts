@@ -1,13 +1,13 @@
-import type { Chain, Network } from "@wormhole-foundation/sdk-base";
-import { amount, chainToPlatform, contracts } from "@wormhole-foundation/sdk-base";
+import type { Chain, Network } from "@xertra/wormhole-sdk-base";
+import { amount, chainToPlatform, contracts } from "@xertra/wormhole-sdk-base";
 import type {
   ChainAddress,
   ChainContext,
   Signer,
   TokenId,
   TokenTransferDetails,
-} from "@wormhole-foundation/sdk-definitions";
-import { isNative, isTokenId } from "@wormhole-foundation/sdk-definitions";
+} from "@xertra/wormhole-sdk-definitions";
+import { isNative, isTokenId } from "@xertra/wormhole-sdk-definitions";
 import { TokenTransfer } from "../../protocols/tokenBridge/tokenTransfer.js";
 import type { AttestationReceipt, SourceInitiatedTransferReceipt } from "../../types.js";
 import { TransferState } from "../../types.js";

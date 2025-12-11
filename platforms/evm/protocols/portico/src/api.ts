@@ -1,9 +1,9 @@
-import type { Chain, TokenAddress } from '@wormhole-foundation/sdk-connect';
+import type { Chain, TokenAddress } from '@xertra/wormhole-sdk-connect';
 import {
   encoding,
   isNative,
   toChainId,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 import axios from 'axios';
 
 export const RELAYER_FEE_API_URL =

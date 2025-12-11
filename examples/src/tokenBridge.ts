@@ -1,10 +1,10 @@
-import type { Chain, Network, TokenId } from "@wormhole-foundation/sdk";
-import { TokenTransfer, Wormhole, amount, isTokenId, wormhole } from "@wormhole-foundation/sdk";
+import type { Chain, Network, TokenId } from "@xertra/wormhole-sdk";
+import { TokenTransfer, Wormhole, amount, isTokenId, wormhole } from "@xertra/wormhole-sdk";
 
 // Import the platform-specific packages
 
-import evm from "@wormhole-foundation/sdk/evm";
-import solana from "@wormhole-foundation/sdk/solana";
+import evm from "@xertra/wormhole-sdk/evm";
+import solana from "@xertra/wormhole-sdk/solana";
 import type { SignerStuff } from "./helpers/index.js";
 import { getSigner, waitLog } from "./helpers/index.js";
 

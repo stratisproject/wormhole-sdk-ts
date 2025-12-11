@@ -52,7 +52,7 @@ const chainIdAndChainEntries = [
   [   60, "Stacks"         ],
   [   63, "Moca"           ],
   [   64, "MegaETH"        ],
-  [ 3104, "Wormchain"      ],
+  [ 3105, "Wormchain"      ],
   [ 4000, "Cosmoshub"      ],
   [ 4001, "Evmos"          ],
   [ 4002, "Kujira"         ],
@@ -69,6 +69,8 @@ const chainIdAndChainEntries = [
   [10005, "OptimismSepolia"],
   [10006, "Holesky"        ],
   [10007, "PolygonSepolia" ],
+  [10105, "Xertra"         ],
+  [10205, "Auroria"        ],
   // guardians are not connected to HyperCore; this is an arbitrary number chosen by Mayan
   [65000, "HyperCore"      ],
 ] as const satisfies MapLevel<number, string>;

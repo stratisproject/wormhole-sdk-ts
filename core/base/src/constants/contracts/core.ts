@@ -67,7 +67,7 @@ export const coreBridgeContracts = [[
     ["Pythnet",         "EUrRARh92Cdc54xrDn6qzaqjA77NRrCcfbr8kPwoTL4z"],
     ["Base",            "0x23908A62110e21C04F3A4e011d24F901F911744A"],
     ["Sei",             "sei1nna9mzp274djrgzhzkac2gvm3j27l402s4xzr08chq57pjsupqnqaj0d5s"],
-    ["Sepolia",         "0x4a8bc80Ed5a4067f1CCf107057b8270E0cC11A78"],
+    ["Sepolia",         "0x3378932e90Dbf0724EDfd470F5b2eAD2333D89eb"],
     ["Wormchain",       "wormhole16jzpxp0e8550c9aht6q9svcux30vtyyyyxv5w2l2djjra46580wsazcjwp"],
     ["ArbitrumSepolia", "0x6b9C8671cdDC8dEab9c719bB87cBd3e782bA6a35"],
     ["BaseSepolia",     "0x79A1027a6A159502049F10906D333EC57E95F083"],
@@ -96,6 +96,7 @@ export const coreBridgeContracts = [[
     ["CreditCoin",      "0xaBf89de706B583424328B54dD05a8fC986750Da8"],
     ["Moca",            "0xaBf89de706B583424328B54dD05a8fC986750Da8"],
     ["MegaETH",         "0x81705b969cDcc6FbFde91a0C6777bE0EF3A75855"],
+    ["Auroria",         "0xc8C49f960e113E60276d5ff27bcc5fC1b8cB3626"],
   ]], [
   "Devnet", [
     ["Solana",    "Bridge1p5gheXUvJ6jGWGeCsgPKgnE3YgdGKRVCMY9o"],

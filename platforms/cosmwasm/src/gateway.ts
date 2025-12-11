@@ -4,15 +4,15 @@ import type {
   GatewayTransferWithPayloadMsg,
   Network,
   TokenId,
-} from "@wormhole-foundation/sdk-connect";
-import { CONFIG, encoding, sha256, toChainId } from "@wormhole-foundation/sdk-connect";
+} from "@xertra/wormhole-sdk-connect";
+import { CONFIG, encoding, sha256, toChainId } from "@xertra/wormhole-sdk-connect";
 
 import { CosmwasmAddress } from "./address.js";
 import { CosmwasmChain } from "./chain.js";
 import { IBC_TRANSFER_PORT } from "./constants.js";
 import { CosmwasmPlatform } from "./platform.js";
 import type { CosmwasmChains } from "./types.js";
-import { isNative } from "@wormhole-foundation/sdk-connect";
+import { isNative } from "@xertra/wormhole-sdk-connect";
 
 export class Gateway<N extends Network> extends CosmwasmChain<N, "Wormchain"> {
   static chain: "Wormchain" = "Wormchain";

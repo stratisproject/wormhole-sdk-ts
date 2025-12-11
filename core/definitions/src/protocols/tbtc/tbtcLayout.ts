@@ -1,4 +1,4 @@
-import type { Layout } from "@wormhole-foundation/sdk-base";
+import type { Layout } from "@xertra/wormhole-sdk-base";
 import { universalAddressItem } from "./../../layout-items/index.js";
 import type { NamedPayloads, RegisterPayloadTypes } from "./../../vaa/index.js";
 import { registerPayloadTypes } from "./../../vaa/index.js";

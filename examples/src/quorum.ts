@@ -1,9 +1,9 @@
-import type { Chain } from "@wormhole-foundation/sdk";
-import { api, toChain, wormhole } from "@wormhole-foundation/sdk";
-import algorand from "@wormhole-foundation/sdk/algorand";
-import cosmwasm from "@wormhole-foundation/sdk/cosmwasm";
-import evm from "@wormhole-foundation/sdk/evm";
-import solana from "@wormhole-foundation/sdk/solana";
+import type { Chain } from "@xertra/wormhole-sdk";
+import { api, toChain, wormhole } from "@xertra/wormhole-sdk";
+import algorand from "@xertra/wormhole-sdk/algorand";
+import cosmwasm from "@xertra/wormhole-sdk/cosmwasm";
+import evm from "@xertra/wormhole-sdk/evm";
+import solana from "@xertra/wormhole-sdk/solana";
 
 type Stats = {
   max: bigint;

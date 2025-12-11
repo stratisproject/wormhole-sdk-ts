@@ -1,5 +1,5 @@
-import * as _algorand from "@wormhole-foundation/sdk-algorand";
-import { applyChainsConfigConfigOverrides } from "@wormhole-foundation/sdk-connect";
+import * as _algorand from "@xertra/wormhole-sdk-algorand";
+import { applyChainsConfigConfigOverrides } from "@xertra/wormhole-sdk-connect";
 import type { PlatformDefinition } from "../index.js";
 
 /** Platform and protocol definitions for Algorand */
@@ -8,8 +8,8 @@ const algorand: PlatformDefinition<typeof _algorand._platform> = {
   Platform: _algorand.AlgorandPlatform,
   getSigner: _algorand.getAlgorandSigner,
   protocols: {
-    WormholeCore: () => import("@wormhole-foundation/sdk-algorand-core"),
-    TokenBridge: () => import("@wormhole-foundation/sdk-algorand-tokenbridge"),
+    WormholeCore: () => import("@xertra/wormhole-sdk-algorand-core"),
+    TokenBridge: () => import("@xertra/wormhole-sdk-algorand-tokenbridge"),
   },
   getChain: (network, chain, overrides?) =>
     new _algorand.AlgorandChain(

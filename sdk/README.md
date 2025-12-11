@@ -39,12 +39,12 @@ Getting started is simple, just import Wormhole and the [Platform](#platforms) m
 
 <!--EXAMPLE_IMPORTS-->
 ```ts
-import { wormhole } from "@wormhole-foundation/sdk";
-import algorand from "@wormhole-foundation/sdk/algorand";
-import cosmwasm from "@wormhole-foundation/sdk/cosmwasm";
-import evm from "@wormhole-foundation/sdk/evm";
-import solana from "@wormhole-foundation/sdk/solana";
-import sui from "@wormhole-foundation/sdk/sui";
+import { wormhole } from "@xertra/wormhole-sdk";
+import algorand from "@xertra/wormhole-sdk/algorand";
+import cosmwasm from "@xertra/wormhole-sdk/cosmwasm";
+import evm from "@xertra/wormhole-sdk/evm";
+import solana from "@xertra/wormhole-sdk/solana";
+import sui from "@xertra/wormhole-sdk/sui";
 ```
 See example [here](https://github.com/wormhole-foundation/wormhole-sdk-ts/blob/main/examples/src/index.ts#L2)
 <!--EXAMPLE_IMPORTS-->
@@ -282,7 +282,7 @@ Every chain has a `TokenBridge` protocol client that provides a consistent inter
 Using the `WormholeTransfer` abstractions is the recommended way to interact with these protocols but it is possible to use them directly
 
 ```ts
-import { signSendWait } from "@wormhole-foundation/sdk";
+import { signSendWait } from "@xertra/wormhole-sdk";
 
 // ...
 

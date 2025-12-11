@@ -1,5 +1,5 @@
-import type { Chain, Network } from "@wormhole-foundation/sdk-base";
-import { contracts } from "@wormhole-foundation/sdk-base";
+import type { Chain, Network } from "@xertra/wormhole-sdk-base";
+import { contracts } from "@xertra/wormhole-sdk-base";
 
 // Allow contracts to be passed that aren't
 // part of the known contract set

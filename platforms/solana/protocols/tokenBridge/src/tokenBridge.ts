@@ -9,7 +9,7 @@ import type {
   Platform,
   TokenBridge,
   TokenId,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 import {
   ErrNotWrapped,
   UniversalAddress,
@@ -18,21 +18,21 @@ import {
   toChain,
   toChainId,
   toNative,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 import type {
   AnySolanaAddress,
   SolanaChains,
   SolanaTransaction,
-} from '@wormhole-foundation/sdk-solana';
+} from '@xertra/wormhole-sdk-solana';
 import {
   SolanaAddress,
   SolanaPlatform,
   SolanaUnsignedTransaction,
-} from '@wormhole-foundation/sdk-solana';
+} from '@xertra/wormhole-sdk-solana';
 import {
   SolanaWormholeCore,
   utils as coreUtils,
-} from '@wormhole-foundation/sdk-solana-core';
+} from '@xertra/wormhole-sdk-solana-core';
 
 import type { Program } from '@coral-xyz/anchor';
 import {

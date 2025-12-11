@@ -8,7 +8,7 @@ import type {
   Platform,
   TokenAddress,
   TokenId,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 import {
   nativeChainIds,
   toChainId,
@@ -17,23 +17,23 @@ import {
   serializeLayout,
   serialize,
   contracts,
-} from '@wormhole-foundation/sdk-connect';
-import type { EvmChains } from '@wormhole-foundation/sdk-evm';
+} from '@xertra/wormhole-sdk-connect';
+import type { EvmChains } from '@xertra/wormhole-sdk-evm';
 import {
   EvmAddress,
   EvmPlatform,
   EvmUnsignedTransaction,
   addChainId,
   addFrom,
-} from '@wormhole-foundation/sdk-evm';
+} from '@xertra/wormhole-sdk-evm';
 import type { Provider, TransactionRequest } from 'ethers';
 import { Contract } from 'ethers';
 import '@wormhole-foundation/sdk-evm-core';
-import { EvmWormholeCore } from '@wormhole-foundation/sdk-evm-core';
+import { EvmWormholeCore } from '@xertra/wormhole-sdk-evm-core';
 import {
   relayInstructionsLayout,
   toUniversal,
-} from '@wormhole-foundation/sdk-definitions';
+} from '@xertra/wormhole-sdk-definitions';
 import { ZeroAddress } from 'ethers';
 
 const RELAYER_ABI = [

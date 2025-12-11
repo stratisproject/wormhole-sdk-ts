@@ -1,5 +1,5 @@
-import type { Chain, Network, PlatformToChains } from "@wormhole-foundation/sdk-base";
-import { chainToPlatform, encoding, toChain } from "@wormhole-foundation/sdk-base";
+import type { Chain, Network, PlatformToChains } from "@xertra/wormhole-sdk-base";
+import { chainToPlatform, encoding, toChain } from "@xertra/wormhole-sdk-base";
 import type {
   AttestationId,
   ChainAddress,
@@ -15,7 +15,7 @@ import type {
   TransactionId,
   TxHash,
   WormholeMessageId,
-} from "@wormhole-foundation/sdk-definitions";
+} from "@xertra/wormhole-sdk-definitions";
 import {
   TokenBridge,
   UniversalAddress,
@@ -26,7 +26,7 @@ import {
   isWormholeMessageId,
   toGatewayMsg,
   toNative,
-} from "@wormhole-foundation/sdk-definitions";
+} from "@xertra/wormhole-sdk-definitions";
 import { signSendWait } from "../../common.js";
 import { fetchIbcXfer, isTokenBridgeVaaRedeemed, retry } from "../../tasks.js";
 import { TransferState } from "../../types.js";

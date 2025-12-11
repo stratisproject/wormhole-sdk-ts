@@ -16,7 +16,7 @@ import type {
   Network,
   TxHash,
   WormholeMessageId,
-} from "@wormhole-foundation/sdk-connect";
+} from "@xertra/wormhole-sdk-connect";
 import {
   chainToPlatform,
   encoding,
@@ -24,7 +24,7 @@ import {
   isIbcTransferInfo,
   isNative,
   toChainId,
-} from "@wormhole-foundation/sdk-connect";
+} from "@xertra/wormhole-sdk-connect";
 
 import type {
   AnyCosmwasmAddress,
@@ -32,7 +32,7 @@ import type {
   CosmwasmPlatformType,
   CosmwasmTransaction,
   IbcChannels,
-} from "@wormhole-foundation/sdk-cosmwasm";
+} from "@xertra/wormhole-sdk-cosmwasm";
 import {
   CosmwasmAddress,
   CosmwasmPlatform,
@@ -51,9 +51,9 @@ import {
   IBC_TRANSFER_PORT,
   computeFee,
   networkChainToChannels,
-} from "@wormhole-foundation/sdk-cosmwasm";
+} from "@xertra/wormhole-sdk-cosmwasm";
 
-import { CosmwasmWormholeCore } from "@wormhole-foundation/sdk-cosmwasm-core";
+import { CosmwasmWormholeCore } from "@xertra/wormhole-sdk-cosmwasm-core";
 
 const millisToNano = (seconds: number) => seconds * 1_000_000;
 

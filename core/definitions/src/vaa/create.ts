@@ -2,8 +2,8 @@
 //  memory. For some extra lulz, try turning createVAA into an arrow function (spoiler: also
 //  causes out of memory fireworks)
 
-import type { DynamicItemsOfLayout, LayoutToType } from "@wormhole-foundation/sdk-base";
-import { addFixedValues, serializeLayout } from "@wormhole-foundation/sdk-base";
+import type { DynamicItemsOfLayout, LayoutToType } from "@xertra/wormhole-sdk-base";
+import { addFixedValues, serializeLayout } from "@xertra/wormhole-sdk-base";
 
 import { keccak256 } from "../utils.js";
 import type { PayloadLiteral } from "./registration.js";

@@ -1,5 +1,6 @@
-import { Chain, Wormhole, platformToChains } from "@wormhole-foundation/sdk-connect";
-import { CosmwasmPlatform } from "@wormhole-foundation/sdk-cosmwasm";
+import type { Chain} from "@xertra/wormhole-sdk-connect";
+import { Wormhole, platformToChains } from "@xertra/wormhole-sdk-connect";
+import { CosmwasmPlatform } from "@xertra/wormhole-sdk-cosmwasm";
 
 import "@wormhole-foundation/sdk-cosmwasm-ibc";
 

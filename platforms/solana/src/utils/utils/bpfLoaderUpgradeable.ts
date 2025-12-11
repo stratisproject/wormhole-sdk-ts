@@ -2,13 +2,18 @@ import type { PublicKeyInitData } from '@solana/web3.js';
 import { PublicKey } from '@solana/web3.js';
 import { deriveAddress } from './account.js';
 
-import type { CustomConversion, Layout } from '@wormhole-foundation/sdk-connect';
+import type {
+  CustomConversion,
+  Layout,
+} from '@xertra/wormhole-sdk-connect';
 
 export const BPF_LOADER_UPGRADEABLE_PROGRAM_ID = new PublicKey(
-  "BPFLoaderUpgradeab1e11111111111111111111111"
+  'BPFLoaderUpgradeab1e11111111111111111111111',
 );
 
-export function deriveProgramDataAddress(programId: PublicKeyInitData): PublicKey {
+export function deriveProgramDataAddress(
+  programId: PublicKeyInitData,
+): PublicKey {
   return deriveAddress(
     [new PublicKey(programId).toBuffer()],
     BPF_LOADER_UPGRADEABLE_PROGRAM_ID,
@@ -19,12 +24,16 @@ export function deriveProgramDataAddress(programId: PublicKeyInitData): PublicKe
 //  account that's found at the program id address), which is of type UpgradeLoaderState::Program:
 //  https://docs.rs/solana-program/latest/src/solana_program/bpf_loader_upgradeable.rs.html#40-43
 export function programDataAddress(programId: PublicKeyInitData) {
-  return PublicKey.findProgramAddressSync([new PublicKey(programId).toBytes()], BPF_LOADER_UPGRADEABLE_PROGRAM_ID)[0];
+  return PublicKey.findProgramAddressSync(
+    [new PublicKey(programId).toBytes()],
+    BPF_LOADER_UPGRADEABLE_PROGRAM_ID,
+  )[0];
 }
 
-const onChainUint = { binary: "uint", endianness: "little" } as const;
+const onChainUint = { binary: 'uint', endianness: 'little' } as const;
 
-const pubKeyConversion = { //TODO find a better place for this
+const pubKeyConversion = {
+  //TODO find a better place for this
   to: (encoded: Uint8Array) => new PublicKey(encoded),
   from: (decoded: PublicKey) => decoded.toBytes(),
 } as const satisfies CustomConversion<Uint8Array, PublicKey>;
@@ -43,17 +52,36 @@ const pubKeyConversion = { //TODO find a better place for this
 //See https://explorer.solana.com/address/GDDMwNyyx8uB6zrqwBFHjLLG3TBYk2F8Az4yrQC5RzMp
 //  as an example of an immutable program data account.
 export const programDataLayout = [
-  { name: "programDataEnumVariant", ...onChainUint, size: 4, custom: 3, omit: true },
-  { name: "slot", ...onChainUint, size: 8 },
   {
-    name: "upgradeAuthority",
-    binary: "switch",
+    name: 'programDataEnumVariant',
+    ...onChainUint,
+    size: 4,
+    custom: 3,
+    omit: true,
+  },
+  { name: 'slot', ...onChainUint, size: 8 },
+  {
+    name: 'upgradeAuthority',
+    binary: 'switch',
     idSize: 1,
-    idTag: "isSome",
+    idTag: 'isSome',
     layouts: [
-      [[0, false], [{ name: "_lastValueBeforeImmutability", binary: "bytes", size: 32 }]],
-      [[1, true], [{ name: "value", binary: "bytes", size: 32, custom: pubKeyConversion }]],
+      [
+        [0, false],
+        [{ name: '_lastValueBeforeImmutability', binary: 'bytes', size: 32 }],
+      ],
+      [
+        [1, true],
+        [
+          {
+            name: 'value',
+            binary: 'bytes',
+            size: 32,
+            custom: pubKeyConversion,
+          },
+        ],
+      ],
     ],
   },
-  { name: "bytecode", binary: "bytes" },
+  { name: 'bytecode', binary: 'bytes' },
 ] as const satisfies Layout;

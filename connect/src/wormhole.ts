@@ -1,5 +1,5 @@
-import type { Chain, Network, Platform } from "@wormhole-foundation/sdk-base";
-import { chainToPlatform, circle } from "@wormhole-foundation/sdk-base";
+import type { Chain, Network, Platform } from "@xertra/wormhole-sdk-base";
+import { chainToPlatform, circle } from "@xertra/wormhole-sdk-base";
 import type {
   CapabilitiesResponse,
   ChainAddress,
@@ -18,13 +18,13 @@ import type {
   UniversalAddress,
   WormholeMessageId,
   deserialize,
-} from "@wormhole-foundation/sdk-definitions";
+} from "@xertra/wormhole-sdk-definitions";
 import {
   canonicalAddress,
   isNative,
   nativeTokenId,
   toNative,
-} from "@wormhole-foundation/sdk-definitions";
+} from "@xertra/wormhole-sdk-definitions";
 import { getCircleAttestationWithRetry } from "./circle-api.js";
 import type { WormholeConfig, WormholeConfigOverrides } from "./config.js";
 import { applyWormholeConfigOverrides } from "./config.js";
@@ -43,7 +43,7 @@ import {
   getVaaBytesWithRetry,
   getVaaWithRetry,
 } from "./whscan-api.js";
-import { fetchCapabilities, fetchQuote, fetchStatus } from "@wormhole-foundation/sdk-definitions";
+import { fetchCapabilities, fetchQuote, fetchStatus } from "@xertra/wormhole-sdk-definitions";
 
 type PlatformMap<N extends Network, P extends Platform = Platform> = Map<P, PlatformContext<N, P>>;
 type ChainMap<N extends Network, C extends Chain = Chain> = Map<C, ChainContext<N, C>>;

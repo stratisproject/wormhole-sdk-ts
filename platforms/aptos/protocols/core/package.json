@@ -1,14 +1,14 @@
 {
-  "name": "@wormhole-foundation/sdk-aptos-core",
-  "version": "1.20.0",
+  "name": "@xertra/wormhole-sdk-aptos-core",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wormhole-foundation/wormhole-sdk-ts.git"
+    "url": "git+https://github.com/stratisproject/wormhole-sdk-ts.git"
   },
   "bugs": {
-    "url": "https://github.com/wormhole-foundation/wormhole-sdk-ts/issues"
+    "url": "https://github.com/stratisproject/wormhole-sdk-ts/issues"
   },
-  "homepage": "https://github.com/wormhole-foundation/wormhole-sdk-ts#readme",
+  "homepage": "https://github.com/stratisproject/wormhole-sdk-ts#readme",
   "directories": {
     "test": "__tests__"
   },
@@ -45,8 +45,8 @@
     "prettier": "prettier --write ./src"
   },
   "dependencies": {
-    "@wormhole-foundation/sdk-connect": "1.20.0",
-    "@wormhole-foundation/sdk-aptos": "1.20.0"
+    "@xertra/wormhole-sdk-connect": "1.0.0",
+    "@xertra/wormhole-sdk-aptos": "1.0.0"
   },
   "type": "module",
   "exports": {

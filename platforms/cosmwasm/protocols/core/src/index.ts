@@ -1,5 +1,5 @@
-import { registerProtocol } from "@wormhole-foundation/sdk-connect";
-import { _platform } from "@wormhole-foundation/sdk-cosmwasm";
+import { registerProtocol } from "@xertra/wormhole-sdk-connect";
+import { _platform } from "@xertra/wormhole-sdk-cosmwasm";
 import { CosmwasmWormholeCore } from "./core.js";
 
 registerProtocol(_platform, "WormholeCore", CosmwasmWormholeCore);

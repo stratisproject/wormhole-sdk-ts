@@ -1,4 +1,4 @@
-import type { Chain } from "@wormhole-foundation/sdk-base";
+import type { Chain } from "@xertra/wormhole-sdk-base";
 import type { ProtocolName } from "./protocol.js";
 import type { AutomaticCircleBridge, CircleBridge } from "./protocols/circleBridge/circleBridge.js";
 import type { IbcTransferData } from "./protocols/ibc/ibc.js";

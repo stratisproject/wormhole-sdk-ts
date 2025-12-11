@@ -207,6 +207,15 @@ const explorerConfig = [[
           account: "address/"
         }
       }
+    ], [
+      "Xertra", {
+        name: "Xertra Explorer",
+        baseUrl: "https://explorer.xertra.com",
+        endpoints: {
+          tx: "tx/",
+          account: "address/"
+        }
+      }
     ]
   ]], [
   "Testnet", [[
@@ -373,6 +382,15 @@ const explorerConfig = [[
       "MegaETH", {
         name: "MegaETH Explorer",
         baseUrl: "https://megaeth-testnet-v2.blockscout.com/",
+        endpoints: {
+          tx: "tx/",
+          account: "address/"
+        }
+      }
+    ], [
+      "Auroria", {
+        name: "Auroria Explorer",
+        baseUrl: "https://auroria.explorer.xertra.com",
         endpoints: {
           tx: "tx/",
           account: "address/"

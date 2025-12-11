@@ -1,6 +1,6 @@
 {
-  "name": "@wormhole-foundation/scripts",
-  "version": "0.4.0-beta.2",
+  "name": "@xertra/wormhole-scripts",
+  "version": "1.0.0",
   "license": "Apache-2.0",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -21,7 +21,7 @@
   "sideEffects": false,
   "scripts": {
     "features": "tsx src/features.ts",
-    "examples":"tsx src/updateExamples.ts"
+    "examples": "tsx src/updateExamples.ts"
   },
   "devDependencies": {
     "algosdk": "^2.7.0",
@@ -29,22 +29,22 @@
     "tsx": "^4.7.0"
   },
   "dependencies": {
-    "@wormhole-foundation/sdk-connect": "^0.4.0-beta.2",
-    "@wormhole-foundation/sdk-evm": "^0.4.0-beta.2",
-    "@wormhole-foundation/sdk-evm-core": "^0.4.0-beta.2",
-    "@wormhole-foundation/sdk-evm-tokenbridge": "^0.4.0-beta.2",
-    "@wormhole-foundation/sdk-evm-cctp": "^0.4.0-beta.2",
-    "@wormhole-foundation/sdk-evm-portico": "^0.4.0-beta.2",
-    "@wormhole-foundation/sdk-solana": "^0.4.0-beta.2",
-    "@wormhole-foundation/sdk-solana-core": "^0.4.0-beta.2",
-    "@wormhole-foundation/sdk-solana-tokenbridge": "^0.4.0-beta.2",
-    "@wormhole-foundation/sdk-solana-cctp": "^0.4.0-beta.2",
-    "@wormhole-foundation/sdk-cosmwasm": "^0.4.0-beta.2",
-    "@wormhole-foundation/sdk-cosmwasm-core": "^0.4.0-beta.2",
-    "@wormhole-foundation/sdk-cosmwasm-tokenbridge": "^0.4.0-beta.2",
-    "@wormhole-foundation/sdk-cosmwasm-ibc": "^0.4.0-beta.2",
-    "@wormhole-foundation/sdk-algorand": "^0.4.0-beta.2",
-    "@wormhole-foundation/sdk-algorand-core": "^0.4.0-beta.2",
-    "@wormhole-foundation/sdk-algorand-tokenbridge": "^0.4.0-beta.2"
+    "@xertra/wormhole-sdk-connect": "1.0.0",
+    "@xertra/wormhole-sdk-evm": "1.0.0",
+    "@xertra/wormhole-sdk-evm-core": "1.0.0",
+    "@xertra/wormhole-sdk-evm-tokenbridge": "1.0.0",
+    "@xertra/wormhole-sdk-evm-cctp": "1.0.0",
+    "@xertra/wormhole-sdk-evm-portico": "1.0.0",
+    "@xertra/wormhole-sdk-solana": "1.0.0",
+    "@xertra/wormhole-sdk-solana-core": "1.0.0",
+    "@xertra/wormhole-sdk-solana-tokenbridge": "1.0.0",
+    "@xertra/wormhole-sdk-solana-cctp": "1.0.0",
+    "@xertra/wormhole-sdk-cosmwasm": "1.0.0",
+    "@xertra/wormhole-sdk-cosmwasm-core": "1.0.0",
+    "@xertra/wormhole-sdk-cosmwasm-tokenbridge": "1.0.0",
+    "@xertra/wormhole-sdk-cosmwasm-ibc": "1.0.0",
+    "@xertra/wormhole-sdk-algorand": "1.0.0",
+    "@xertra/wormhole-sdk-algorand-core": "1.0.0",
+    "@xertra/wormhole-sdk-algorand-tokenbridge": "1.0.0"
   }
 }

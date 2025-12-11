@@ -9,21 +9,21 @@ import type {
   Network,
   Platform,
   TokenAddress,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 import {
   isNative,
   toChainId,
   toNative,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 import type {
   SolanaChains,
   SolanaTransaction,
-} from '@wormhole-foundation/sdk-solana';
+} from '@xertra/wormhole-sdk-solana';
 import {
   SolanaAddress,
   SolanaPlatform,
   SolanaUnsignedTransaction,
-} from '@wormhole-foundation/sdk-solana';
+} from '@xertra/wormhole-sdk-solana';
 
 import type { Program } from '@coral-xyz/anchor';
 
@@ -209,7 +209,12 @@ export class SolanaAutomaticTokenBridge<
     ]);
 
     const decimals = Number(
-      await SolanaPlatform.getDecimals(this.network, this.chain, this.connection, token),
+      await SolanaPlatform.getDecimals(
+        this.network,
+        this.chain,
+        this.connection,
+        token,
+      ),
     );
 
     const relayerFee = TEN.pow(new BN(decimals))
@@ -230,7 +235,12 @@ export class SolanaAutomaticTokenBridge<
       ]);
 
     const decimals = Number(
-      await SolanaPlatform.getDecimals(this.network, this.chain, this.connection, token),
+      await SolanaPlatform.getDecimals(
+        this.network,
+        this.chain,
+        this.connection,
+        token,
+      ),
     );
 
     const nativeSwapRate = this.calculateNativeSwapRate(solSwapRate, swapRate);
@@ -258,7 +268,12 @@ export class SolanaAutomaticTokenBridge<
     const mint = this.mintAddress(token);
 
     const decimals = Number(
-      await SolanaPlatform.getDecimals(this.network, this.chain, this.connection, token),
+      await SolanaPlatform.getDecimals(
+        this.network,
+        this.chain,
+        this.connection,
+        token,
+      ),
     );
 
     const [{ swapRate }, { swapRate: solSwapRate }] = await Promise.all([

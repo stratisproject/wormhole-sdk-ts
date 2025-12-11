@@ -1,5 +1,5 @@
-import type { Address, Platform } from "@wormhole-foundation/sdk-connect";
-import { UniversalAddress, encoding, registerNative } from "@wormhole-foundation/sdk-connect";
+import type { Address, Platform } from "@xertra/wormhole-sdk-connect";
+import { UniversalAddress, encoding, registerNative } from "@xertra/wormhole-sdk-connect";
 
 import { decodeAddress, encodeAddress, isValidAddress } from "algosdk";
 import type { AnyAlgorandAddress } from "./types.js";
@@ -78,7 +78,7 @@ export class AlgorandAddress implements Address {
   }
 }
 
-declare module "@wormhole-foundation/sdk-connect" {
+declare module "@xertra/wormhole-sdk-connect" {
   export namespace WormholeRegistry {
     interface PlatformToNativeAddressMapping {
       Algorand: AlgorandAddress;

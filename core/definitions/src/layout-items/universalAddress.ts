@@ -1,7 +1,7 @@
 import type {
   Layout,
   CustomConversion,
-} from "@wormhole-foundation/sdk-base";
+} from "@xertra/wormhole-sdk-base";
 import { UniversalAddress } from '../universalAddress.js';
 
 export const universalAddressItem = {

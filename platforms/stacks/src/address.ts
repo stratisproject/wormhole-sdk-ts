@@ -1,6 +1,8 @@
-import { Address, UniversalAddress, registerNative } from "@wormhole-foundation/sdk-connect";
-import { _platform, AnyStacksAddress } from "./types.js";
-import { Address as TransactionsAddress } from "@stacks/transactions";
+import type { Address } from '@xertra/wormhole-sdk-connect';
+import { UniversalAddress, registerNative } from '@xertra/wormhole-sdk-connect';
+import type { AnyStacksAddress } from './types.js';
+import { _platform } from './types.js';
+import { Address as TransactionsAddress } from '@stacks/transactions';
 
 export const StacksZeroAddress = 'SP000000000000000000002Q6VF78';
 
@@ -9,17 +11,17 @@ export class StacksAddress implements Address {
   static readonly platform = _platform;
   readonly type: string = 'Native';
 
-  readonly address: string
+  readonly address: string;
 
   constructor(address: AnyStacksAddress) {
-    if(StacksAddress.instanceof(address)) {
+    if (StacksAddress.instanceof(address)) {
       const a = address as unknown as StacksAddress;
       this.address = a.address;
       return;
     }
 
-    if(typeof address === 'string') {
-      if(!StacksAddress.isValidAddress(address)) {
+    if (typeof address === 'string') {
+      if (!StacksAddress.isValidAddress(address)) {
         throw new Error(`Invalid Stacks address ${address}`);
       }
       this.address = address;
@@ -40,18 +42,18 @@ export class StacksAddress implements Address {
   }
 
   toUint8Array(): Uint8Array {
-    return new Uint8Array(Buffer.from(this.address))
+    return new Uint8Array(Buffer.from(this.address));
   }
 
   toUniversalAddress(): UniversalAddress {
-    return new UniversalAddress(this.address, "keccak256")
+    return new UniversalAddress(this.address, 'keccak256');
   }
-  
+
   static isValidAddress(address: string): boolean {
     try {
       TransactionsAddress.parse(address);
       return true;
-    } catch(error) {
+    } catch (error) {
       return false;
     }
   }
@@ -59,7 +61,7 @@ export class StacksAddress implements Address {
   static instanceof(address: any): address is StacksAddress {
     return address.constructor.platform === StacksAddress.platform;
   }
-  
+
   equals(other: StacksAddress | UniversalAddress): boolean {
     if (StacksAddress.instanceof(other)) {
       return other.address === this.address;
@@ -69,7 +71,7 @@ export class StacksAddress implements Address {
   }
 }
 
-declare module '@wormhole-foundation/sdk-connect' {
+declare module '@xertra/wormhole-sdk-connect' {
   export namespace WormholeRegistry {
     interface PlatformToNativeAddressMapping {
       Stacks: StacksAddress;

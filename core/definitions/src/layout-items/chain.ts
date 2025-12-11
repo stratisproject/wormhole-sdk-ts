@@ -3,8 +3,8 @@ import type {
   CustomConversion,
   FixedConversion,
   Layout,
-} from "@wormhole-foundation/sdk-base";
-import { chainToChainId, chains, toChain } from "@wormhole-foundation/sdk-base";
+} from "@xertra/wormhole-sdk-base";
+import { chainToChainId, chains, toChain } from "@xertra/wormhole-sdk-base";
 
 const chainItemBase = { binary: "uint", size: 2 } as const;
 

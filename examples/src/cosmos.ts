@@ -1,11 +1,11 @@
-import type { Chain, GatewayTransferDetails, Network, TokenId } from "@wormhole-foundation/sdk";
-import { GatewayTransfer, Wormhole, amount, wormhole } from "@wormhole-foundation/sdk";
+import type { Chain, GatewayTransferDetails, Network, TokenId } from "@xertra/wormhole-sdk";
+import { GatewayTransfer, Wormhole, amount, wormhole } from "@xertra/wormhole-sdk";
 
 // Import the platform specific packages
 
-import cosmwasm from "@wormhole-foundation/sdk/cosmwasm";
-import evm from "@wormhole-foundation/sdk/evm";
-import solana from "@wormhole-foundation/sdk/solana";
+import cosmwasm from "@xertra/wormhole-sdk/cosmwasm";
+import evm from "@xertra/wormhole-sdk/evm";
+import solana from "@xertra/wormhole-sdk/solana";
 import type { SignerStuff } from "./helpers/index.js";
 import { getSigner } from "./helpers/index.js";
 

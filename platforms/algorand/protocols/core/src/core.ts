@@ -6,26 +6,20 @@ import type {
   VAA,
   WormholeCore,
   WormholeMessageId,
-} from "@wormhole-foundation/sdk-connect";
-import {
-  createVAA,
-  encoding,
-  keccak256,
-  serialize,
-  toChainId,
-} from "@wormhole-foundation/sdk-connect";
+} from "@xertra/wormhole-sdk-connect";
+import { createVAA, encoding, keccak256, serialize, toChainId } from "@xertra/wormhole-sdk-connect";
 import type {
   AlgorandChains,
   AnyAlgorandAddress,
   TransactionSet,
   TransactionSignerPair,
-} from "@wormhole-foundation/sdk-algorand";
+} from "@xertra/wormhole-sdk-algorand";
 import {
   AlgorandAddress,
   AlgorandPlatform,
   AlgorandUnsignedTransaction,
   safeBigIntToNumber,
-} from "@wormhole-foundation/sdk-algorand";
+} from "@xertra/wormhole-sdk-algorand";
 import type { Algodv2, SuggestedParams, Transaction } from "algosdk";
 import {
   LogicSigAccount,

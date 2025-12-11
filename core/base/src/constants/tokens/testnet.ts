@@ -3233,6 +3233,15 @@ const testnetTokenEntries = [
           address: "0xeef12A83EE5b7161D3873317c8E0E7B76e0B5D9c",
         },
       ],
+      [
+        "WSTRAX",
+        {
+          symbol: "WSTRAX",
+          decimals: 18,
+          address: "0x811fb0eB3b8De42830a4dc937e286d0a51fEAE96",
+          original: "Auroria",
+        },
+      ],
     ],
   ],
   [
@@ -3319,6 +3328,36 @@ const testnetTokenEntries = [
           decimals: 18,
           address: "0x4200000000000000000000000000000000000006"
         }
+      ]
+    ]
+  ], [
+    "Auroria",
+    [
+      [
+        "STRAX",
+        {
+          symbol: "STRAX",
+          decimals: 18,
+          address: "native",
+          wrappedKey: "WSTRAX",
+        },
+      ],
+      [
+        "WSTRAX",
+        {
+          symbol: "WSTRAX",
+          decimals: 18,
+          address: "0x57402359Eb6f3aB02c19EA7B98F366f324b66Aae",
+        },
+      ],
+      [
+        "WETH",
+        {
+          symbol: "WETH",
+          decimals: 18,
+          address: "0xe75d7bEA9ad9f4115fBF4f8418702816e8173D05",
+          original: "Sepolia",
+        },
       ]
     ]
   ]

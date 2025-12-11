@@ -1,6 +1,6 @@
 import { expect, test } from "@jest/globals";
 
-import { DEFAULT_NETWORK, CONFIG, chainToPlatform, chains } from "@wormhole-foundation/sdk-connect";
+import { DEFAULT_NETWORK, CONFIG, chainToPlatform, chains } from "@xertra/wormhole-sdk-connect";
 
 import { SuiChains, SuiPlatform } from "./../../src/index.js";
 

@@ -1,10 +1,10 @@
-import type { Chain, LayoutToType, Network } from "@wormhole-foundation/sdk-base";
+import type { Chain, LayoutToType, Network } from "@xertra/wormhole-sdk-base";
 import {
   deserializeLayout,
   encoding,
   lazyInstantiate,
   serializeLayout,
-} from "@wormhole-foundation/sdk-base";
+} from "@xertra/wormhole-sdk-base";
 import type { AccountAddress, ChainAddress } from "../../address.js";
 import type { CircleMessageId } from "../../attestation.js";
 import type { TokenId } from "../../types.js";

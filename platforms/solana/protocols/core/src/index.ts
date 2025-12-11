@@ -1,5 +1,5 @@
-import { _platform } from '@wormhole-foundation/sdk-solana';
-import { registerProtocol } from '@wormhole-foundation/sdk-connect';
+import { _platform } from '@xertra/wormhole-sdk-solana';
+import { registerProtocol } from '@xertra/wormhole-sdk-connect';
 import { SolanaWormholeCore } from './core.js';
 
 registerProtocol(_platform, 'WormholeCore', SolanaWormholeCore);

@@ -1,6 +1,6 @@
 // EXAMPLE_SYNC_IMPORT
-import { Wormhole } from "@wormhole-foundation/sdk";
-import evm from "@wormhole-foundation/sdk/platforms/evm";
+import { Wormhole } from "@xertra/wormhole-sdk";
+import evm from "@xertra/wormhole-sdk/platforms/evm";
 
 const wh = new Wormhole("Mainnet", [evm.Platform]);
 console.log(wh.config);

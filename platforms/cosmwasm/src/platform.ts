@@ -9,7 +9,7 @@ import type {
   SignedTx,
   StaticPlatformMethods,
   TxHash,
-} from "@wormhole-foundation/sdk-connect";
+} from "@xertra/wormhole-sdk-connect";
 import {
   PlatformContext,
   Wormhole,
@@ -17,7 +17,7 @@ import {
   isNative,
   nativeChainIds,
   networkPlatformConfigs,
-} from "@wormhole-foundation/sdk-connect";
+} from "@xertra/wormhole-sdk-connect";
 
 import { CosmwasmChain } from "./chain.js";
 import type { IbcChannels } from "./constants.js";
@@ -25,8 +25,8 @@ import { chainToNativeDenoms, networkChainToChannels } from "./constants.js";
 import type { CosmwasmChains, CosmwasmPlatformType } from "./types.js";
 import { _platform } from "./types.js";
 
-import type { Balances, TokenId } from "@wormhole-foundation/sdk-connect";
-import { chainToPlatform } from "@wormhole-foundation/sdk-connect";
+import type { Balances, TokenId } from "@xertra/wormhole-sdk-connect";
+import { chainToPlatform } from "@xertra/wormhole-sdk-connect";
 import { CosmwasmAddress } from "./address.js";
 import { IBC_TRANSFER_PORT } from "./constants.js";
 import type { AnyCosmwasmAddress } from "./types.js";

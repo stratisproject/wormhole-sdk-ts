@@ -1,5 +1,5 @@
-import type { PlatformAddressFormat, Layout } from "@wormhole-foundation/sdk-base";
-import { encoding, serializeLayout, throws } from "@wormhole-foundation/sdk-base";
+import type { PlatformAddressFormat, Layout } from "@xertra/wormhole-sdk-base";
+import { encoding, serializeLayout, throws } from "@xertra/wormhole-sdk-base";
 
 import type { Address, NativeAddress } from "./address.js";
 import { toNative } from "./address.js";
@@ -82,8 +82,7 @@ export class UniversalAddress implements Address {
       }
     })();
 
-    if (!decoded)
-      throw new Error(`string ${address} could not be decoded for format ${format}`);
+    if (!decoded) throw new Error(`string ${address} could not be decoded for format ${format}`);
 
     if (decoded.length > UniversalAddress.byteSize)
       throw new Error(`string ${address} has invalid length for format ${format}`);

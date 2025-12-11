@@ -14,14 +14,14 @@ import { PublicKey } from '@solana/web3.js';
  * @returns PDA
  */
 type Seed = string | Buffer | Uint8Array;
-const toBytes = (s: Seed) => typeof s === "string" ? Buffer.from(s) : s;
+const toBytes = (s: Seed) => (typeof s === 'string' ? Buffer.from(s) : s);
 export function deriveAddress(
   seeds: Seed | readonly Seed[],
   programId: PublicKeyInitData,
 ): PublicKey {
   return PublicKey.findProgramAddressSync(
     Array.isArray(seeds) ? seeds.map(toBytes) : [toBytes(seeds as Seed)],
-    new PublicKey(programId)
+    new PublicKey(programId),
   )[0];
 }
 

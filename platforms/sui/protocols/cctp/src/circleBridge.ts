@@ -1,24 +1,16 @@
 import type { SuiClient } from "@mysten/sui/client";
 import { Transaction } from "@mysten/sui/transactions";
-import {
-  SuiPlatform,
-  type SuiChains,
-  SuiUnsignedTransaction,
-} from "@wormhole-foundation/sdk-sui";
+import { SuiPlatform, type SuiChains, SuiUnsignedTransaction } from "@xertra/wormhole-sdk-sui";
 import type {
   AccountAddress,
   ChainAddress,
   ChainsConfig,
   Network,
   Platform,
-} from "@wormhole-foundation/sdk-connect";
-import {
-  CircleBridge,
   CircleTransferMessage,
-  circle,
   Contracts,
-  encoding,
-} from "@wormhole-foundation/sdk-connect";
+} from "@xertra/wormhole-sdk-connect";
+import { CircleBridge, circle, encoding } from "@xertra/wormhole-sdk-connect";
 
 import { suiCircleObjects } from "./objects.js";
 
@@ -147,8 +139,8 @@ export class SuiCircleBridge<N extends Network, C extends SuiChains> implements 
     const [receipt] = tx.moveCall({
       target: `${this.messageTransmitterId}::receive_message::receive_message`,
       arguments: [
-        tx.pure.vector('u8', CircleBridge.serialize(message)),
-        tx.pure.vector('u8', encoding.hex.decode(attestation)),
+        tx.pure.vector("u8", CircleBridge.serialize(message)),
+        tx.pure.vector("u8", encoding.hex.decode(attestation)),
         tx.object(this.messageTransmitterStateId), // message_transmitter state
       ],
     });

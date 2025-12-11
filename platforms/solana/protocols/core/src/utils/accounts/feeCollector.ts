@@ -1,5 +1,5 @@
 import type { PublicKey, PublicKeyInitData } from '@solana/web3.js';
-import { utils } from '@wormhole-foundation/sdk-solana';
+import { utils } from '@xertra/wormhole-sdk-solana';
 
 export function deriveFeeCollectorKey(
   wormholeProgramId: PublicKeyInitData,

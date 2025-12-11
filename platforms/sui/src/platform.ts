@@ -7,7 +7,7 @@ import type {
   StaticPlatformMethods,
   TokenId,
   TxHash,
-} from "@wormhole-foundation/sdk-connect";
+} from "@xertra/wormhole-sdk-connect";
 import {
   PlatformContext,
   Wormhole,
@@ -16,9 +16,10 @@ import {
   nativeChainIds,
   decimals as nativeDecimals,
   networkPlatformConfigs,
-} from "@wormhole-foundation/sdk-connect";
+} from "@xertra/wormhole-sdk-connect";
 
-import { PaginatedCoins, SuiClient } from "@mysten/sui/client";
+import type { PaginatedCoins } from "@mysten/sui/client";
+import { SuiClient } from "@mysten/sui/client";
 import { SuiAddress } from "./address.js";
 import { SuiChain } from "./chain.js";
 import { SUI_COIN } from "./constants.js";
@@ -72,7 +73,12 @@ export class SuiPlatform<N extends Network>
     return platform === SuiPlatform._platform;
   }
 
-  static async getDecimals(network: Network, chain: Chain, rpc: SuiClient, token: AnySuiAddress): Promise<number> {
+  static async getDecimals(
+    network: Network,
+    chain: Chain,
+    rpc: SuiClient,
+    token: AnySuiAddress,
+  ): Promise<number> {
     if (isNative(token)) return nativeDecimals.nativeDecimals(SuiPlatform._platform);
 
     const parsedAddress = new SuiAddress(token);

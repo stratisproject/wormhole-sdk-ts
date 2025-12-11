@@ -1,5 +1,5 @@
-import { registerProtocol } from '@wormhole-foundation/sdk-connect';
-import { _platform } from '@wormhole-foundation/sdk-evm';
+import { registerProtocol } from '@xertra/wormhole-sdk-connect';
+import { _platform } from '@xertra/wormhole-sdk-evm';
 import { EvmTokenBridge } from './tokenBridge.js';
 import { EvmAutomaticTokenBridge } from './automaticTokenBridge.js';
 import { EvmExecutorTokenBridge } from './executorTokenBridge.js';

@@ -1,7 +1,7 @@
-import type { Layout, LayoutToType } from "@wormhole-foundation/sdk-base";
-import { encoding, serializeLayout } from "@wormhole-foundation/sdk-base";
-import { layoutItems } from "@wormhole-foundation/sdk-definitions";
-import { APTOS_SEPARATOR } from "@wormhole-foundation/sdk-aptos";
+import type { Layout, LayoutToType } from "@xertra/wormhole-sdk-base";
+import { encoding, serializeLayout } from "@xertra/wormhole-sdk-base";
+import { layoutItems } from "@xertra/wormhole-sdk-definitions";
+import { APTOS_SEPARATOR } from "@xertra/wormhole-sdk-aptos";
 
 const foreignAddressSeedLayout = [
   { name: "tokenBridgeAddress", ...layoutItems.universalAddressItem },

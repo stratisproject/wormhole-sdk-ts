@@ -1,4 +1,4 @@
-import { UniversalAddress } from "@wormhole-foundation/sdk-connect"
+import { UniversalAddress } from "@xertra/wormhole-sdk-connect"
 import { StacksAddress, StacksZeroAddress } from "../../src/address.js"
 
 describe("Stacks Address Tests", () => {

@@ -18,15 +18,16 @@ console.warn = function (x: any, ...rest: any) {
   }
 };
 
-import {
+import type {
   Chain,
   Network,
+  TokenId} from "@xertra/wormhole-sdk-connect";
+import {
   chains,
-  TokenId,
   Wormhole,
   toNative,
-} from "@wormhole-foundation/sdk-connect";
-import { ForeignAssetsCache, TokenEntries, TokensConfig } from "../types";
+} from "@xertra/wormhole-sdk-connect";
+import type { ForeignAssetsCache, TokenEntries, TokensConfig } from "../types";
 
 // TODO: Question: How do we handle if a user tries to perform an action for a chain/platform which isn't installed??
 // const supportedPlatforms: Platform[] = ['Evm', 'Solana'];

@@ -17,8 +17,8 @@ npm install @wormhole-foundation/sdk-icons
 Getting started is simple, just import Wormhole and the [Platform](#platforms) modules you wish to support
 
 ```ts
-import { Chain } from "@wormhole-foundation/sdk-base";
-import { chainToIcon } from "@wormhole-foundation/sdk-icons";
+import { Chain } from "@xertra/wormhole-sdk-base";
+import { chainToIcon } from "@xertra/wormhole-sdk-icons";
 
 function ChainIcon({chain}: {chain: Chain}) {
     const icon = chainToIcon(chain);

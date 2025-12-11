@@ -11,7 +11,7 @@ import type {
   TokenAddress,
   TokenBridge,
   TokenId,
-} from "@wormhole-foundation/sdk-connect";
+} from "@xertra/wormhole-sdk-connect";
 import {
   UniversalAddress,
   encoding,
@@ -20,19 +20,19 @@ import {
   toChain,
   toChainId,
   toNative,
-} from "@wormhole-foundation/sdk-connect";
+} from "@xertra/wormhole-sdk-connect";
 import type {
   AlgorandChains,
   AnyAlgorandAddress,
   TransactionSignerPair,
-} from "@wormhole-foundation/sdk-algorand";
+} from "@xertra/wormhole-sdk-algorand";
 import {
   AlgorandAddress,
   AlgorandPlatform,
   AlgorandUnsignedTransaction,
   safeBigIntToNumber,
-} from "@wormhole-foundation/sdk-algorand";
-import { AlgorandWormholeCore, StorageLogicSig } from "@wormhole-foundation/sdk-algorand-core";
+} from "@xertra/wormhole-sdk-algorand";
+import { AlgorandWormholeCore, StorageLogicSig } from "@xertra/wormhole-sdk-algorand-core";
 import type { ABIType, Algodv2, LogicSigAccount, SuggestedParams } from "algosdk";
 import {
   ABIMethod,

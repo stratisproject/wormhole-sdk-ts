@@ -1,5 +1,5 @@
-import type { Chain, Network } from "@wormhole-foundation/sdk-base";
-import { amount, contracts } from "@wormhole-foundation/sdk-base";
+import type { Chain, Network } from "@xertra/wormhole-sdk-base";
+import { amount, contracts } from "@xertra/wormhole-sdk-base";
 import type {
   ChainAddress,
   ChainContext,
@@ -7,7 +7,7 @@ import type {
   TokenId,
   TokenTransferDetails,
   TransactionId,
-} from "@wormhole-foundation/sdk-definitions";
+} from "@xertra/wormhole-sdk-definitions";
 import { TokenTransfer } from "../../protocols/tokenBridge/tokenTransfer.js";
 import type {
   AttestationReceipt,
@@ -26,7 +26,7 @@ import type {
   ValidationResult,
 } from "../types.js";
 import type { RouteTransferRequest } from "../request.js";
-import { chainToPlatform } from "@wormhole-foundation/sdk-base";
+import { chainToPlatform } from "@xertra/wormhole-sdk-base";
 
 export namespace TokenBridgeRoute {
   export type Options = {

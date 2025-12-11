@@ -8,15 +8,15 @@ import type {
   NativeAddress,
   Network,
   TokenAddress,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 import {
   isNative,
   serialize,
   toNative,
   nativeChainIds,
   toChainId,
-} from '@wormhole-foundation/sdk-connect';
-import type { EvmChains, EvmPlatformType } from '@wormhole-foundation/sdk-evm';
+} from '@xertra/wormhole-sdk-connect';
+import type { EvmChains, EvmPlatformType } from '@xertra/wormhole-sdk-evm';
 import {
   EvmAddress,
   EvmPlatform,
@@ -24,12 +24,12 @@ import {
   WETH_CONTRACTS,
   addChainId,
   addFrom,
-} from '@wormhole-foundation/sdk-evm';
+} from '@xertra/wormhole-sdk-evm';
 import type { Provider, TransactionRequest } from 'ethers';
 import { ethers_contracts } from './index.js';
 
 import '@wormhole-foundation/sdk-evm-core';
-import { EvmWormholeCore } from '@wormhole-foundation/sdk-evm-core';
+import { EvmWormholeCore } from '@xertra/wormhole-sdk-evm-core';
 
 export class EvmAutomaticTokenBridge<N extends Network, C extends EvmChains>
   implements AutomaticTokenBridge<N, C>
@@ -241,7 +241,9 @@ export class EvmAutomaticTokenBridge<N extends Network, C extends EvmChains>
   }
 
   async getWeth(): Promise<string> {
-    return WETH_CONTRACTS[this.network]?.[this.chain] ?? this.tokenBridge.WETH();
+    return (
+      WETH_CONTRACTS[this.network]?.[this.chain] ?? this.tokenBridge.WETH()
+    );
   }
 
   private createUnsignedTx(

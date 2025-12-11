@@ -4,7 +4,7 @@ import type {
   Network,
   Platform,
   PlatformToChains,
-} from "@wormhole-foundation/sdk-base";
+} from "@xertra/wormhole-sdk-base";
 import {
   chainToPlatform,
   chains,
@@ -16,10 +16,10 @@ import {
   rpc,
   toChainId,
   graphQL,
-} from "@wormhole-foundation/sdk-base";
+} from "@xertra/wormhole-sdk-base";
 
-import type { ChainTokens, Token } from "@wormhole-foundation/sdk-base";
-import { getNative, getTokenByKey, getTokenMap } from "@wormhole-foundation/sdk-base/tokens";
+import type { ChainTokens, Token } from "@xertra/wormhole-sdk-base";
+import { getNative, getTokenByKey, getTokenMap } from "@xertra/wormhole-sdk-base/tokens";
 import type { ChainAddress, UniversalOrNative } from "./address.js";
 import { toNative } from "./address.js";
 import type { Contracts } from "./contracts.js";

@@ -21,8 +21,8 @@ import type {
   SignOnlySigner,
   Signer,
   UnsignedTransaction,
-} from '@wormhole-foundation/sdk-connect';
-import { bound, encoding, median } from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
+import { bound, encoding, median } from '@xertra/wormhole-sdk-connect';
 import { SolanaPlatform } from './platform.js';
 import type { SolanaChains } from './types.js';
 import {

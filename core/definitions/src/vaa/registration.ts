@@ -1,4 +1,4 @@
-import type { Layout } from "@wormhole-foundation/sdk-base";
+import type { Layout } from "@xertra/wormhole-sdk-base";
 import type { WormholeRegistry } from "../registry.js";
 import type { ProtocolName } from "../protocol.js";
 

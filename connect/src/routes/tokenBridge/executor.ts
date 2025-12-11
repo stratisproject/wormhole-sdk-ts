@@ -1,6 +1,6 @@
-import type { Chain, Network } from "@wormhole-foundation/sdk-base";
-import { amount as sdkAmount, contracts } from "@wormhole-foundation/sdk-base";
-import type { ExecutorTokenBridge } from "@wormhole-foundation/sdk-definitions";
+import type { Chain, Network } from "@xertra/wormhole-sdk-base";
+import { amount as sdkAmount, contracts } from "@xertra/wormhole-sdk-base";
+import type { ExecutorTokenBridge } from "@xertra/wormhole-sdk-definitions";
 import {
   canonicalAddress,
   toNative,
@@ -10,7 +10,7 @@ import {
   type TokenId,
   type TokenTransferDetails,
   type TransactionId,
-} from "@wormhole-foundation/sdk-definitions";
+} from "@xertra/wormhole-sdk-definitions";
 import { TokenTransfer } from "../../protocols/tokenBridge/tokenTransfer.js";
 import type {
   AttestationReceipt,

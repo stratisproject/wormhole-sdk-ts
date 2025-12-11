@@ -15,7 +15,8 @@ import {
   type Network,
   type Platform,
   type TokenAddress,
-} from "@wormhole-foundation/sdk-connect";
+} from "@xertra/wormhole-sdk-connect";
+import type { SuiChains } from "@xertra/wormhole-sdk-sui";
 import {
   getObjectFields,
   getPackageId,
@@ -25,10 +26,9 @@ import {
   SUI_COIN,
   SUI_SEPARATOR,
   SuiAddress,
-  SuiChains,
   SuiPlatform,
   SuiUnsignedTransaction,
-} from "@wormhole-foundation/sdk-sui";
+} from "@xertra/wormhole-sdk-sui";
 import "@wormhole-foundation/sdk-sui-core";
 import { getTokenCoinType } from "./utils.js";
 
@@ -171,7 +171,7 @@ export class SuiAutomaticTokenBridge<N extends Network, C extends SuiChains>
       target: `${coreBridgePackageId}::vaa::parse_and_verify`,
       arguments: [
         tx.object(this.coreBridgeObjectId),
-        tx.pure.vector('u8', serialize(vaa)),
+        tx.pure.vector("u8", serialize(vaa)),
         tx.object(SUI_CLOCK_OBJECT_ID),
       ],
     });
@@ -238,7 +238,12 @@ export class SuiAutomaticTokenBridge<N extends Network, C extends SuiChains>
       throw new Error("Unable to compute relayer fee");
     }
 
-    const decimals = await SuiPlatform.getDecimals(this.network, this.chain, this.connection, token.toString());
+    const decimals = await SuiPlatform.getDecimals(
+      this.network,
+      this.chain,
+      this.connection,
+      token.toString(),
+    );
     const swapRate = tokenInfo.swap_rate;
 
     const relayerFeePrecision = fields.relayer_fee_precision;

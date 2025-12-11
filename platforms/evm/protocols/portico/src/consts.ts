@@ -1,4 +1,4 @@
-import { Wormhole } from '@wormhole-foundation/sdk-connect';
+import { Wormhole } from '@xertra/wormhole-sdk-connect';
 
 export const FEE_TIER = 100;
 

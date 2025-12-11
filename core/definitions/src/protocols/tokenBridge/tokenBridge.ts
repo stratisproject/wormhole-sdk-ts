@@ -1,5 +1,5 @@
-import type { Chain, Network } from "@wormhole-foundation/sdk-base";
-import { lazyInstantiate } from "@wormhole-foundation/sdk-base";
+import type { Chain, Network } from "@xertra/wormhole-sdk-base";
+import { lazyInstantiate } from "@xertra/wormhole-sdk-base";
 import type { AccountAddress, ChainAddress, NativeAddress } from "../../address.js";
 import type { UniversalAddress } from "../../universalAddress.js";
 import type { TokenAddress, TokenId } from "../../types.js";

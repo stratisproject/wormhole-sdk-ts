@@ -7,7 +7,7 @@ import type {
   StaticPlatformMethods,
   TokenId,
   TxHash,
-} from "@wormhole-foundation/sdk-connect";
+} from "@xertra/wormhole-sdk-connect";
 import {
   PlatformContext,
   Wormhole,
@@ -16,7 +16,7 @@ import {
   nativeChainIds,
   decimals as nativeDecimals,
   networkPlatformConfigs,
-} from "@wormhole-foundation/sdk-connect";
+} from "@xertra/wormhole-sdk-connect";
 import { Aptos, AptosConfig, Network as AptosNetwork } from "@aptos-labs/ts-sdk";
 import { AptosChain } from "./chain.js";
 import type { AptosChains, AptosPlatformType } from "./types.js";
@@ -73,7 +73,12 @@ export class AptosPlatform<N extends Network>
     return platform === AptosPlatform._platform;
   }
 
-  static async getDecimals(network: Network, chain: Chain, rpc: Aptos, token: AnyAptosAddress): Promise<number> {
+  static async getDecimals(
+    network: Network,
+    chain: Chain,
+    rpc: Aptos,
+    token: AnyAptosAddress,
+  ): Promise<number> {
     if (isNative(token) || token === APTOS_COIN)
       return nativeDecimals.nativeDecimals(AptosPlatform._platform);
 
@@ -125,7 +130,7 @@ export class AptosPlatform<N extends Network>
       let balances: Balances = {};
       for (const bal of data) {
         if (bal.asset_type) {
-          let addr = bal.asset_type === '0x1::aptos_coin::AptosCoin' ? 'native' : bal.asset_type;
+          let addr = bal.asset_type === "0x1::aptos_coin::AptosCoin" ? "native" : bal.asset_type;
           balances[addr] = bal.amount;
         }
       }

@@ -7,7 +7,7 @@ import type {
   Platform,
   TokenAddress,
   TokenId,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 import {
   PorticoBridge,
   Wormhole,
@@ -18,23 +18,23 @@ import {
   serialize,
   toChain,
   toChainId,
-} from '@wormhole-foundation/sdk-connect';
-import type { EvmChains } from '@wormhole-foundation/sdk-evm';
+} from '@xertra/wormhole-sdk-connect';
+import type { EvmChains } from '@xertra/wormhole-sdk-evm';
 import {
   EvmAddress,
   EvmPlatform,
   EvmUnsignedTransaction,
   addChainId,
   addFrom,
-} from '@wormhole-foundation/sdk-evm';
+} from '@xertra/wormhole-sdk-evm';
 import type { Provider, TransactionRequest } from 'ethers';
 import { ethers, keccak256 } from 'ethers';
 import { porticoAbi, uniswapQuoterV2Abi } from './abis.js';
 import { PorticoApi } from './api.js';
 import { FEE_TIER, supportedTokens } from './consts.js';
 
-import { EvmWormholeCore } from '@wormhole-foundation/sdk-evm-core';
-import { EvmTokenBridge } from '@wormhole-foundation/sdk-evm-tokenbridge';
+import { EvmWormholeCore } from '@xertra/wormhole-sdk-evm-core';
+import { EvmTokenBridge } from '@xertra/wormhole-sdk-evm-tokenbridge';
 
 import '@wormhole-foundation/sdk-evm-tokenbridge';
 

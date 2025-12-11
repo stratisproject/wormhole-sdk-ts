@@ -1,8 +1,8 @@
-import type { Chain, Network } from "@wormhole-foundation/sdk-base";
-import { filters } from "@wormhole-foundation/sdk-base";
-import { type TokenSymbol } from "@wormhole-foundation/sdk-base";
-import type { ChainContext, TokenId } from "@wormhole-foundation/sdk-definitions";
-import { canonicalAddress, isNative } from "@wormhole-foundation/sdk-definitions";
+import type { Chain, Network } from "@xertra/wormhole-sdk-base";
+import { filters } from "@xertra/wormhole-sdk-base";
+import { type TokenSymbol } from "@xertra/wormhole-sdk-base";
+import type { ChainContext, TokenId } from "@xertra/wormhole-sdk-definitions";
+import { canonicalAddress, isNative } from "@xertra/wormhole-sdk-definitions";
 import { Wormhole } from "../wormhole.js";
 
 export interface TokenDetails {

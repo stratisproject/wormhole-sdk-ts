@@ -1,4 +1,4 @@
-import { registerProtocol } from "@wormhole-foundation/sdk-connect";
+import { registerProtocol } from "@xertra/wormhole-sdk-connect";
 import { AptosWormholeCore } from "./core.js";
 
 registerProtocol("Aptos", "WormholeCore", AptosWormholeCore);

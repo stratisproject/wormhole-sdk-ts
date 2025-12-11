@@ -1,5 +1,5 @@
-import type { Chain, Network } from "@wormhole-foundation/sdk-base";
-import type { Balances } from "@wormhole-foundation/sdk-definitions";
+import type { Chain, Network } from "@xertra/wormhole-sdk-base";
+import type { Balances } from "@xertra/wormhole-sdk-definitions";
 import AlchemyClient from "./AlchemyClient.js";
 import GoldRushClient from "./GoldRushClient.js";
 import type { IndexerConfig, IndexerClientConfig } from "./types.js";

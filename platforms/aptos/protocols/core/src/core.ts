@@ -7,15 +7,11 @@ import type {
   VAA,
   WormholeCore,
   WormholeMessageId,
-} from "@wormhole-foundation/sdk-connect";
-import { UniversalAddress, createVAA, encoding, toChainId } from "@wormhole-foundation/sdk-connect";
-import type {
-  AnyAptosAddress,
-  AptosChains,
-  AptosPlatformType,
-} from "@wormhole-foundation/sdk-aptos";
-import { AptosPlatform } from "@wormhole-foundation/sdk-aptos";
-import { Aptos } from "@aptos-labs/ts-sdk";
+} from "@xertra/wormhole-sdk-connect";
+import { UniversalAddress, createVAA, encoding, toChainId } from "@xertra/wormhole-sdk-connect";
+import type { AnyAptosAddress, AptosChains, AptosPlatformType } from "@xertra/wormhole-sdk-aptos";
+import { AptosPlatform } from "@xertra/wormhole-sdk-aptos";
+import type { Aptos } from "@aptos-labs/ts-sdk";
 
 export class AptosWormholeCore<N extends Network, C extends AptosChains>
   implements WormholeCore<N, C>

@@ -1,7 +1,7 @@
 import type {
   Network,
   UnsignedTransaction,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 import type { ContractCallOptions } from '@stacks/transactions';
 import type { StacksChains } from './types.js';
 

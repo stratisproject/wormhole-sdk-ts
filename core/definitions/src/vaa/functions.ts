@@ -1,10 +1,10 @@
-import type { Layout, LayoutToType } from "@wormhole-foundation/sdk-base";
+import type { Layout, LayoutToType } from "@xertra/wormhole-sdk-base";
 import {
   deserializeLayout,
   encoding,
   layoutDiscriminator,
   serializeLayout,
-} from "@wormhole-foundation/sdk-base";
+} from "@xertra/wormhole-sdk-base";
 
 import type { ComposeLiteral, LayoutLiteral, LayoutOf, PayloadLiteral } from "./registration.js";
 import { composeLiteral, payloadFactory } from "./registration.js";
@@ -174,8 +174,11 @@ export function deserialize<T extends PayloadLiteral | PayloadDiscriminator>(
       throw new Error("Guardian signatures must be in ascending order of guardian set index");
 
   const envelopeOffset = headerSize;
-  const [envelope, envelopeSize] =
-    deserializeLayout(envelopeLayout, data.subarray(envelopeOffset), false);
+  const [envelope, envelopeSize] = deserializeLayout(
+    envelopeLayout,
+    data.subarray(envelopeOffset),
+    false,
+  );
 
   const payloadOffset = envelopeOffset + envelopeSize;
   const [payloadLiteral, payload] =
@@ -241,7 +244,7 @@ export function deserializePayload<T extends PayloadLiteral | PayloadDiscriminat
 
     return [
       candidate,
-      deserializeLayout(getPayloadLayout(candidate) as Layout, data.subarray(offset))
+      deserializeLayout(getPayloadLayout(candidate) as Layout, data.subarray(offset)),
     ];
   })() as DeserializePayloadReturn<T>;
 }

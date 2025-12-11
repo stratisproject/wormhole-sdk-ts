@@ -10,7 +10,7 @@ import {
   SYSVAR_RENT_PUBKEY,
   SystemProgram,
 } from '@solana/web3.js';
-import type { VAA } from '@wormhole-foundation/sdk-connect';
+import type { VAA } from '@xertra/wormhole-sdk-connect';
 import { createReadOnlyWormholeProgramInterface } from '../program.js';
 import { deriveGuardianSetKey, getGuardianSet } from './../accounts/index.js';
 import { createSecp256k1Instruction } from './secp256k1.js';

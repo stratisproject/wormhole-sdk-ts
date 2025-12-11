@@ -8,7 +8,7 @@ import type {
   TokenAddress,
   TokenId,
   ExecutorTokenBridge,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 import {
   canonicalAddress,
   contracts,
@@ -18,16 +18,16 @@ import {
   signedQuoteLayout,
   toChainId,
   toUniversal,
-} from '@wormhole-foundation/sdk-connect';
+} from '@xertra/wormhole-sdk-connect';
 import type {
   SolanaChains,
   SolanaTransaction,
-} from '@wormhole-foundation/sdk-solana';
+} from '@xertra/wormhole-sdk-solana';
 import {
   SolanaAddress,
   SolanaPlatform,
   SolanaUnsignedTransaction,
-} from '@wormhole-foundation/sdk-solana';
+} from '@xertra/wormhole-sdk-solana';
 
 import { Program } from '@coral-xyz/anchor';
 
@@ -56,14 +56,15 @@ import {
 import '@wormhole-foundation/sdk-solana-core';
 
 import BN from 'bn.js';
+import type {
+  ExecutorTokenBridgeRelayer} from './executorTokenBridgeTypes.js';
 import {
-  ExecutorTokenBridgeRelayer,
   ExecutorTokenBridgeRelayerIdl,
 } from './executorTokenBridgeTypes.js';
 import {
   SolanaWormholeCore,
   utils,
-} from '@wormhole-foundation/sdk-solana-core';
+} from '@xertra/wormhole-sdk-solana-core';
 import { SolanaTokenBridge } from './tokenBridge.js';
 import {
   deriveWrappedMetaKey,
