@@ -1,4 +1,4 @@
-import type { Chain, Network } from "@xertra/wormhole-sdk-base";
+import type { Chain, Network } from "@xertraplatform/wormhole-sdk-base";
 
 /**
  * An unsigned transaction is a transaction that has not been signed

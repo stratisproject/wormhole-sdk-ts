@@ -8,19 +8,19 @@ import {
   type Network,
   type Platform,
   type TBTCBridge,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 import type {
-  SolanaTransaction} from '@xertra/wormhole-sdk-solana';
+  SolanaTransaction} from '@xertraplatform/wormhole-sdk-solana';
 import {
   SolanaAddress,
   SolanaPlatform,
   SolanaUnsignedTransaction,
   type SolanaChains,
-} from '@xertra/wormhole-sdk-solana';
+} from '@xertraplatform/wormhole-sdk-solana';
 import {
   utils as coreUtils,
   SolanaWormholeCore,
-} from '@xertra/wormhole-sdk-solana-core';
+} from '@xertraplatform/wormhole-sdk-solana-core';
 import {
   deriveAuthoritySignerKey,
   deriveEndpointKey,
@@ -28,7 +28,7 @@ import {
   deriveSenderAccountKey,
   deriveTokenBridgeConfigKey,
   deriveWrappedMetaKey,
-} from '@xertra/wormhole-sdk-solana-tokenbridge';
+} from '@xertraplatform/wormhole-sdk-solana-tokenbridge';
 import type {
   Connection,
   TransactionInstruction} from '@solana/web3.js';

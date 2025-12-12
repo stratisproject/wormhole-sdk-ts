@@ -68,7 +68,7 @@ export const coreBridgeContracts = [[
     ["Base",            "0x23908A62110e21C04F3A4e011d24F901F911744A"],
     ["Sei",             "sei1nna9mzp274djrgzhzkac2gvm3j27l402s4xzr08chq57pjsupqnqaj0d5s"],
     ["Sepolia",         "0x3378932e90Dbf0724EDfd470F5b2eAD2333D89eb"],
-    ["Wormchain",       "wormhole16jzpxp0e8550c9aht6q9svcux30vtyyyyxv5w2l2djjra46580wsazcjwp"],
+    ["Wormchain",       "wormhole1ghd753shjuwexxywmgs4xz7x2q732vcnkm6h2pyv9s6ah3hylvrqtm7t3h"],
     ["ArbitrumSepolia", "0x6b9C8671cdDC8dEab9c719bB87cBd3e782bA6a35"],
     ["BaseSepolia",     "0x79A1027a6A159502049F10906D333EC57E95F083"],
     ["OptimismSepolia", "0x31377888146f3253211EFEf5c676D41ECe7D58Fe"],

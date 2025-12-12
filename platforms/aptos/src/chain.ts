@@ -1,5 +1,5 @@
-import type { Network } from "@xertra/wormhole-sdk-connect";
-import { ChainContext } from "@xertra/wormhole-sdk-connect";
+import type { Network } from "@xertraplatform/wormhole-sdk-connect";
+import { ChainContext } from "@xertraplatform/wormhole-sdk-connect";
 import type { AptosChains } from "./types.js";
 
 export class AptosChain<

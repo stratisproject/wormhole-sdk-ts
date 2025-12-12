@@ -9,21 +9,21 @@ import type {
   Network,
   Platform,
   TokenAddress,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 import {
   isNative,
   toChainId,
   toNative,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 import type {
   SolanaChains,
   SolanaTransaction,
-} from '@xertra/wormhole-sdk-solana';
+} from '@xertraplatform/wormhole-sdk-solana';
 import {
   SolanaAddress,
   SolanaPlatform,
   SolanaUnsignedTransaction,
-} from '@xertra/wormhole-sdk-solana';
+} from '@xertraplatform/wormhole-sdk-solana';
 
 import type { Program } from '@coral-xyz/anchor';
 

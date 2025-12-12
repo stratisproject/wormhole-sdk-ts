@@ -1,5 +1,5 @@
-import type { PlatformAddressFormat, Layout } from "@xertra/wormhole-sdk-base";
-import { encoding, serializeLayout, throws } from "@xertra/wormhole-sdk-base";
+import type { PlatformAddressFormat, Layout } from "@xertraplatform/wormhole-sdk-base";
+import { encoding, serializeLayout, throws } from "@xertraplatform/wormhole-sdk-base";
 
 import type { Address, NativeAddress } from "./address.js";
 import { toNative } from "./address.js";

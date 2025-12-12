@@ -1,4 +1,4 @@
-import type { Network, UnsignedTransaction } from "@xertra/wormhole-sdk-connect";
+import type { Network, UnsignedTransaction } from "@xertraplatform/wormhole-sdk-connect";
 import type { InputGenerateTransactionPayloadData } from "@aptos-labs/ts-sdk";
 import type { AptosChains } from "./types.js";
 

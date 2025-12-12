@@ -10,7 +10,7 @@ import type {
   TokenAddress,
   TokenBridge,
   TokenId,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 import {
   ErrNotWrapped,
   UniversalAddress,
@@ -21,13 +21,13 @@ import {
   toChain,
   toChainId,
   toNative,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 import type { Provider, TransactionRequest } from 'ethers';
 
 import { ethers_contracts } from './index.js';
 import type { TokenBridgeContract } from './ethers-contracts/index.js';
 
-import type { EvmChains } from '@xertra/wormhole-sdk-evm';
+import type { EvmChains } from '@xertraplatform/wormhole-sdk-evm';
 import {
   EvmAddress,
   EvmPlatform,
@@ -38,10 +38,10 @@ import {
   unusedArbiterFee,
   unusedNonce,
   WETH_CONTRACTS,
-} from '@xertra/wormhole-sdk-evm';
+} from '@xertraplatform/wormhole-sdk-evm';
 
 import '@wormhole-foundation/sdk-evm-core';
-import { EvmWormholeCore } from '@xertra/wormhole-sdk-evm-core';
+import { EvmWormholeCore } from '@xertraplatform/wormhole-sdk-evm-core';
 
 export class EvmTokenBridge<N extends Network, C extends EvmChains>
   implements TokenBridge<N, C>

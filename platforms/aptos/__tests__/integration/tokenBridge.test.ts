@@ -5,8 +5,8 @@ import {
   UniversalAddress,
   createVAA,
   toNative,
-} from "@xertra/wormhole-sdk-connect";
-import { utils } from "@xertra/wormhole-sdk-definitions/testing";
+} from "@xertraplatform/wormhole-sdk-connect";
+import { utils } from "@xertraplatform/wormhole-sdk-definitions/testing";
 
 import "@wormhole-foundation/sdk-aptos-core";
 import "@wormhole-foundation/sdk-aptos-tokenbridge";

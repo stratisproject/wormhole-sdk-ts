@@ -1,4 +1,4 @@
-import type { Chain, Network } from "@xertra/wormhole-sdk-base";
+import type { Chain, Network } from "@xertraplatform/wormhole-sdk-base";
 
 /**
  * WormholeRegistry is a namespace to provide consumers and downstream packages

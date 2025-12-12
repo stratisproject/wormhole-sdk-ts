@@ -15,5 +15,5 @@ export * as routes from "./routes/index.js";
 export * from "./indexers/index.js";
 
 // Re-export from core packages
-export * from "@xertra/wormhole-sdk-base";
-export * from "@xertra/wormhole-sdk-definitions";
+export * from "@xertraplatform/wormhole-sdk-base";
+export * from "@xertraplatform/wormhole-sdk-definitions";

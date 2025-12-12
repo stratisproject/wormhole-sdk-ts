@@ -1,5 +1,5 @@
 {
-  "name": "@xertra/wormhole-sdk-evm-portico",
+  "name": "@xertraplatform/wormhole-sdk-evm-portico",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -52,10 +52,10 @@
     "prettier": "prettier --write ./src"
   },
   "dependencies": {
-    "@xertra/wormhole-sdk-connect": "1.0.0",
-    "@xertra/wormhole-sdk-evm": "1.0.0",
-    "@xertra/wormhole-sdk-evm-core": "1.0.0",
-    "@xertra/wormhole-sdk-evm-tokenbridge": "1.0.0",
+    "@xertraplatform/wormhole-sdk-connect": "1.0.0",
+    "@xertraplatform/wormhole-sdk-evm": "1.0.0",
+    "@xertraplatform/wormhole-sdk-evm-core": "1.0.0",
+    "@xertraplatform/wormhole-sdk-evm-tokenbridge": "1.0.0",
     "ethers": "^6.5.1"
   },
   "type": "module",

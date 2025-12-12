@@ -4,7 +4,7 @@ import type {
   SignAndSendSigner,
   UnsignedTransaction,
   TxHash,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 import type { StacksChains } from './types.js';
 import type { StacksTransactionWire } from '@stacks/transactions';
 import {

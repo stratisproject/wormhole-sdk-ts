@@ -1,8 +1,8 @@
 import type {
   Layout,
   CustomConversion,
-} from "@xertra/wormhole-sdk-base";
-import { encoding } from "@xertra/wormhole-sdk-base";
+} from "@xertraplatform/wormhole-sdk-base";
+import { encoding } from "@xertraplatform/wormhole-sdk-base";
 
 const trimZeros = (arr: Uint8Array) => {
   const i = arr.findIndex((x) => x !== 0);

@@ -1,7 +1,7 @@
-import type { Chain, Network } from "@xertra/wormhole-sdk-base";
-import { amount } from "@xertra/wormhole-sdk-base";
-import type { ChainContext, TokenId } from "@xertra/wormhole-sdk-definitions";
-import type { ChainAddress } from "@xertra/wormhole-sdk-definitions";
+import type { Chain, Network } from "@xertraplatform/wormhole-sdk-base";
+import { amount } from "@xertraplatform/wormhole-sdk-base";
+import type { ChainContext, TokenId } from "@xertraplatform/wormhole-sdk-definitions";
+import type { ChainAddress } from "@xertraplatform/wormhole-sdk-definitions";
 import type { TransferQuote } from "../types.js";
 import type { Wormhole } from "../wormhole.js";
 import type { TokenDetails } from "./token.js";

@@ -1,4 +1,4 @@
-import { CustomConversion } from "binary-layout";
+import type { CustomConversion } from "binary-layout";
 
 export const dateConversion = {
   to: (encoded: bigint) => new Date(Number(encoded * 1000n)),

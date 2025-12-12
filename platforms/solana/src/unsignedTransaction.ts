@@ -6,7 +6,7 @@ import type {
 import type {
   Network,
   UnsignedTransaction,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 import type { SolanaChains } from './types.js';
 
 export type SolanaTransaction = {

@@ -8,8 +8,8 @@ import type {
   Contracts,
   Network,
   Platform,
-} from '@xertra/wormhole-sdk-connect';
-import { CircleBridge, circle } from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
+import { CircleBridge, circle } from '@xertraplatform/wormhole-sdk-connect';
 
 import type { Program } from '@coral-xyz/anchor';
 import BN from 'bn.js';
@@ -21,12 +21,12 @@ import {
 import type {
   SolanaChains,
   SolanaTransaction,
-} from '@xertra/wormhole-sdk-solana';
+} from '@xertraplatform/wormhole-sdk-solana';
 import {
   SolanaAddress,
   SolanaPlatform,
   SolanaUnsignedTransaction,
-} from '@xertra/wormhole-sdk-solana';
+} from '@xertraplatform/wormhole-sdk-solana';
 import type { MessageTransmitter, TokenMessenger } from './index.js';
 import {
   createReadOnlyMessageTransmitterProgramInterface,

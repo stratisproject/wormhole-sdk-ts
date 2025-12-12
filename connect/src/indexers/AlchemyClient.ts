@@ -1,5 +1,5 @@
-import type { Chain, Network } from "@xertra/wormhole-sdk-base";
-import type { Balances } from "@xertra/wormhole-sdk-definitions";
+import type { Chain, Network } from "@xertraplatform/wormhole-sdk-base";
+import type { Balances } from "@xertraplatform/wormhole-sdk-definitions";
 import { parseBalance } from "./utils.js";
 
 const ALCHEMY_CHAINS: Record<Network, Partial<Record<Chain, string>>> = {

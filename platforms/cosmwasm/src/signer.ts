@@ -15,8 +15,8 @@ import type {
   SignedTx,
   Signer,
   UnsignedTransaction,
-} from "@xertra/wormhole-sdk-connect";
-import { encoding, nativeChainIds, rpc as rpcConf } from "@xertra/wormhole-sdk-connect";
+} from "@xertraplatform/wormhole-sdk-connect";
+import { encoding, nativeChainIds, rpc as rpcConf } from "@xertraplatform/wormhole-sdk-connect";
 import type { CosmwasmEvmChain } from "./constants.js";
 import {
   chainToAddressPrefix,

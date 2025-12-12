@@ -6,14 +6,14 @@ import type {
   VAA,
   WormholeCore,
   WormholeMessageId,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 import {
   nativeChainIds,
   createVAA,
   isWormholeMessageId,
   encoding,
   serialize,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 import type { Provider, TransactionRequest } from 'ethers';
 import { ethers_contracts } from './index.js';
 import type {
@@ -25,14 +25,14 @@ import type {
   AnyEvmAddress,
   EvmChains,
   EvmPlatformType,
-} from '@xertra/wormhole-sdk-evm';
+} from '@xertraplatform/wormhole-sdk-evm';
 import {
   EvmAddress,
   EvmPlatform,
   EvmUnsignedTransaction,
   addChainId,
   addFrom,
-} from '@xertra/wormhole-sdk-evm';
+} from '@xertraplatform/wormhole-sdk-evm';
 
 export class EvmWormholeCore<N extends Network, C extends EvmChains>
   implements WormholeCore<N, C>

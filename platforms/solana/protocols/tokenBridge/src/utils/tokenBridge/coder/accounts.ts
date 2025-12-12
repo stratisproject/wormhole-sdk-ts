@@ -1,5 +1,5 @@
 import type { AccountsCoder, Idl } from '@coral-xyz/anchor';
-import { anchor } from '@xertra/wormhole-sdk-solana';
+import { anchor } from '@xertraplatform/wormhole-sdk-solana';
 
 export class TokenBridgeAccountsCoder<A extends string = string>
   implements AccountsCoder

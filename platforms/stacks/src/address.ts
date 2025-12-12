@@ -1,5 +1,5 @@
-import type { Address } from '@xertra/wormhole-sdk-connect';
-import { UniversalAddress, registerNative } from '@xertra/wormhole-sdk-connect';
+import type { Address } from '@xertraplatform/wormhole-sdk-connect';
+import { UniversalAddress, registerNative } from '@xertraplatform/wormhole-sdk-connect';
 import type { AnyStacksAddress } from './types.js';
 import { _platform } from './types.js';
 import { Address as TransactionsAddress } from '@stacks/transactions';
@@ -71,7 +71,7 @@ export class StacksAddress implements Address {
   }
 }
 
-declare module '@xertra/wormhole-sdk-connect' {
+declare module '@xertraplatform/wormhole-sdk-connect' {
   export namespace WormholeRegistry {
     interface PlatformToNativeAddressMapping {
       Stacks: StacksAddress;

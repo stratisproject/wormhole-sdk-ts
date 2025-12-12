@@ -2,11 +2,11 @@ import type {
   Platform,
   Chain,
   Network,
-  tokens} from "@xertra/wormhole-sdk-connect";
+  tokens} from "@xertraplatform/wormhole-sdk-connect";
 import {
   chainToPlatform,
   isChain
-} from "@xertra/wormhole-sdk-connect";
+} from "@xertraplatform/wormhole-sdk-connect";
 import axios from "axios";
 import fs from "fs";
 import * as prettier from "prettier";

@@ -1,5 +1,5 @@
 {
-  "name": "@xertra/wormhole-sdk-sui-core",
+  "name": "@xertraplatform/wormhole-sdk-sui-core",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -46,8 +46,8 @@
   },
   "dependencies": {
     "@mysten/sui": "^1.37.2",
-    "@xertra/wormhole-sdk-connect": "1.0.0",
-    "@xertra/wormhole-sdk-sui": "1.0.0"
+    "@xertraplatform/wormhole-sdk-connect": "1.0.0",
+    "@xertraplatform/wormhole-sdk-sui": "1.0.0"
   },
   "type": "module",
   "exports": {

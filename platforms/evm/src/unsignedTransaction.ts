@@ -1,7 +1,7 @@
 import type {
   Network,
   UnsignedTransaction,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 import type { TransactionRequest } from 'ethers';
 import type { EvmChains } from './types.js';
 

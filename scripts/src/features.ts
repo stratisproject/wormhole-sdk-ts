@@ -1,10 +1,10 @@
 import fs from "fs";
-import type { Chain, Network} from "@xertra/wormhole-sdk-connect";
-import { Wormhole, chains } from "@xertra/wormhole-sdk-connect";
-import { EvmPlatform } from "@xertra/wormhole-sdk-evm";
-import { SolanaPlatform } from "@xertra/wormhole-sdk-solana";
-import { CosmwasmPlatform } from "@xertra/wormhole-sdk-cosmwasm";
-import { AlgorandPlatform } from "@xertra/wormhole-sdk-algorand";
+import type { Chain, Network} from "@xertraplatform/wormhole-sdk-connect";
+import { Wormhole, chains } from "@xertraplatform/wormhole-sdk-connect";
+import { EvmPlatform } from "@xertraplatform/wormhole-sdk-evm";
+import { SolanaPlatform } from "@xertraplatform/wormhole-sdk-solana";
+import { CosmwasmPlatform } from "@xertraplatform/wormhole-sdk-cosmwasm";
+import { AlgorandPlatform } from "@xertraplatform/wormhole-sdk-algorand";
 
 import "@wormhole-foundation/sdk-evm-core";
 import "@wormhole-foundation/sdk-evm-tokenbridge";

@@ -1,5 +1,5 @@
-import type { FixedConversion, Layout, LayoutToType, RoArray, ShallowMapping } from "@xertra/wormhole-sdk-base";
-import { column, encoding, constMap, platformToChains, enumItem, calcStaticLayoutSize, deserializeLayout, serializeLayout } from "@xertra/wormhole-sdk-base";
+import type { FixedConversion, Layout, LayoutToType, RoArray, ShallowMapping } from "@xertraplatform/wormhole-sdk-base";
+import { column, encoding, constMap, platformToChains, enumItem, calcStaticLayoutSize, deserializeLayout, serializeLayout } from "@xertraplatform/wormhole-sdk-base";
 
 import { modificationKinds } from "./globalAccountant.js";
 import { amountItem, chainItem, sequenceItem, fixedLengthStringItem, guardianSetItem, universalAddressItem, stringConversion } from "../../layout-items/index.js";

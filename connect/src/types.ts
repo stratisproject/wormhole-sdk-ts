@@ -1,11 +1,11 @@
-import type { Chain } from "@xertra/wormhole-sdk-base";
+import type { Chain } from "@xertraplatform/wormhole-sdk-base";
 import type {
   Attestation,
   AttestationId,
   ProtocolName,
   TokenId,
   TransactionId,
-} from "@xertra/wormhole-sdk-definitions";
+} from "@xertraplatform/wormhole-sdk-definitions";
 import type { QuoteWarning } from "./warnings.js";
 import { RelayFailedError } from "./routes/types.js";
 

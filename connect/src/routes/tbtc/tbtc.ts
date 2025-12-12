@@ -1,5 +1,5 @@
-import type { Chain, Network } from "@xertra/wormhole-sdk-base";
-import { amount, contracts, finality, guardians, time } from "@xertra/wormhole-sdk-base";
+import type { Chain, Network } from "@xertraplatform/wormhole-sdk-base";
+import { amount, contracts, finality, guardians, time } from "@xertraplatform/wormhole-sdk-base";
 import type { StaticRouteMethods } from "../route.js";
 import { ManualRoute } from "../route.js";
 import type {
@@ -9,14 +9,14 @@ import type {
   TokenId,
   TransactionId,
   WormholeMessageId,
-} from "@xertra/wormhole-sdk-definitions";
+} from "@xertraplatform/wormhole-sdk-definitions";
 import {
   deserialize,
   isNative,
   isSameToken,
   serialize,
   TBTCBridge,
-} from "@xertra/wormhole-sdk-definitions";
+} from "@xertraplatform/wormhole-sdk-definitions";
 import type {
   Options,
   Quote,

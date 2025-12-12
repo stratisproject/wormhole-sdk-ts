@@ -1,5 +1,5 @@
 {
-  "name": "@xertra/wormhole-sdk-aptos",
+  "name": "@xertraplatform/wormhole-sdk-aptos",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "@aptos-labs/ts-sdk": "^2.0.0",
-    "@xertra/wormhole-sdk-connect": "1.0.0"
+    "@xertraplatform/wormhole-sdk-connect": "1.0.0"
   },
   "type": "module",
   "typesVersions": {

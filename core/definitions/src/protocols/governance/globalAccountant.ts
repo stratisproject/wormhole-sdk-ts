@@ -1,4 +1,4 @@
-import type { Chain, Network } from "@xertra/wormhole-sdk-base";
+import type { Chain, Network } from "@xertraplatform/wormhole-sdk-base";
 import type { EmptyPlatformMap } from "../../protocol.js";
 import "../../registry.js";
 declare module "../../registry.js" {

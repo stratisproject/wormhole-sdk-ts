@@ -1,6 +1,6 @@
-import type { TokenId } from "@xertra/wormhole-sdk-definitions";
+import type { TokenId } from "@xertraplatform/wormhole-sdk-definitions";
 import type { AttestationReceipt, TransferReceipt } from "../types.js";
-import { amount } from "@xertra/wormhole-sdk-base";
+import { amount } from "@xertraplatform/wormhole-sdk-base";
 import type { QuoteWarning } from "../warnings.js";
 
 // Extend Options to provide custom options

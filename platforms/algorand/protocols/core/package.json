@@ -1,5 +1,5 @@
 {
-  "name": "@xertra/wormhole-sdk-algorand-core",
+  "name": "@xertraplatform/wormhole-sdk-algorand-core",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -45,8 +45,8 @@
     "prettier": "prettier --write ./src"
   },
   "dependencies": {
-    "@xertra/wormhole-sdk-connect": "1.0.0",
-    "@xertra/wormhole-sdk-algorand": "1.0.0"
+    "@xertraplatform/wormhole-sdk-connect": "1.0.0",
+    "@xertraplatform/wormhole-sdk-algorand": "1.0.0"
   },
   "type": "module",
   "exports": {

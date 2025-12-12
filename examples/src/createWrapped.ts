@@ -1,7 +1,7 @@
-import { Wormhole, signSendWait, wormhole } from "@xertra/wormhole-sdk";
+import { Wormhole, signSendWait, wormhole } from "@xertraplatform/wormhole-sdk";
 
-import evm from "@xertra/wormhole-sdk/evm";
-import solana from "@xertra/wormhole-sdk/solana";
+import evm from "@xertraplatform/wormhole-sdk/evm";
+import solana from "@xertraplatform/wormhole-sdk/solana";
 import { inspect } from "util";
 import { getSigner } from "./helpers/index.js";
 

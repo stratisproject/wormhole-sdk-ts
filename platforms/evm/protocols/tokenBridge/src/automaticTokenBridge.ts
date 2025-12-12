@@ -8,15 +8,15 @@ import type {
   NativeAddress,
   Network,
   TokenAddress,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 import {
   isNative,
   serialize,
   toNative,
   nativeChainIds,
   toChainId,
-} from '@xertra/wormhole-sdk-connect';
-import type { EvmChains, EvmPlatformType } from '@xertra/wormhole-sdk-evm';
+} from '@xertraplatform/wormhole-sdk-connect';
+import type { EvmChains, EvmPlatformType } from '@xertraplatform/wormhole-sdk-evm';
 import {
   EvmAddress,
   EvmPlatform,
@@ -24,12 +24,12 @@ import {
   WETH_CONTRACTS,
   addChainId,
   addFrom,
-} from '@xertra/wormhole-sdk-evm';
+} from '@xertraplatform/wormhole-sdk-evm';
 import type { Provider, TransactionRequest } from 'ethers';
 import { ethers_contracts } from './index.js';
 
 import '@wormhole-foundation/sdk-evm-core';
-import { EvmWormholeCore } from '@xertra/wormhole-sdk-evm-core';
+import { EvmWormholeCore } from '@xertraplatform/wormhole-sdk-evm-core';
 
 export class EvmAutomaticTokenBridge<N extends Network, C extends EvmChains>
   implements AutomaticTokenBridge<N, C>

@@ -1,4 +1,4 @@
-import type { Chain, Network } from "@xertra/wormhole-sdk-base";
+import type { Chain, Network } from "@xertraplatform/wormhole-sdk-base";
 import type AlchemyClient from "./AlchemyClient.js";
 import type GoldRushClient from "./GoldRushClient.js";
 

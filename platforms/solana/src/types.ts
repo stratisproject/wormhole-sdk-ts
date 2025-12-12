@@ -2,7 +2,7 @@ import type { PublicKeyInitData } from '@solana/web3.js';
 import type {
   PlatformToChains,
   UniversalOrNative,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 
 export const unusedNonce = 0;
 export const unusedArbiterFee = 0n;

@@ -1,5 +1,5 @@
 {
-  "name": "@xertra/wormhole-sdk-connect",
+  "name": "@xertraplatform/wormhole-sdk-connect",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -97,8 +97,8 @@
     "docs": "typedoc"
   },
   "dependencies": {
-    "@xertra/wormhole-sdk-base": "1.0.0",
-    "@xertra/wormhole-sdk-definitions": "1.0.0",
+    "@xertraplatform/wormhole-sdk-base": "1.0.0",
+    "@xertraplatform/wormhole-sdk-definitions": "1.0.0",
     "axios": "^1.4.0"
   },
   "type": "module",

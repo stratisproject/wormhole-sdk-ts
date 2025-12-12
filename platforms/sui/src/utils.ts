@@ -2,7 +2,7 @@ import type { PaginatedObjectsResponse, SuiClient } from "@mysten/sui/client";
 import { Transaction } from "@mysten/sui/transactions";
 import { isValidSuiAddress, normalizeSuiAddress, normalizeSuiObjectId } from "@mysten/sui/utils";
 
-import { encoding } from "@xertra/wormhole-sdk-connect";
+import { encoding } from "@xertraplatform/wormhole-sdk-connect";
 import type { SuiBuildOutput } from "./types.js";
 import {
   getFieldsFromObjectResponse,

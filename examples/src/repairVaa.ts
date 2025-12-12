@@ -1,6 +1,6 @@
-import type { VAA, WormholeCore } from "@xertra/wormhole-sdk";
-import { SignatureUtils, encoding, keccak256, serialize, wormhole } from "@xertra/wormhole-sdk";
-import evm from "@xertra/wormhole-sdk/evm";
+import type { VAA, WormholeCore } from "@xertraplatform/wormhole-sdk";
+import { SignatureUtils, encoding, keccak256, serialize, wormhole } from "@xertraplatform/wormhole-sdk";
+import evm from "@xertraplatform/wormhole-sdk/evm";
 
 // If a VAA contains signatures from an older guardian set, it can be repaired by removing the invalid signatures and setting the new guardian set index.
 

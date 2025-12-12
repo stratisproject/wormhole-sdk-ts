@@ -1,6 +1,6 @@
 import { PublicKey } from '@solana/web3.js';
-import type { Chain} from '@xertra/wormhole-sdk-connect';
-import { toChainId } from '@xertra/wormhole-sdk-connect';
+import type { Chain} from '@xertraplatform/wormhole-sdk-connect';
+import { toChainId } from '@xertraplatform/wormhole-sdk-connect';
 
 export function getCustodianPda(gatewayProgramId: PublicKey): PublicKey {
   return PublicKey.findProgramAddressSync(

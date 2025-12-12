@@ -1,7 +1,7 @@
 import type { BN } from '@coral-xyz/anchor';
 import type { PublicKeyInitData } from '@solana/web3.js';
 import { PublicKey } from '@solana/web3.js';
-import { utils } from '@xertra/wormhole-sdk-solana';
+import { utils } from '@xertraplatform/wormhole-sdk-solana';
 
 export interface RegisteredToken {
   swapRate: BN;

@@ -7,7 +7,7 @@ import type {
   StaticPlatformMethods,
   TokenId,
   TxHash,
-} from "@xertra/wormhole-sdk-connect";
+} from "@xertraplatform/wormhole-sdk-connect";
 import {
   PlatformContext,
   Wormhole,
@@ -16,7 +16,7 @@ import {
   nativeChainIds,
   decimals as nativeDecimals,
   networkPlatformConfigs,
-} from "@xertra/wormhole-sdk-connect";
+} from "@xertraplatform/wormhole-sdk-connect";
 import { Aptos, AptosConfig, Network as AptosNetwork } from "@aptos-labs/ts-sdk";
 import { AptosChain } from "./chain.js";
 import type { AptosChains, AptosPlatformType } from "./types.js";

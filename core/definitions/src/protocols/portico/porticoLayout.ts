@@ -1,5 +1,5 @@
-import type { Layout } from "@xertra/wormhole-sdk-base";
-import { bitsetItem } from "@xertra/wormhole-sdk-base";
+import type { Layout } from "@xertraplatform/wormhole-sdk-base";
+import { bitsetItem } from "@xertraplatform/wormhole-sdk-base";
 import { amountItem, universalAddressItem } from "./../../layout-items/index.js";
 import type { NamedPayloads, RegisterPayloadTypes } from "./../../vaa/index.js";
 import { registerPayloadTypes } from "./../../vaa/index.js";

@@ -1,4 +1,4 @@
-import type { Chain, Network } from "@xertra/wormhole-sdk-base";
+import type { Chain, Network } from "@xertraplatform/wormhole-sdk-base";
 import type {
   AttestationId,
   ChainContext,
@@ -8,7 +8,7 @@ import type {
   Signer,
   TokenTransferDetails,
   TxHash,
-} from "@xertra/wormhole-sdk-definitions";
+} from "@xertraplatform/wormhole-sdk-definitions";
 import type {
   AttestationReceipt,
   TransferQuote,

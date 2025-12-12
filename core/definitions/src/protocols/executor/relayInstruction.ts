@@ -1,4 +1,4 @@
-import { DeriveType, Layout } from "binary-layout";
+import type { DeriveType, Layout } from "binary-layout";
 import { universalAddressItem } from "../../layout-items/universalAddress.js";
 
 export const gasInstructionLayout = [

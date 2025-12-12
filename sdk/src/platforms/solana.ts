@@ -1,5 +1,5 @@
-import { applyChainsConfigConfigOverrides } from "@xertra/wormhole-sdk-connect";
-import * as _solana from "@xertra/wormhole-sdk-solana";
+import { applyChainsConfigConfigOverrides } from "@xertraplatform/wormhole-sdk-connect";
+import * as _solana from "@xertraplatform/wormhole-sdk-solana";
 import type { PlatformDefinition } from "../index.js";
 /** Platform and protocol definitons for Solana */
 const solana: PlatformDefinition<typeof _solana._platform> = {
@@ -7,10 +7,10 @@ const solana: PlatformDefinition<typeof _solana._platform> = {
   Platform: _solana.SolanaPlatform,
   getSigner: _solana.getSolanaSignAndSendSigner,
   protocols: {
-    WormholeCore: () => import("@xertra/wormhole-sdk-solana-core"),
-    TokenBridge: () => import("@xertra/wormhole-sdk-solana-tokenbridge"),
-    CircleBridge: () => import("@xertra/wormhole-sdk-solana-cctp"),
-    TBTCBridge: () => import("@xertra/wormhole-sdk-solana-tbtc"),
+    WormholeCore: () => import("@xertraplatform/wormhole-sdk-solana-core"),
+    TokenBridge: () => import("@xertraplatform/wormhole-sdk-solana-tokenbridge"),
+    CircleBridge: () => import("@xertraplatform/wormhole-sdk-solana-cctp"),
+    TBTCBridge: () => import("@xertraplatform/wormhole-sdk-solana-tbtc"),
   },
   getChain: (network, chain, overrides?) =>
     new _solana.SolanaChain(

@@ -7,7 +7,7 @@ import {
   isMoveStructObject,
   isValidSuiType,
   trimSuiType,
-} from "@xertra/wormhole-sdk-sui";
+} from "@xertraplatform/wormhole-sdk-sui";
 
 export const getTokenFromTokenRegistry = async (
   provider: SuiClient,

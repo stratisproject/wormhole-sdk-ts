@@ -6,9 +6,9 @@ import {
   fetchCallReadOnlyFunction,
   PostConditionMode,
 } from '@stacks/transactions';
-import type { ChainsConfig } from '@xertra/wormhole-sdk-connect';
-import { serialize, UniversalAddress } from '@xertra/wormhole-sdk-connect';
-import type { Contracts } from '@xertra/wormhole-sdk-connect';
+import type { ChainsConfig } from '@xertraplatform/wormhole-sdk-connect';
+import { serialize, UniversalAddress } from '@xertraplatform/wormhole-sdk-connect';
+import type { Contracts } from '@xertraplatform/wormhole-sdk-connect';
 import type {
   AccountAddress,
   Network,
@@ -17,15 +17,15 @@ import type {
   VAA,
   WormholeCore,
   WormholeMessageId,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 import type {
   StacksChains,
   StacksPlatformType,
-} from '@xertra/wormhole-sdk-stacks';
+} from '@xertraplatform/wormhole-sdk-stacks';
 import {
   StacksPlatform,
   StacksZeroAddress,
-} from '@xertra/wormhole-sdk-stacks';
+} from '@xertraplatform/wormhole-sdk-stacks';
 
 export type StacksWormholeMessageId = WormholeMessageId & {
   emitterPrincipal: string;

@@ -1,6 +1,6 @@
 import { normalizeSuiAddress } from "@mysten/sui/utils";
-import type { Address } from "@xertra/wormhole-sdk-connect";
-import { UniversalAddress, encoding, registerNative } from "@xertra/wormhole-sdk-connect";
+import type { Address } from "@xertraplatform/wormhole-sdk-connect";
+import { UniversalAddress, encoding, registerNative } from "@xertraplatform/wormhole-sdk-connect";
 
 import { SUI_COIN, SUI_SEPARATOR } from "./constants.js";
 import type { AnySuiAddress } from "./types.js";
@@ -134,7 +134,7 @@ export class SuiAddress implements Address {
   }
 }
 
-declare module "@xertra/wormhole-sdk-connect" {
+declare module "@xertraplatform/wormhole-sdk-connect" {
   export namespace WormholeRegistry {
     interface PlatformToNativeAddressMapping {
       Sui: SuiAddress;

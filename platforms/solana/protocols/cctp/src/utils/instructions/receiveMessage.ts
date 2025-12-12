@@ -4,9 +4,9 @@ import { PublicKey, SystemProgram } from '@solana/web3.js';
 import type {
   CircleAttestation,
   circle,
-} from '@xertra/wormhole-sdk-connect';
-import { CircleBridge, encoding } from '@xertra/wormhole-sdk-connect';
-import { SolanaAddress } from '@xertra/wormhole-sdk-solana';
+} from '@xertraplatform/wormhole-sdk-connect';
+import { CircleBridge, encoding } from '@xertraplatform/wormhole-sdk-connect';
+import { SolanaAddress } from '@xertraplatform/wormhole-sdk-solana';
 import { createMessageTransmitterProgramInterface } from '../program.js';
 import { findProgramAddress } from './../accounts/index.js';
 

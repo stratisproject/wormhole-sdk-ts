@@ -1,8 +1,8 @@
-import { utils } from '@xertra/wormhole-sdk-solana';
+import { utils } from '@xertraplatform/wormhole-sdk-solana';
 import type { PublicKeyInitData } from '@solana/web3.js';
 import { PublicKey } from '@solana/web3.js';
 import type { BN } from '@coral-xyz/anchor';
-import { encoding } from '@xertra/wormhole-sdk-connect';
+import { encoding } from '@xertraplatform/wormhole-sdk-connect';
 
 export function deriveTokenTransferMessageAddress(
   programId: PublicKeyInitData,

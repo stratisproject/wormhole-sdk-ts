@@ -1,5 +1,5 @@
-import type { Chain, LayoutToType, Network } from "@xertra/wormhole-sdk-base";
-import { deserializeLayout, serializeLayout } from "@xertra/wormhole-sdk-base";
+import type { Chain, LayoutToType, Network } from "@xertraplatform/wormhole-sdk-base";
+import { deserializeLayout, serializeLayout } from "@xertraplatform/wormhole-sdk-base";
 import type { AccountAddress, ChainAddress } from "../../address.js";
 import type { TokenAddress, TokenId } from "../../types.js";
 import type { UnsignedTransaction } from "../../unsignedTransaction.js";

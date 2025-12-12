@@ -1,5 +1,5 @@
-import type { Layout, CustomizableBytes } from "@xertra/wormhole-sdk-base";
-import { customizableBytes } from "@xertra/wormhole-sdk-base";
+import type { Layout, CustomizableBytes } from "@xertraplatform/wormhole-sdk-base";
+import { customizableBytes } from "@xertraplatform/wormhole-sdk-base";
 import {
   payloadIdItem,
   universalAddressItem,

@@ -5,7 +5,7 @@ import type {
   PublicKeyInitData,
 } from '@solana/web3.js';
 import { ETHEREUM_KEY_LENGTH } from '../instructions/secp256k1.js';
-import { utils } from '@xertra/wormhole-sdk-solana';
+import { utils } from '@xertraplatform/wormhole-sdk-solana';
 
 export function deriveGuardianSetKey(
   wormholeProgramId: PublicKeyInitData,

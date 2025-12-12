@@ -1,4 +1,4 @@
-import type { Network, RoArray } from '@xertra/wormhole-sdk-connect';
+import type { Network, RoArray } from '@xertraplatform/wormhole-sdk-connect';
 
 // TODO: hack to get around the fact that Solana does _not_ have
 // an easy way to recover all the tokens that are registered and allowed

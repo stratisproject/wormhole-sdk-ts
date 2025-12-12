@@ -5,7 +5,7 @@ import { deriveAddress } from './account.js';
 import type {
   CustomConversion,
   Layout,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 
 export const BPF_LOADER_UPGRADEABLE_PROGRAM_ID = new PublicKey(
   'BPFLoaderUpgradeab1e11111111111111111111111',

@@ -1,5 +1,5 @@
-import type { Layout, CustomConversion, CustomizableBytes } from "@xertra/wormhole-sdk-base";
-import { customizableBytes, range } from "@xertra/wormhole-sdk-base";
+import type { Layout, CustomConversion, CustomizableBytes } from "@xertraplatform/wormhole-sdk-base";
+import { customizableBytes, range } from "@xertraplatform/wormhole-sdk-base";
 import {
   amountItem,
   chainItem,

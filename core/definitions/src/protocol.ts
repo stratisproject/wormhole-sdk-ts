@@ -1,5 +1,5 @@
-import type { Chain, Network, Platform, PlatformToChains } from "@xertra/wormhole-sdk-base";
-import { chainToPlatform, isChain } from "@xertra/wormhole-sdk-base";
+import type { Chain, Network, Platform, PlatformToChains } from "@xertraplatform/wormhole-sdk-base";
+import { chainToPlatform, isChain } from "@xertraplatform/wormhole-sdk-base";
 import type { Contracts } from "./contracts.js";
 import type { WormholeRegistry } from "./registry.js";
 import type { RpcConnection } from "./rpc.js";

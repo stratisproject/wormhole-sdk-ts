@@ -1,5 +1,5 @@
-import { registerProtocol } from '@xertra/wormhole-sdk-connect';
-import { _platform } from '@xertra/wormhole-sdk-evm';
+import { registerProtocol } from '@xertraplatform/wormhole-sdk-connect';
+import { _platform } from '@xertraplatform/wormhole-sdk-evm';
 import { EvmCircleBridge } from './circleBridge.js';
 import { EvmAutomaticCircleBridge } from './automaticCircleBridge.js';
 

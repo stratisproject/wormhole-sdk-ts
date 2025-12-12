@@ -1,5 +1,5 @@
-import type { MapLevels, Network } from "@xertra/wormhole-sdk-connect";
-import { constMap } from "@xertra/wormhole-sdk-connect";
+import type { MapLevels, Network } from "@xertraplatform/wormhole-sdk-connect";
+import { constMap } from "@xertraplatform/wormhole-sdk-connect";
 
 type HexString = `0x${string}`;
 

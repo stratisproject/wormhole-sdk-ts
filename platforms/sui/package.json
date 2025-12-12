@@ -1,5 +1,5 @@
 {
-  "name": "@xertra/wormhole-sdk-sui",
+  "name": "@xertraplatform/wormhole-sdk-sui",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -46,7 +46,7 @@
     "test": "jest --config ./jest.config.ts"
   },
   "dependencies": {
-    "@xertra/wormhole-sdk-connect": "1.0.0",
+    "@xertraplatform/wormhole-sdk-connect": "1.0.0",
     "@mysten/sui": "^1.37.2"
   },
   "type": "module",

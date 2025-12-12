@@ -1,4 +1,4 @@
-import type { Network, Platform, PlatformToChains } from "@xertra/wormhole-sdk-base";
+import type { Network, Platform, PlatformToChains } from "@xertraplatform/wormhole-sdk-base";
 import type {
   ChainContext,
   ChainsConfig,

@@ -1,5 +1,5 @@
 import type { PublicKey, PublicKeyInitData } from '@solana/web3.js';
-import { utils } from '@xertra/wormhole-sdk-solana';
+import { utils } from '@xertraplatform/wormhole-sdk-solana';
 
 export interface RedeemerConfig {
   owner: PublicKey;

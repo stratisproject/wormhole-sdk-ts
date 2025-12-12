@@ -1,7 +1,7 @@
-import { wormhole } from '@xertra/wormhole-sdk';
-import { Network, platformToChains } from '@xertra/wormhole-sdk-connect';
-import evm from '@xertra/wormhole-sdk/evm';
-import { EvmChains, WETH_CONTRACTS } from '@xertra/wormhole-sdk-evm';
+import { wormhole } from '@xertraplatform/wormhole-sdk';
+import { Network, platformToChains } from '@xertraplatform/wormhole-sdk-connect';
+import evm from '@xertraplatform/wormhole-sdk/evm';
+import { EvmChains, WETH_CONTRACTS } from '@xertraplatform/wormhole-sdk-evm';
 
 describe('WETH contracts', function () {
   const evmChains = platformToChains('Evm');

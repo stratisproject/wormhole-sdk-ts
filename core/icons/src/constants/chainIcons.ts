@@ -1,6 +1,6 @@
 // THIS FILE IS AUTO-GENERATED WITH `npm run gen`
 
-import type { Chain } from "@xertra/wormhole-sdk-base";
+import type { Chain } from "@xertraplatform/wormhole-sdk-base";
 
 const PREFIX = "data:image/svg+xml;base64,";
 

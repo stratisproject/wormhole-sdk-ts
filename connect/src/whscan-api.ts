@@ -1,12 +1,12 @@
-import type { Chain } from "@xertra/wormhole-sdk-base";
-import { amount, encoding, toChain, toChainId } from "@xertra/wormhole-sdk-base";
+import type { Chain } from "@xertraplatform/wormhole-sdk-base";
+import { amount, encoding, toChain, toChainId } from "@xertraplatform/wormhole-sdk-base";
 import type {
   PayloadDiscriminator,
   PayloadLiteral,
   TxHash,
   WormholeMessageId,
-} from "@xertra/wormhole-sdk-definitions";
-import { deserialize } from "@xertra/wormhole-sdk-definitions";
+} from "@xertraplatform/wormhole-sdk-definitions";
+import { deserialize } from "@xertraplatform/wormhole-sdk-definitions";
 import axios from "axios";
 import { retry } from "./tasks.js";
 

@@ -1,4 +1,4 @@
-import { DeriveType, Layout } from "binary-layout";
+import type { DeriveType, Layout } from "binary-layout";
 import { dateConversion } from "../../layout-items/date.js";
 
 export const quoteLayout = [

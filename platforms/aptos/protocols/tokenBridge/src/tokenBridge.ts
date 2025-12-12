@@ -8,7 +8,7 @@ import type {
   Network,
   TokenBridge,
   TokenId,
-} from "@xertra/wormhole-sdk-connect";
+} from "@xertraplatform/wormhole-sdk-connect";
 import {
   ErrNotWrapped,
   UniversalAddress,
@@ -20,8 +20,8 @@ import {
   toChain,
   toChainId,
   toNative,
-} from "@xertra/wormhole-sdk-connect";
-import type { AnyAptosAddress, AptosChains, AptosPlatformType } from "@xertra/wormhole-sdk-aptos";
+} from "@xertraplatform/wormhole-sdk-connect";
+import type { AnyAptosAddress, AptosChains, AptosPlatformType } from "@xertraplatform/wormhole-sdk-aptos";
 import {
   APTOS_COIN,
   APTOS_SEPARATOR,
@@ -30,7 +30,7 @@ import {
   AptosUnsignedTransaction,
   coalesceModuleAddress,
   isValidAptosType,
-} from "@xertra/wormhole-sdk-aptos";
+} from "@xertraplatform/wormhole-sdk-aptos";
 import { serializeForeignAddressSeeds } from "./foreignAddress.js";
 import type { OriginInfo, TokenBridgeState } from "./types.js";
 import type { Aptos, InputGenerateTransactionPayloadData } from "@aptos-labs/ts-sdk";

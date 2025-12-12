@@ -1,4 +1,4 @@
-import type { Chain, Network } from "@xertra/wormhole-sdk-base";
+import type { Chain, Network } from "@xertraplatform/wormhole-sdk-base";
 import type {
   GatewayTransferMsg,
   GatewayTransferWithPayloadMsg,
@@ -8,13 +8,13 @@ import type {
   TokenBridge,
   TransactionId,
   TxHash,
-} from "@xertra/wormhole-sdk-definitions";
+} from "@xertraplatform/wormhole-sdk-definitions";
 import {
   isGatewayTransferMsg,
   isGatewayTransferWithPayloadMsg,
   isIbcMessageId,
   isTransactionIdentifier,
-} from "@xertra/wormhole-sdk-definitions";
+} from "@xertraplatform/wormhole-sdk-definitions";
 import { DEFAULT_TASK_TIMEOUT } from "./config.js";
 
 // A task is a retryable function, it should return a Thing or null for a failure case

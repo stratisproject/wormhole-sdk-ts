@@ -1,4 +1,4 @@
-import type { Chain, Network } from "@xertra/wormhole-sdk-base";
+import type { Chain, Network } from "@xertraplatform/wormhole-sdk-base";
 import type {
   ChainContext,
   SignAndSendSigner,
@@ -6,8 +6,8 @@ import type {
   TransactionId,
   TxHash,
   UnsignedTransaction,
-} from "@xertra/wormhole-sdk-definitions";
-import { isSignAndSendSigner, isSigner } from "@xertra/wormhole-sdk-definitions";
+} from "@xertraplatform/wormhole-sdk-definitions";
+import { isSignAndSendSigner, isSigner } from "@xertraplatform/wormhole-sdk-definitions";
 
 type SignSend<N extends Network, C extends Chain> = (
   txns: UnsignedTransaction<N, C>[],

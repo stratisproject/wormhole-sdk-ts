@@ -1,4 +1,4 @@
-import { type Network } from '@xertra/wormhole-sdk-base';
+import { type Network } from '@xertraplatform/wormhole-sdk-base';
 import type { EvmChains } from './types.js';
 
 export const WETH_CONTRACTS: Record<

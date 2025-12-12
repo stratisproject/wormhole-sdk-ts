@@ -1,4 +1,4 @@
-import { serializeLayout, deserializeLayout } from "@xertra/wormhole-sdk-base";
+import { serializeLayout, deserializeLayout } from "@xertraplatform/wormhole-sdk-base";
 import { signatureItem } from "./layout-items/index.js";
 import { secp256k1 } from "./utils.js";
 

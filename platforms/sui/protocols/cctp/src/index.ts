@@ -1,4 +1,4 @@
-import { registerProtocol } from "@xertra/wormhole-sdk-connect";
+import { registerProtocol } from "@xertraplatform/wormhole-sdk-connect";
 
 import { SuiCircleBridge } from "./circleBridge.js";
 

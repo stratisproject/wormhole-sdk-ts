@@ -62,7 +62,7 @@ export const tokenBridgeContracts = [[
     ["BaseSepolia",     "0x86F55A04690fd7815A3D802bD587e83eA888B239"],
     ["Sei",             "sei1jv5xw094mclanxt5emammy875qelf3v62u4tl4lp5nhte3w3s9ts9w9az2"],
     ["Sepolia",         "0xEDf0f8d602C44D52BC5c7d53439542493Ec60C2F"],
-    ["Wormchain",       "wormhole1aaf9r6s7nxhysuegqrxv0wpm27ypyv4886medd3mrkrw6t4yfcnst3qpex"],
+    ["Wormchain",       "wormhole1eyfccmjm6732k7wp4p6gdjwhxjwsvje44j0hfx8nkgrm8fs7vqfssvpdkx"],
     ["Holesky",         "0x76d093BbaE4529a342080546cAFEec4AcbA59EC6"],
     ["Mantle",          "0x75Bfa155a9D7A3714b0861c8a8aF0C4633c45b5D"],
     ["PolygonSepolia",  "0xC7A204bDBFe983FCD8d8E61D02b475D4073fF97e"],

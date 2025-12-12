@@ -5,7 +5,7 @@ import type {
   Network,
   Signer,
   TxHash,
-} from "@xertra/wormhole-sdk";
+} from "@xertraplatform/wormhole-sdk";
 import {
   DEFAULT_TASK_TIMEOUT,
   TokenTransfer,
@@ -14,7 +14,7 @@ import {
   amount,
   api,
   tasks,
-} from "@xertra/wormhole-sdk";
+} from "@xertraplatform/wormhole-sdk";
 
 import algorand from "../../../sdk/dist/esm/platforms/algorand.js";
 import cosmwasm from "../../../sdk/dist/esm/platforms/cosmwasm.js";

@@ -9,7 +9,7 @@ import type {
   TxHash,
   SignedTx,
   TokenAddress,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 import {
   chainToPlatform,
   networkPlatformConfigs,
@@ -17,10 +17,10 @@ import {
   isNative,
   decimals,
   Wormhole,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 import type { StacksChains, StacksPlatformType } from './types.js';
 import { _platform } from './types.js';
-import type { Chain } from '@xertra/wormhole-sdk-connect';
+import type { Chain } from '@xertraplatform/wormhole-sdk-connect';
 import { StacksChain } from './chain.js';
 import type { StacksNetwork, StacksNetworkName } from '@stacks/network';
 import { ChainId, networkFromName } from '@stacks/network';

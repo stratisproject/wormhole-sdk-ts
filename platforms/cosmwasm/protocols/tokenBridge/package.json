@@ -1,5 +1,5 @@
 {
-  "name": "@xertra/wormhole-sdk-cosmwasm-tokenbridge",
+  "name": "@xertraplatform/wormhole-sdk-cosmwasm-tokenbridge",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -54,8 +54,8 @@
   "dependencies": {
     "@injectivelabs/sdk-ts": "^1.14.13-beta.2",
     "@cosmjs/cosmwasm-stargate": "^0.32.0",
-    "@xertra/wormhole-sdk-connect": "1.0.0",
-    "@xertra/wormhole-sdk-cosmwasm": "1.0.0"
+    "@xertraplatform/wormhole-sdk-connect": "1.0.0",
+    "@xertraplatform/wormhole-sdk-cosmwasm": "1.0.0"
   },
   "type": "module",
   "exports": {

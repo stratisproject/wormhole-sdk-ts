@@ -1,8 +1,8 @@
-import { utils } from '@xertra/wormhole-sdk-solana';
+import { utils } from '@xertraplatform/wormhole-sdk-solana';
 import type { PublicKey, PublicKeyInitData } from '@solana/web3.js';
 import type { BN } from '@coral-xyz/anchor';
-import type { Chain } from '@xertra/wormhole-sdk-connect';
-import { toChainId } from '@xertra/wormhole-sdk-connect';
+import type { Chain } from '@xertraplatform/wormhole-sdk-connect';
+import { toChainId } from '@xertraplatform/wormhole-sdk-connect';
 
 export interface ForeignContract {
   chain: number;

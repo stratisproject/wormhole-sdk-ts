@@ -1,5 +1,5 @@
-import { blindDeserializePayload, loadProtocols } from "@xertra/wormhole-sdk";
-import evm from "@xertra/wormhole-sdk/platforms/evm";
+import { blindDeserializePayload, loadProtocols } from "@xertraplatform/wormhole-sdk";
+import evm from "@xertraplatform/wormhole-sdk/platforms/evm";
 
 (async function () {
   await loadProtocols(evm, ["TokenBridge", "WormholeCore"]);

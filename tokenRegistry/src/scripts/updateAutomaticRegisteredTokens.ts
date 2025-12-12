@@ -1,7 +1,7 @@
-import type { Chain, Network } from "@xertra/wormhole-sdk-connect";
-import { Wormhole } from "@xertra/wormhole-sdk-connect";
-import { EvmPlatform } from "@xertra/wormhole-sdk-evm";
-import { SolanaPlatform } from "@xertra/wormhole-sdk-solana";
+import type { Chain, Network } from "@xertraplatform/wormhole-sdk-connect";
+import { Wormhole } from "@xertraplatform/wormhole-sdk-connect";
+import { EvmPlatform } from "@xertraplatform/wormhole-sdk-evm";
+import { SolanaPlatform } from "@xertraplatform/wormhole-sdk-solana";
 
 import * as fs from "fs";
 import type { TokensConfig } from "../types";

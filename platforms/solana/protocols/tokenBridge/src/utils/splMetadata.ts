@@ -6,7 +6,7 @@ import type {
   TransactionInstruction,
 } from '@solana/web3.js';
 import { PublicKey, SystemProgram, SYSVAR_RENT_PUBKEY } from '@solana/web3.js';
-import { utils } from '@xertra/wormhole-sdk-solana';
+import { utils } from '@xertraplatform/wormhole-sdk-solana';
 
 export class Creator {
   address: PublicKey;

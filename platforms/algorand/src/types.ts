@@ -1,4 +1,4 @@
-import type { PlatformToChains, UniversalOrNative } from "@xertra/wormhole-sdk-connect";
+import type { PlatformToChains, UniversalOrNative } from "@xertraplatform/wormhole-sdk-connect";
 import type { Transaction } from "algosdk";
 
 /**

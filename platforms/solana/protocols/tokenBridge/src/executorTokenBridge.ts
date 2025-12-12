@@ -8,7 +8,7 @@ import type {
   TokenAddress,
   TokenId,
   ExecutorTokenBridge,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 import {
   canonicalAddress,
   contracts,
@@ -18,16 +18,16 @@ import {
   signedQuoteLayout,
   toChainId,
   toUniversal,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 import type {
   SolanaChains,
   SolanaTransaction,
-} from '@xertra/wormhole-sdk-solana';
+} from '@xertraplatform/wormhole-sdk-solana';
 import {
   SolanaAddress,
   SolanaPlatform,
   SolanaUnsignedTransaction,
-} from '@xertra/wormhole-sdk-solana';
+} from '@xertraplatform/wormhole-sdk-solana';
 
 import { Program } from '@coral-xyz/anchor';
 
@@ -64,7 +64,7 @@ import {
 import {
   SolanaWormholeCore,
   utils,
-} from '@xertra/wormhole-sdk-solana-core';
+} from '@xertraplatform/wormhole-sdk-solana-core';
 import { SolanaTokenBridge } from './tokenBridge.js';
 import {
   deriveWrappedMetaKey,

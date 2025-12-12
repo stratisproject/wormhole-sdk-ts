@@ -7,7 +7,7 @@ import type {
   StaticPlatformMethods,
   TokenId,
   TxHash,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 import {
   PlatformContext,
   Wormhole,
@@ -16,7 +16,7 @@ import {
   nativeChainIds,
   networkPlatformConfigs,
   isNative,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 import { SolanaChain } from './chain.js';
 
 import { TOKEN_PROGRAM_ID, TOKEN_2022_PROGRAM_ID } from '@solana/spl-token';

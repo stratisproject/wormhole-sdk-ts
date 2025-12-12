@@ -4,8 +4,8 @@ import type {
   PublicKeyInitData,
 } from '@solana/web3.js';
 import { PublicKey } from '@solana/web3.js';
-import type { ChainId } from '@xertra/wormhole-sdk-connect';
-import { utils } from '@xertra/wormhole-sdk-solana';
+import type { ChainId } from '@xertraplatform/wormhole-sdk-connect';
+import { utils } from '@xertraplatform/wormhole-sdk-solana';
 
 export function deriveWrappedMintKey(
   tokenBridgeProgramId: PublicKeyInitData,

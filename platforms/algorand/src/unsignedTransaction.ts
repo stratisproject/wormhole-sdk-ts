@@ -1,4 +1,4 @@
-import type { Network, UnsignedTransaction } from "@xertra/wormhole-sdk-connect";
+import type { Network, UnsignedTransaction } from "@xertraplatform/wormhole-sdk-connect";
 import type { AlgorandChains, TransactionSignerPair } from "./types.js";
 
 export class AlgorandUnsignedTransaction<N extends Network, C extends AlgorandChains>

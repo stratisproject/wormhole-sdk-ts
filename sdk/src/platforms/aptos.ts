@@ -1,6 +1,6 @@
-import * as _aptos from "@xertra/wormhole-sdk-aptos";
+import * as _aptos from "@xertraplatform/wormhole-sdk-aptos";
 import type { PlatformDefinition } from "../index.js";
-import { applyChainsConfigConfigOverrides } from "@xertra/wormhole-sdk-connect";
+import { applyChainsConfigConfigOverrides } from "@xertraplatform/wormhole-sdk-connect";
 
 /** Platform and protocol definitions for Aptos */
 const aptos: PlatformDefinition<typeof _aptos._platform> = {
@@ -8,9 +8,9 @@ const aptos: PlatformDefinition<typeof _aptos._platform> = {
   Platform: _aptos.AptosPlatform,
   getSigner: _aptos.getAptosSigner,
   protocols: {
-    WormholeCore: () => import("@xertra/wormhole-sdk-aptos-core"),
-    TokenBridge: () => import("@xertra/wormhole-sdk-aptos-tokenbridge"),
-    CircleBridge: () => import("@xertra/wormhole-sdk-aptos-cctp"),
+    WormholeCore: () => import("@xertraplatform/wormhole-sdk-aptos-core"),
+    TokenBridge: () => import("@xertraplatform/wormhole-sdk-aptos-tokenbridge"),
+    CircleBridge: () => import("@xertraplatform/wormhole-sdk-aptos-cctp"),
   },
   getChain: (network, chain, overrides?) =>
     new _aptos.AptosChain(

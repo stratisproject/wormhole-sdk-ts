@@ -10,8 +10,8 @@ import type {
   PlatformUtils,
   RpcConnection,
   Signer,
-} from "@xertra/wormhole-sdk-connect";
-import { Wormhole } from "@xertra/wormhole-sdk-connect";
+} from "@xertraplatform/wormhole-sdk-connect";
+import { Wormhole } from "@xertraplatform/wormhole-sdk-connect";
 
 /**
  * PlatformDefinition is a type that contains the types necessary to
@@ -100,5 +100,5 @@ export async function wormhole<N extends Network>(
   return new Wormhole(network, loaded, config);
 }
 
-export * from "@xertra/wormhole-sdk-connect";
+export * from "@xertraplatform/wormhole-sdk-connect";
 export * from "./addresses.js";

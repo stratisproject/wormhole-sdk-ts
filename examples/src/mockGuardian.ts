@@ -1,5 +1,5 @@
-import { encoding, serialize } from "@xertra/wormhole-sdk";
-import { mocks } from "@xertra/wormhole-sdk-definitions/testing";
+import { encoding, serialize } from "@xertraplatform/wormhole-sdk";
+import { mocks } from "@xertraplatform/wormhole-sdk-definitions/testing";
 
 (async function () {
   const guardians = mocks.devnetGuardianSet();

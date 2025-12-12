@@ -1,5 +1,5 @@
-import { registerProtocol } from '@xertra/wormhole-sdk-connect';
-import { _platform } from '@xertra/wormhole-sdk-stacks';
+import { registerProtocol } from '@xertraplatform/wormhole-sdk-connect';
+import { _platform } from '@xertraplatform/wormhole-sdk-stacks';
 import { StacksWormholeCore } from './core.js';
 
 registerProtocol(_platform, 'WormholeCore', StacksWormholeCore);

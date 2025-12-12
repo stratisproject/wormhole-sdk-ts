@@ -1,5 +1,5 @@
-import type { Chain } from "@xertra/wormhole-sdk-base";
-import { guardians } from "@xertra/wormhole-sdk-base";
+import type { Chain } from "@xertraplatform/wormhole-sdk-base";
+import { guardians } from "@xertraplatform/wormhole-sdk-base";
 import type { PayloadLiteral, VAA } from "../../index.js";
 import { Signature, SignatureUtils, createVAA, deserialize, serialize } from "../../index.js";
 import type { UniversalAddress } from "../../universalAddress.js";

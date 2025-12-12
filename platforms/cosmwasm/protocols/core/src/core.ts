@@ -9,16 +9,16 @@ import type {
   VAA,
   WormholeCore,
   WormholeMessageId,
-} from "@xertra/wormhole-sdk-connect";
-import { UniversalAddress, createVAA, encoding } from "@xertra/wormhole-sdk-connect";
+} from "@xertraplatform/wormhole-sdk-connect";
+import { UniversalAddress, createVAA, encoding } from "@xertraplatform/wormhole-sdk-connect";
 
 import type {
   AnyCosmwasmAddress,
   CosmwasmChains,
   CosmwasmPlatformType,
   CosmwasmUnsignedTransaction,
-} from "@xertra/wormhole-sdk-cosmwasm";
-import { CosmwasmPlatform } from "@xertra/wormhole-sdk-cosmwasm";
+} from "@xertraplatform/wormhole-sdk-cosmwasm";
+import { CosmwasmPlatform } from "@xertraplatform/wormhole-sdk-cosmwasm";
 
 export class CosmwasmWormholeCore<N extends Network, C extends CosmwasmChains>
   implements WormholeCore<N, C>

@@ -4,8 +4,8 @@
 
 import * as borsh from '@coral-xyz/borsh';
 import type { Layout } from 'buffer-layout';
-import type { anchor } from '@xertra/wormhole-sdk-solana';
-import { camelCase } from '@xertra/wormhole-sdk-solana';
+import type { anchor } from '@xertraplatform/wormhole-sdk-solana';
+import { camelCase } from '@xertraplatform/wormhole-sdk-solana';
 
 export class IdlCoder {
   public static fieldLayout(

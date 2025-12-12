@@ -1,4 +1,4 @@
-import type { Layout } from "@xertra/wormhole-sdk-base";
+import type { Layout } from "@xertraplatform/wormhole-sdk-base";
 
 export const sequenceItem = {
   binary: "uint",

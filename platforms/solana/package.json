@@ -1,5 +1,5 @@
 {
-  "name": "@xertra/wormhole-sdk-solana",
+  "name": "@xertraplatform/wormhole-sdk-solana",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -53,7 +53,7 @@
     "@coral-xyz/borsh": "0.29.0",
     "@solana/spl-token": "0.3.9",
     "@solana/web3.js": "^1.95.8",
-    "@xertra/wormhole-sdk-connect": "1.0.0",
+    "@xertraplatform/wormhole-sdk-connect": "1.0.0",
     "rpc-websockets": "^7.10.0"
   },
   "type": "module",

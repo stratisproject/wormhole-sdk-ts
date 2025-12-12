@@ -1,6 +1,6 @@
-import type { Network } from "@xertra/wormhole-sdk-base";
-import type { ChainContext, TokenId } from "@xertra/wormhole-sdk-definitions";
-import { canonicalAddress, isNative, resolveWrappedToken } from "@xertra/wormhole-sdk-definitions";
+import type { Network } from "@xertraplatform/wormhole-sdk-base";
+import type { ChainContext, TokenId } from "@xertraplatform/wormhole-sdk-definitions";
+import { canonicalAddress, isNative, resolveWrappedToken } from "@xertraplatform/wormhole-sdk-definitions";
 import type { Wormhole } from "../wormhole.js";
 import type { RouteTransferRequest } from "./request.js";
 import type { Route, RouteConstructor } from "./route.js";

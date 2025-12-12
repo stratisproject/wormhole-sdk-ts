@@ -4,7 +4,7 @@ import type {
   PublicKeyInitData,
 } from '@solana/web3.js';
 import { PublicKey } from '@solana/web3.js';
-import { utils } from '@xertra/wormhole-sdk-solana';
+import { utils } from '@xertraplatform/wormhole-sdk-solana';
 
 export async function getSignatureSetData(
   connection: Connection,

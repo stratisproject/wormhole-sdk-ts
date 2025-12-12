@@ -4,7 +4,7 @@ import type {
   Commitment,
   PublicKeyInitData,
 } from '@solana/web3.js';
-import { utils } from '@xertra/wormhole-sdk-solana';
+import { utils } from '@xertraplatform/wormhole-sdk-solana';
 
 export function deriveWormholeBridgeDataKey(
   wormholeProgramId: PublicKeyInitData,

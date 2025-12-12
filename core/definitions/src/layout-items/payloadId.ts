@@ -1,4 +1,4 @@
-import type { Layout } from "@xertra/wormhole-sdk-base";
+import type { Layout } from "@xertraplatform/wormhole-sdk-base";
 
 export const payloadIdItem = <ID extends number>(id: ID) =>
   ({

@@ -1,4 +1,4 @@
-import type { Layout, CustomConversion } from "@xertra/wormhole-sdk-base";
+import type { Layout, CustomConversion } from "@xertraplatform/wormhole-sdk-base";
 
 export const boolItem = {
   binary: "uint",

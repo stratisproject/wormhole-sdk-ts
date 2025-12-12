@@ -1,4 +1,4 @@
-import { constMap, type MapLevels, type Network } from "@xertra/wormhole-sdk-connect";
+import { constMap, type MapLevels, type Network } from "@xertraplatform/wormhole-sdk-connect";
 
 type SuiCircleObjects = {
   tokenMessengerState: string;

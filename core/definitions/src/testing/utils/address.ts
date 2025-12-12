@@ -1,5 +1,5 @@
-import type { Chain } from "@xertra/wormhole-sdk-base";
-import { chainToPlatform, encoding, isPlatform, platformToChains } from "@xertra/wormhole-sdk-base";
+import type { Chain } from "@xertraplatform/wormhole-sdk-base";
+import { chainToPlatform, encoding, isPlatform, platformToChains } from "@xertraplatform/wormhole-sdk-base";
 import type { ChainAddress, NativeAddress } from "./../../index.js";
 import { UniversalAddress, toNative } from "./../../index.js";
 

@@ -1,6 +1,6 @@
 import type { SuiClient } from "@mysten/sui/client";
 import { Transaction } from "@mysten/sui/transactions";
-import { SuiPlatform, type SuiChains, SuiUnsignedTransaction } from "@xertra/wormhole-sdk-sui";
+import { SuiPlatform, type SuiChains, SuiUnsignedTransaction } from "@xertraplatform/wormhole-sdk-sui";
 import type {
   AccountAddress,
   ChainAddress,
@@ -9,8 +9,8 @@ import type {
   Platform,
   CircleTransferMessage,
   Contracts,
-} from "@xertra/wormhole-sdk-connect";
-import { CircleBridge, circle, encoding } from "@xertra/wormhole-sdk-connect";
+} from "@xertraplatform/wormhole-sdk-connect";
+import { CircleBridge, circle, encoding } from "@xertraplatform/wormhole-sdk-connect";
 
 import { suiCircleObjects } from "./objects.js";
 

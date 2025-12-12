@@ -1,4 +1,4 @@
-import type { Chain } from "@xertra/wormhole-sdk-base";
+import type { Chain } from "@xertraplatform/wormhole-sdk-base";
 
 export class MockRpc {
   constructor(chain: Chain) {}

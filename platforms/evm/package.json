@@ -1,5 +1,5 @@
 {
-  "name": "@xertra/wormhole-sdk-evm",
+  "name": "@xertraplatform/wormhole-sdk-evm",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -57,7 +57,7 @@
     "nock": "13.3.8"
   },
   "dependencies": {
-    "@xertra/wormhole-sdk-connect": "1.0.0",
+    "@xertraplatform/wormhole-sdk-connect": "1.0.0",
     "ethers": "^6.5.1"
   },
   "type": "module",

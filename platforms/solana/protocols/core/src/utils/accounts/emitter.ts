@@ -4,7 +4,7 @@ import type {
   PublicKey,
   PublicKeyInitData,
 } from '@solana/web3.js';
-import { utils } from '@xertra/wormhole-sdk-solana';
+import { utils } from '@xertraplatform/wormhole-sdk-solana';
 import type { SequenceTracker } from './sequence.js';
 import { deriveEmitterSequenceKey, getSequenceTracker } from './sequence.js';
 

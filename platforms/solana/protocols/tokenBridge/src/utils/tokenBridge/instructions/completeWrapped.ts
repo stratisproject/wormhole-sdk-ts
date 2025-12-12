@@ -6,7 +6,7 @@ import type {
 import { PublicKey, SystemProgram, SYSVAR_RENT_PUBKEY } from '@solana/web3.js';
 import { TOKEN_PROGRAM_ID } from '@solana/spl-token';
 import { createReadOnlyTokenBridgeProgramInterface } from '../program.js';
-import { utils } from '@xertra/wormhole-sdk-solana-core';
+import { utils } from '@xertraplatform/wormhole-sdk-solana-core';
 import {
   deriveEndpointKey,
   deriveTokenBridgeConfigKey,
@@ -14,8 +14,8 @@ import {
   deriveWrappedMetaKey,
   deriveMintAuthorityKey,
 } from './../accounts/index.js';
-import type { TokenBridge } from '@xertra/wormhole-sdk-connect';
-import { toChainId } from '@xertra/wormhole-sdk-connect';
+import type { TokenBridge } from '@xertraplatform/wormhole-sdk-connect';
+import { toChainId } from '@xertraplatform/wormhole-sdk-connect';
 
 export function createCompleteTransferWrappedInstruction(
   connection: Connection,

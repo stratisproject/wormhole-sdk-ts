@@ -1,7 +1,7 @@
-import { encoding, signSendWait, wormhole } from "@xertra/wormhole-sdk";
+import { encoding, signSendWait, wormhole } from "@xertraplatform/wormhole-sdk";
 import { getSigner } from "./helpers/index.js";
-import solana from "@xertra/wormhole-sdk/solana";
-import evm from "@xertra/wormhole-sdk/evm";
+import solana from "@xertraplatform/wormhole-sdk/solana";
+import evm from "@xertraplatform/wormhole-sdk/evm";
 
 (async function () {
   // EXAMPLE_CORE_BRIDGE

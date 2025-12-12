@@ -1,5 +1,5 @@
 import { jest, expect, test } from '@jest/globals';
-import { nativeChainIds } from '@xertra/wormhole-sdk-connect';
+import { nativeChainIds } from '@xertraplatform/wormhole-sdk-connect';
 
 // Mock the genesis hash call for solana so we dont touch the network
 jest.mock('@solana/web3.js', () => {
@@ -23,7 +23,7 @@ import {
   CONFIG,
   chainToPlatform,
   chains,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 
 import { SolanaChains, SolanaPlatform } from './../../src/index.js';
 

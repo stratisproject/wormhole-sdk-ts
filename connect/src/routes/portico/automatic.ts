@@ -1,4 +1,4 @@
-import { filters, finality, time } from "@xertra/wormhole-sdk-base";
+import { filters, finality, time } from "@xertraplatform/wormhole-sdk-base";
 import type { StaticRouteMethods } from "../route.js";
 import { AutomaticRoute } from "../route.js";
 import type {
@@ -35,7 +35,7 @@ import {
   resolveWrappedToken,
   signSendWait,
 } from "./../../index.js";
-import type { ChainAddress, WormholeMessageId } from "@xertra/wormhole-sdk-definitions";
+import type { ChainAddress, WormholeMessageId } from "@xertraplatform/wormhole-sdk-definitions";
 import type { RouteTransferRequest } from "../request.js";
 
 export const SLIPPAGE_BPS = 15n; // 0.15%

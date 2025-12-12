@@ -6,7 +6,7 @@ import type {
   Signer,
   TxHash,
   UnsignedTransaction,
-} from "@xertra/wormhole-sdk-connect";
+} from "@xertraplatform/wormhole-sdk-connect";
 import { SuiPlatform } from "./platform.js";
 import type { SuiChains } from "./types.js";
 import type { SuiUnsignedTransaction } from "./unsignedTransaction.js";

@@ -1,4 +1,4 @@
-import type { Chain } from "@xertra/wormhole-sdk-base";
+import type { Chain } from "@xertraplatform/wormhole-sdk-base";
 import type { TokenAddress } from "../../types.js";
 
 import type { EmptyPlatformMap } from "../../protocol.js";

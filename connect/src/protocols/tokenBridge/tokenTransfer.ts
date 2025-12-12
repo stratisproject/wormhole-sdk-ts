@@ -1,4 +1,4 @@
-import type { Chain, Network } from "@xertra/wormhole-sdk-base";
+import type { Chain, Network } from "@xertraplatform/wormhole-sdk-base";
 import {
   amount,
   encoding,
@@ -9,7 +9,7 @@ import {
   toChainId,
   deserializeLayout,
   serializeLayout,
-} from "@xertra/wormhole-sdk-base";
+} from "@xertraplatform/wormhole-sdk-base";
 import type {
   AttestationId,
   AutomaticTokenBridge,
@@ -25,7 +25,7 @@ import type {
   ExecutorTokenBridge,
   RelayInstructions,
   ChainAddress,
-} from "@xertra/wormhole-sdk-definitions";
+} from "@xertraplatform/wormhole-sdk-definitions";
 import {
   TokenBridge,
   UniversalAddress,
@@ -43,10 +43,10 @@ import {
   relayInstructionsLayout,
   signedQuoteLayout,
   nativeTokenId,
-} from "@xertra/wormhole-sdk-definitions";
+} from "@xertraplatform/wormhole-sdk-definitions";
 import { signSendWait } from "../../common.js";
 import { DEFAULT_TASK_TIMEOUT } from "../../config.js";
-import { chainToPlatform } from "@xertra/wormhole-sdk-base";
+import { chainToPlatform } from "@xertraplatform/wormhole-sdk-base";
 import type {
   AttestationReceipt as _AttestationReceipt,
   AttestedTransferReceipt,
@@ -71,7 +71,7 @@ import { getGovernedTokens, getGovernorLimits } from "../../whscan-api.js";
 import { Wormhole } from "../../wormhole.js";
 import type { WormholeTransfer } from "../wormholeTransfer.js";
 import type { QuoteWarning } from "../../warnings.js";
-import { RelayStatus } from "@xertra/wormhole-sdk-definitions";
+import { RelayStatus } from "@xertraplatform/wormhole-sdk-definitions";
 import { routes } from "../../index.js";
 
 export class TokenTransfer<N extends Network = Network>

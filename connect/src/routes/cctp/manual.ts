@@ -1,5 +1,5 @@
-import type { Chain, Network } from "@xertra/wormhole-sdk-base";
-import { amount, circle, contracts } from "@xertra/wormhole-sdk-base";
+import type { Chain, Network } from "@xertraplatform/wormhole-sdk-base";
+import { amount, circle, contracts } from "@xertraplatform/wormhole-sdk-base";
 import type {
   ChainAddress,
   ChainContext,
@@ -7,8 +7,8 @@ import type {
   Signer,
   TokenId,
   TransactionId,
-} from "@xertra/wormhole-sdk-definitions";
-import { CircleBridge, isSameToken } from "@xertra/wormhole-sdk-definitions";
+} from "@xertraplatform/wormhole-sdk-definitions";
+import { CircleBridge, isSameToken } from "@xertraplatform/wormhole-sdk-definitions";
 import { signSendWait } from "../../common.js";
 import { CircleTransfer } from "../../protocols/cctp/cctpTransfer.js";
 import type { TransferReceipt } from "../../types.js";

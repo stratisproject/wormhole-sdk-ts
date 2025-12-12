@@ -1,8 +1,8 @@
-import type { Layout, LayoutToType } from '@xertra/wormhole-sdk-connect';
+import type { Layout, LayoutToType } from '@xertraplatform/wormhole-sdk-connect';
 import {
   deserializeLayout,
   layoutItems,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 
 /** Binary layout for postMessage account */
 export const postMessageLayout = [

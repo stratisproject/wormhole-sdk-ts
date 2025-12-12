@@ -1,5 +1,5 @@
-import type { Chain, ChainId, Network } from "@xertra/wormhole-sdk-base";
-import { encoding, toChain, toChainId } from "@xertra/wormhole-sdk-base";
+import type { Chain, ChainId, Network } from "@xertraplatform/wormhole-sdk-base";
+import { encoding, toChain, toChainId } from "@xertraplatform/wormhole-sdk-base";
 import type { AccountAddress, ChainAddress, NativeAddress } from "../../address.js";
 import type { IbcMessageId, WormholeMessageId } from "../../attestation.js";
 import type { TokenAddress, TokenId, TxHash } from "../../types.js";

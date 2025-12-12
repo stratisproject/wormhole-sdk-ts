@@ -5,9 +5,9 @@ import type {
   TransactionInstruction,
 } from '@solana/web3.js';
 import { PublicKey, SystemProgram, SYSVAR_RENT_PUBKEY } from '@solana/web3.js';
-import type { TokenBridge } from '@xertra/wormhole-sdk-connect';
-import { toChainId } from '@xertra/wormhole-sdk-connect';
-import { utils as CoreUtils } from '@xertra/wormhole-sdk-solana-core';
+import type { TokenBridge } from '@xertraplatform/wormhole-sdk-connect';
+import { toChainId } from '@xertraplatform/wormhole-sdk-connect';
+import { utils as CoreUtils } from '@xertraplatform/wormhole-sdk-solana-core';
 import {
   deriveSplTokenMetadataKey,
   SplTokenMetadataProgram,

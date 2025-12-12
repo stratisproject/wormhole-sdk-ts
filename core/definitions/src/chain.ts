@@ -5,8 +5,8 @@ import type {
   Platform,
   Token,
   TokenSymbol,
-} from "@xertra/wormhole-sdk-base";
-import { getTokenByAddress } from "@xertra/wormhole-sdk-base/tokens";
+} from "@xertraplatform/wormhole-sdk-base";
+import { getTokenByAddress } from "@xertraplatform/wormhole-sdk-base/tokens";
 import type { ChainAddress, UniversalOrNative } from "./address.js";
 import { toNative } from "./address.js";
 import type { WormholeMessageId } from "./attestation.js";

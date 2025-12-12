@@ -15,8 +15,8 @@ import {
   type Network,
   type Platform,
   type TokenAddress,
-} from "@xertra/wormhole-sdk-connect";
-import type { SuiChains } from "@xertra/wormhole-sdk-sui";
+} from "@xertraplatform/wormhole-sdk-connect";
+import type { SuiChains } from "@xertraplatform/wormhole-sdk-sui";
 import {
   getObjectFields,
   getPackageId,
@@ -28,7 +28,7 @@ import {
   SuiAddress,
   SuiPlatform,
   SuiUnsignedTransaction,
-} from "@xertra/wormhole-sdk-sui";
+} from "@xertraplatform/wormhole-sdk-sui";
 import "@wormhole-foundation/sdk-sui-core";
 import { getTokenCoinType } from "./utils.js";
 

@@ -16,8 +16,8 @@ import {
 import { getAssociatedTokenAddressSync } from '@solana/spl-token';
 import { getWrappedMeta } from './../../tokenBridge/index.js';
 import { deriveSignerSequenceAddress } from '../accounts/signerSequence.js';
-import type { Chain } from '@xertra/wormhole-sdk-connect';
-import { toChainId } from '@xertra/wormhole-sdk-connect';
+import type { Chain } from '@xertraplatform/wormhole-sdk-connect';
+import { toChainId } from '@xertraplatform/wormhole-sdk-connect';
 
 import BN from 'bn.js';
 

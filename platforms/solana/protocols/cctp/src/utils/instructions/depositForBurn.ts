@@ -1,7 +1,7 @@
 import { TOKEN_PROGRAM_ID } from '@solana/spl-token';
 import type { TransactionInstruction } from '@solana/web3.js';
 import { PublicKey } from '@solana/web3.js';
-import type { UniversalAddress } from '@xertra/wormhole-sdk-connect';
+import type { UniversalAddress } from '@xertraplatform/wormhole-sdk-connect';
 import BN from 'bn.js';
 import { createTokenMessengerProgramInterface } from '../program.js';
 import { findProgramAddress } from './../accounts/index.js';

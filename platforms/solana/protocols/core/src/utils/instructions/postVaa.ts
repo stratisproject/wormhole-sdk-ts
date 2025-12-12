@@ -15,8 +15,8 @@ import {
   deriveGuardianSetKey,
   derivePostedVaaKey,
 } from './../accounts/index.js';
-import type { VAA } from '@xertra/wormhole-sdk-connect';
-import { serializePayload, toChainId } from '@xertra/wormhole-sdk-connect';
+import type { VAA } from '@xertraplatform/wormhole-sdk-connect';
+import { serializePayload, toChainId } from '@xertraplatform/wormhole-sdk-connect';
 import BN from 'bn.js';
 
 /**

@@ -9,7 +9,7 @@ import {
   createVAA,
   encoding,
   toNative,
-} from "@xertra/wormhole-sdk-connect";
+} from "@xertraplatform/wormhole-sdk-connect";
 import { CosmwasmChains, CosmwasmPlatform, chainToNativeDenoms } from "./../../src/index.js";
 
 import "@wormhole-foundation/sdk-cosmwasm-core";

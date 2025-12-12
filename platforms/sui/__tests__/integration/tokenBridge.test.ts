@@ -1,6 +1,6 @@
 import { describe, expect, test } from "@jest/globals";
-import { CONFIG, TokenBridge, toNative } from "@xertra/wormhole-sdk-connect";
-import { utils } from "@xertra/wormhole-sdk-definitions/testing";
+import { CONFIG, TokenBridge, toNative } from "@xertraplatform/wormhole-sdk-connect";
+import { utils } from "@xertraplatform/wormhole-sdk-definitions/testing";
 import { SuiChains, SuiPlatform } from "./../../src/index.js";
 import { SUI_COIN } from "../../src/constants.js";
 

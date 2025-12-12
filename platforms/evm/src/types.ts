@@ -1,7 +1,7 @@
 import type {
   PlatformToChains,
   UniversalOrNative,
-} from '@xertra/wormhole-sdk-connect';
+} from '@xertraplatform/wormhole-sdk-connect';
 import type { TransactionRequest } from 'ethers';
 
 export const unusedNonce = 0;

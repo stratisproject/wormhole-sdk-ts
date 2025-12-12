@@ -1,5 +1,5 @@
 {
-  "name": "@xertra/wormhole-sdk-icons",
+  "name": "@xertraplatform/wormhole-sdk-icons",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -50,7 +50,7 @@
     "dist/cjs"
   ],
   "dependencies": {
-    "@xertra/wormhole-sdk-base": "1.0.0"
+    "@xertraplatform/wormhole-sdk-base": "1.0.0"
   },
   "sideEffects": false,
   "scripts": {

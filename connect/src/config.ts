@@ -1,7 +1,7 @@
-import type { Chain, Network, Platform } from "@xertra/wormhole-sdk-base";
-import { circle, executor } from "@xertra/wormhole-sdk-base";
-import type { ChainConfig, ChainsConfig } from "@xertra/wormhole-sdk-definitions";
-import { buildConfig } from "@xertra/wormhole-sdk-definitions";
+import type { Chain, Network, Platform } from "@xertraplatform/wormhole-sdk-base";
+import { circle, executor } from "@xertraplatform/wormhole-sdk-base";
+import type { ChainConfig, ChainsConfig } from "@xertraplatform/wormhole-sdk-definitions";
+import { buildConfig } from "@xertraplatform/wormhole-sdk-definitions";
 
 export const DEFAULT_TASK_TIMEOUT = 60 * 1000; // 1 minute in milliseconds
 

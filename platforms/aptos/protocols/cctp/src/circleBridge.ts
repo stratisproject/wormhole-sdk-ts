@@ -9,7 +9,7 @@ import {
   AptosPlatform,
   AptosUnsignedTransaction,
   type AptosChains,
-} from "@xertra/wormhole-sdk-aptos";
+} from "@xertraplatform/wormhole-sdk-aptos";
 import type {
   AccountAddress,
   ChainAddress,
@@ -18,8 +18,8 @@ import type {
   Platform,
   CircleTransferMessage,
   Contracts,
-} from "@xertra/wormhole-sdk-connect";
-import { CircleBridge, circle, encoding, keccak256 } from "@xertra/wormhole-sdk-connect";
+} from "@xertraplatform/wormhole-sdk-connect";
+import { CircleBridge, circle, encoding, keccak256 } from "@xertraplatform/wormhole-sdk-connect";
 import type { AptosCCTPMoveScripts } from "./moveScripts.js";
 import { aptosCCTPMoveScripts } from "./moveScripts.js";
 

@@ -7,7 +7,7 @@ import type {
   StaticPlatformMethods,
   TokenId,
   TxHash,
-} from "@xertra/wormhole-sdk-connect";
+} from "@xertraplatform/wormhole-sdk-connect";
 import {
   PlatformContext,
   Wormhole,
@@ -16,7 +16,7 @@ import {
   nativeChainIds,
   decimals as nativeDecimals,
   networkPlatformConfigs,
-} from "@xertra/wormhole-sdk-connect";
+} from "@xertraplatform/wormhole-sdk-connect";
 
 import type { PaginatedCoins } from "@mysten/sui/client";
 import { SuiClient } from "@mysten/sui/client";

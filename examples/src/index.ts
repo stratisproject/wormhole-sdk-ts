@@ -1,14 +1,14 @@
 // EXAMPLE_IMPORTS
-import { wormhole } from "@xertra/wormhole-sdk";
+import { wormhole } from "@xertraplatform/wormhole-sdk";
 // EXAMPLE_IMPORTS
 
-import { Wormhole, amount, signSendWait } from "@xertra/wormhole-sdk";
-import algorand from "@xertra/wormhole-sdk/algorand";
-import aptos from "@xertra/wormhole-sdk/aptos";
-import cosmwasm from "@xertra/wormhole-sdk/cosmwasm";
-import evm from "@xertra/wormhole-sdk/evm";
-import solana from "@xertra/wormhole-sdk/solana";
-import sui from "@xertra/wormhole-sdk/sui";
+import { Wormhole, amount, signSendWait } from "@xertraplatform/wormhole-sdk";
+import algorand from "@xertraplatform/wormhole-sdk/algorand";
+import aptos from "@xertraplatform/wormhole-sdk/aptos";
+import cosmwasm from "@xertraplatform/wormhole-sdk/cosmwasm";
+import evm from "@xertraplatform/wormhole-sdk/evm";
+import solana from "@xertraplatform/wormhole-sdk/solana";
+import sui from "@xertraplatform/wormhole-sdk/sui";
 import { getSigner } from "./helpers/index.js";
 
 (async function () {

@@ -1,5 +1,5 @@
 {
-  "name": "@xertra/wormhole-sdk-solana-core",
+  "name": "@xertraplatform/wormhole-sdk-solana-core",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -45,8 +45,8 @@
     "prettier": "prettier --write ./src"
   },
   "dependencies": {
-    "@xertra/wormhole-sdk-connect": "1.0.0",
-    "@xertra/wormhole-sdk-solana": "1.0.0",
+    "@xertraplatform/wormhole-sdk-connect": "1.0.0",
+    "@xertraplatform/wormhole-sdk-solana": "1.0.0",
     "@coral-xyz/borsh": "0.29.0",
     "@coral-xyz/anchor": "0.29.0",
     "@solana/web3.js": "^1.95.8"

@@ -1,5 +1,5 @@
 {
-  "name": "@xertra/wormhole-sdk-cosmwasm",
+  "name": "@xertraplatform/wormhole-sdk-cosmwasm",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -53,7 +53,7 @@
     "test": "jest --config ./jest.config.ts"
   },
   "dependencies": {
-    "@xertra/wormhole-sdk-connect": "1.0.0",
+    "@xertraplatform/wormhole-sdk-connect": "1.0.0",
     "@cosmjs/cosmwasm-stargate": "^0.32.0",
     "@cosmjs/proto-signing": "^0.32.0",
     "@cosmjs/stargate": "^0.32.0",

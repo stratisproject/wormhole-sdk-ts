@@ -1,10 +1,10 @@
-import type { Layout, LayoutToType } from "@xertra/wormhole-sdk-base";
+import type { Layout, LayoutToType } from "@xertraplatform/wormhole-sdk-base";
 import {
   deserializeLayout,
   encoding,
   layoutDiscriminator,
   serializeLayout,
-} from "@xertra/wormhole-sdk-base";
+} from "@xertraplatform/wormhole-sdk-base";
 
 import type { ComposeLiteral, LayoutLiteral, LayoutOf, PayloadLiteral } from "./registration.js";
 import { composeLiteral, payloadFactory } from "./registration.js";

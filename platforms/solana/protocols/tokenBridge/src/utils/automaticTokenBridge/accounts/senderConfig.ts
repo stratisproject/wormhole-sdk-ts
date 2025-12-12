@@ -1,4 +1,4 @@
-import { utils } from '@xertra/wormhole-sdk-solana';
+import { utils } from '@xertraplatform/wormhole-sdk-solana';
 import type { PublicKey, PublicKeyInitData } from '@solana/web3.js';
 
 export interface SenderConfig {

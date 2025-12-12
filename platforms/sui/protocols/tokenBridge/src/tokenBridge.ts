@@ -14,7 +14,7 @@ import type {
   TokenAddress,
   TokenBridge,
   TokenId,
-} from "@xertra/wormhole-sdk-connect";
+} from "@xertraplatform/wormhole-sdk-connect";
 import {
   ErrNotWrapped,
   UniversalAddress,
@@ -27,10 +27,10 @@ import {
   toChain,
   toChainId,
   toNative,
-} from "@xertra/wormhole-sdk-connect";
+} from "@xertraplatform/wormhole-sdk-connect";
 
-import type { SuiBuildOutput, SuiChains } from "@xertra/wormhole-sdk-sui";
-import { SuiAddress } from "@xertra/wormhole-sdk-sui";
+import type { SuiBuildOutput, SuiChains } from "@xertraplatform/wormhole-sdk-sui";
+import { SuiAddress } from "@xertraplatform/wormhole-sdk-sui";
 import {
   SuiPlatform,
   SuiUnsignedTransaction,
@@ -49,7 +49,7 @@ import {
   isValidSuiType,
   publishPackage,
   trimSuiType,
-} from "@xertra/wormhole-sdk-sui";
+} from "@xertraplatform/wormhole-sdk-sui";
 import { getTokenCoinType, getTokenFromTokenRegistry } from "./utils.js";
 
 import "@wormhole-foundation/sdk-sui-core";

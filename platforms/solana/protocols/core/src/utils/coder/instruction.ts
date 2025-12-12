@@ -1,8 +1,8 @@
 import type { Idl, Instruction, InstructionCoder } from '@coral-xyz/anchor';
 import type { Layout } from 'buffer-layout';
-import { encoding } from '@xertra/wormhole-sdk-connect';
-import type { anchor } from '@xertra/wormhole-sdk-solana';
-import { camelCase, upperFirst } from '@xertra/wormhole-sdk-solana';
+import { encoding } from '@xertraplatform/wormhole-sdk-connect';
+import type { anchor } from '@xertraplatform/wormhole-sdk-solana';
+import { camelCase, upperFirst } from '@xertraplatform/wormhole-sdk-solana';
 import * as borsh from '@coral-xyz/borsh';
 import { IdlCoder } from './idl.js';
 

@@ -1,5 +1,5 @@
-import type { Chain, ChainToPlatform, Platform } from "@xertra/wormhole-sdk-base";
-import { chainToPlatform, platformToAddressFormat } from "@xertra/wormhole-sdk-base";
+import type { Chain, ChainToPlatform, Platform } from "@xertraplatform/wormhole-sdk-base";
+import { chainToPlatform, platformToAddressFormat } from "@xertraplatform/wormhole-sdk-base";
 import type { WormholeRegistry } from "./registry.js";
 
 //TODO BRRRR circular include!!
