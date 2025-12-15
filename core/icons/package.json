@@ -1,6 +1,6 @@
 {
   "name": "@xertraplatform/wormhole-sdk-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stratisproject/wormhole-sdk-ts.git"
@@ -50,7 +50,7 @@
     "dist/cjs"
   ],
   "dependencies": {
-    "@xertraplatform/wormhole-sdk-base": "1.0.0"
+    "@xertraplatform/wormhole-sdk-base": "1.0.1"
   },
   "sideEffects": false,
   "scripts": {

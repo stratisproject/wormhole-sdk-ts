@@ -1,6 +1,6 @@
 {
   "name": "@xertraplatform/wormhole-scripts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "Apache-2.0",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -29,22 +29,22 @@
     "tsx": "^4.7.0"
   },
   "dependencies": {
-    "@xertraplatform/wormhole-sdk-connect": "1.0.0",
-    "@xertraplatform/wormhole-sdk-evm": "1.0.0",
-    "@xertraplatform/wormhole-sdk-evm-core": "1.0.0",
-    "@xertraplatform/wormhole-sdk-evm-tokenbridge": "1.0.0",
-    "@xertraplatform/wormhole-sdk-evm-cctp": "1.0.0",
-    "@xertraplatform/wormhole-sdk-evm-portico": "1.0.0",
-    "@xertraplatform/wormhole-sdk-solana": "1.0.0",
-    "@xertraplatform/wormhole-sdk-solana-core": "1.0.0",
-    "@xertraplatform/wormhole-sdk-solana-tokenbridge": "1.0.0",
-    "@xertraplatform/wormhole-sdk-solana-cctp": "1.0.0",
-    "@xertraplatform/wormhole-sdk-cosmwasm": "1.0.0",
-    "@xertraplatform/wormhole-sdk-cosmwasm-core": "1.0.0",
-    "@xertraplatform/wormhole-sdk-cosmwasm-tokenbridge": "1.0.0",
-    "@xertraplatform/wormhole-sdk-cosmwasm-ibc": "1.0.0",
-    "@xertraplatform/wormhole-sdk-algorand": "1.0.0",
-    "@xertraplatform/wormhole-sdk-algorand-core": "1.0.0",
-    "@xertraplatform/wormhole-sdk-algorand-tokenbridge": "1.0.0"
+    "@xertraplatform/wormhole-sdk-connect": "1.0.1",
+    "@xertraplatform/wormhole-sdk-evm": "1.0.1",
+    "@xertraplatform/wormhole-sdk-evm-core": "1.0.1",
+    "@xertraplatform/wormhole-sdk-evm-tokenbridge": "1.0.1",
+    "@xertraplatform/wormhole-sdk-evm-cctp": "1.0.1",
+    "@xertraplatform/wormhole-sdk-evm-portico": "1.0.1",
+    "@xertraplatform/wormhole-sdk-solana": "1.0.1",
+    "@xertraplatform/wormhole-sdk-solana-core": "1.0.1",
+    "@xertraplatform/wormhole-sdk-solana-tokenbridge": "1.0.1",
+    "@xertraplatform/wormhole-sdk-solana-cctp": "1.0.1",
+    "@xertraplatform/wormhole-sdk-cosmwasm": "1.0.1",
+    "@xertraplatform/wormhole-sdk-cosmwasm-core": "1.0.1",
+    "@xertraplatform/wormhole-sdk-cosmwasm-tokenbridge": "1.0.1",
+    "@xertraplatform/wormhole-sdk-cosmwasm-ibc": "1.0.1",
+    "@xertraplatform/wormhole-sdk-algorand": "1.0.1",
+    "@xertraplatform/wormhole-sdk-algorand-core": "1.0.1",
+    "@xertraplatform/wormhole-sdk-algorand-tokenbridge": "1.0.1"
   }
 }
