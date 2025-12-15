@@ -8,8 +8,8 @@ import {
 } from "@xertraplatform/wormhole-sdk-connect";
 import { utils } from "@xertraplatform/wormhole-sdk-definitions/testing";
 
-import "@wormhole-foundation/sdk-aptos-core";
-import "@wormhole-foundation/sdk-aptos-tokenbridge";
+import "@xertraplatform/wormhole-sdk-aptos-core";
+import "@xertraplatform/wormhole-sdk-aptos-tokenbridge";
 
 import { APTOS_COIN, AptosChains, AptosPlatform } from "./../../src/index.js";
 

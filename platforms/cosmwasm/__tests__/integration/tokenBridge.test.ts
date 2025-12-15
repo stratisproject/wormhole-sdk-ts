@@ -12,8 +12,8 @@ import {
 } from "@xertraplatform/wormhole-sdk-connect";
 import { CosmwasmChains, CosmwasmPlatform, chainToNativeDenoms } from "./../../src/index.js";
 
-import "@wormhole-foundation/sdk-cosmwasm-core";
-import "@wormhole-foundation/sdk-cosmwasm-tokenbridge";
+import "@xertraplatform/wormhole-sdk-cosmwasm-core";
+import "@xertraplatform/wormhole-sdk-cosmwasm-tokenbridge";
 import nock from "nock";
 import path from "path";
 

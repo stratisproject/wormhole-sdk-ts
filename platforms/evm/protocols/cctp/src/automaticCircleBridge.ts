@@ -27,7 +27,7 @@ import {
   addFrom,
 } from '@xertraplatform/wormhole-sdk-evm';
 
-import '@wormhole-foundation/sdk-evm-tokenbridge';
+import '@xertraplatform/wormhole-sdk-evm-tokenbridge';
 import { EvmWormholeCore } from '@xertraplatform/wormhole-sdk-evm-core';
 
 export class EvmAutomaticCircleBridge<N extends Network, C extends EvmChains>

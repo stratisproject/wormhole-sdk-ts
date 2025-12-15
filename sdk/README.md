@@ -13,7 +13,7 @@ The Wormhole Typescript SDK is useful for interacting with the chains Wormhole s
 Install the (meta) package
 
 ```bash
-npm install @wormhole-foundation/sdk
+npm install @xertraplatform/wormhole-sdk
 ```
 
 This package combines all the individual packages in a way that makes setup easier while still allowing for tree shaking. 
@@ -24,13 +24,13 @@ Alternatively, for an advanced user, install a specific set of the packages publ
 
 ```bash
 # constants
-npm install @wormhole-foundation/sdk-base
+npm install @xertraplatform/wormhole-sdk-base
 # contract interfaces, basic types, vaa payload definitions
-npm install @wormhole-foundation/sdk-definitions
+npm install @xertraplatform/wormhole-sdk-definitions
 # Evm specific utilities
-npm install @wormhole-foundation/sdk-evm
+npm install @xertraplatform/wormhole-sdk-evm
 # Evm TokenBridge protocol client
-npm install @wormhole-foundation/sdk-evm-tokenbridge
+npm install @xertraplatform/wormhole-sdk-evm-tokenbridge
 ```
 
 ## Usage

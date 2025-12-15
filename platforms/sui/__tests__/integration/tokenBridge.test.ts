@@ -4,8 +4,8 @@ import { utils } from "@xertraplatform/wormhole-sdk-definitions/testing";
 import { SuiChains, SuiPlatform } from "./../../src/index.js";
 import { SUI_COIN } from "../../src/constants.js";
 
-import "@wormhole-foundation/sdk-sui-core";
-import "@wormhole-foundation/sdk-sui-tokenbridge";
+import "@xertraplatform/wormhole-sdk-sui-core";
+import "@xertraplatform/wormhole-sdk-sui-tokenbridge";
 
 import nock from "nock";
 import path from "path";

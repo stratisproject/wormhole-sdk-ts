@@ -1,5 +1,5 @@
 import { describe, expect, test } from "@jest/globals";
-import { amount } from "@wormhole-foundation/sdk-base";
+import { amount } from "@xertraplatform/wormhole-sdk-base";
 import { TokenTransfer } from "../src/protocols/tokenBridge/tokenTransfer.js";
 
 describe("TokenTransfer", () => {

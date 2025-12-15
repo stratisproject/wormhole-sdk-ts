@@ -1,4 +1,4 @@
-import { encoding } from "@xertra/wormhole-sdk-base";
+import { encoding } from "@xertraplatform/wormhole-sdk-base";
 import "../src/protocols/circleBridge/automaticCircleBridgeLayout.js";
 import { deserialize, deserializePayload } from "./../src/vaa/index.js";
 

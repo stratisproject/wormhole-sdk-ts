@@ -28,7 +28,7 @@ import {
 import type { Provider, TransactionRequest } from 'ethers';
 import { ethers_contracts } from './index.js';
 
-import '@wormhole-foundation/sdk-evm-core';
+import '@xertraplatform/wormhole-sdk-evm-core';
 import { EvmWormholeCore } from '@xertraplatform/wormhole-sdk-evm-core';
 
 export class EvmAutomaticTokenBridge<N extends Network, C extends EvmChains>

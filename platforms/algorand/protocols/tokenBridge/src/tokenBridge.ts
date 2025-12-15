@@ -46,7 +46,7 @@ import {
   modelsv2,
 } from "algosdk";
 
-import "@wormhole-foundation/sdk-algorand-core";
+import "@xertraplatform/wormhole-sdk-algorand-core";
 
 export const TransferMethodSelector = ABIMethod.fromSignature("portal_transfer(byte[])byte[]");
 

@@ -53,7 +53,7 @@ import {
   createTransferInstruction,
   getAssociatedTokenAddressSync,
 } from '@solana/spl-token';
-import '@wormhole-foundation/sdk-solana-core';
+import '@xertraplatform/wormhole-sdk-solana-core';
 
 import BN from 'bn.js';
 import type {

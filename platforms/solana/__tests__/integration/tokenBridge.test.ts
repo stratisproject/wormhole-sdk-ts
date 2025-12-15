@@ -9,8 +9,8 @@ import {
 } from '@xertraplatform/wormhole-sdk-connect';
 import { utils } from '@xertraplatform/wormhole-sdk-definitions/testing';
 
-import '@wormhole-foundation/sdk-solana-core';
-import '@wormhole-foundation/sdk-solana-tokenbridge';
+import '@xertraplatform/wormhole-sdk-solana-core';
+import '@xertraplatform/wormhole-sdk-solana-tokenbridge';
 
 import {
   SolanaChains,

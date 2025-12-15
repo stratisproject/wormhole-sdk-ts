@@ -52,7 +52,7 @@ import {
 } from "@xertraplatform/wormhole-sdk-sui";
 import { getTokenCoinType, getTokenFromTokenRegistry } from "./utils.js";
 
-import "@wormhole-foundation/sdk-sui-core";
+import "@xertraplatform/wormhole-sdk-sui-core";
 
 export class SuiTokenBridge<N extends Network, C extends SuiChains> implements TokenBridge<N, C> {
   readonly coreBridgeObjectId: string;

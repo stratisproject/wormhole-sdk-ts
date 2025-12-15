@@ -1,9 +1,9 @@
 import * as publicRpcMock from "./mocks/publicrpc.js"; // Should be first
 
 import { describe, expect, test } from "@jest/globals";
-import { Platform, platform } from "@wormhole-foundation/sdk-base";
-import { ChainContext, PlatformContext, RpcConnection } from "@wormhole-foundation/sdk-definitions";
-import { mocks, utils } from "@wormhole-foundation/sdk-definitions/testing";
+import { Platform, platform } from "@xertraplatform/wormhole-sdk-base";
+import { ChainContext, PlatformContext, RpcConnection } from "@xertraplatform/wormhole-sdk-definitions";
+import { mocks, utils } from "@xertraplatform/wormhole-sdk-definitions/testing";
 
 import { Wormhole, networkPlatformConfigs } from "./../src/index.js";
 

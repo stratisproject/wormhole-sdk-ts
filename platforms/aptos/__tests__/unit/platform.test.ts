@@ -4,8 +4,8 @@ import { DEFAULT_NETWORK, CONFIG, chainToPlatform, chains } from "@xertraplatfor
 
 import { AptosChains, AptosPlatform } from "./../../src/index.js";
 
-import "@wormhole-foundation/sdk-aptos-core";
-import "@wormhole-foundation/sdk-aptos-tokenbridge";
+import "@xertraplatform/wormhole-sdk-aptos-core";
+import "@xertraplatform/wormhole-sdk-aptos-tokenbridge";
 import { Aptos, AptosConfig, Network as AptosNetwork } from "@aptos-labs/ts-sdk";
 
 const network = DEFAULT_NETWORK;

@@ -1,4 +1,4 @@
-import { encoding } from "@xertra/wormhole-sdk-base";
+import { encoding } from "@xertraplatform/wormhole-sdk-base";
 import { SignatureUtils, VAA, keccak256 } from "../src/index.js";
 import { MockEmitter, MockGuardians } from "../src/testing/mocks/guardian.js";
 import { makeUniversalAddress } from "../src/testing/utils/index.js";

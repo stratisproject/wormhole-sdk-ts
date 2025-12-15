@@ -6,11 +6,11 @@
 //   Signer,
 //   WormholeConfig,
 //   nativeChainAddress,
-// } from "@wormhole-foundation/sdk-connect";
+// } from "@xertraplatform/wormhole-sdk-connect";
 //
-// import { getCosmwasmSigner } from "@wormhole-foundation/sdk-cosmwasm";
-// import { getEvmSigner } from "@wormhole-foundation/sdk-evm";
-// import { getSolanaSigner } from "@wormhole-foundation/sdk-solana";
+// import { getCosmwasmSigner } from "@xertraplatform/wormhole-sdk-cosmwasm";
+// import { getEvmSigner } from "@xertraplatform/wormhole-sdk-evm";
+// import { getSolanaSigner } from "@xertraplatform/wormhole-sdk-solana";
 //
 // import { ETH_PRIVATE_KEY, SOLANA_PRIVATE_KEY, TERRA_PRIVATE_KEY } from "./consts";
 //

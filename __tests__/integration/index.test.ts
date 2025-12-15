@@ -7,10 +7,10 @@ import {
   Platform,
   Wormhole,
   Chain,
-} from "@wormhole-foundation/sdk-connect";
-import { utils } from "@wormhole-foundation/sdk-definitions/testing";
-import { EvmPlatform } from "@wormhole-foundation/sdk-evm";
-import { SolanaPlatform } from "@wormhole-foundation/sdk-solana";
+} from "@xertraplatform/wormhole-sdk-connect";
+import { utils } from "@xertraplatform/wormhole-sdk-definitions/testing";
+import { EvmPlatform } from "@xertraplatform/wormhole-sdk-evm";
+import { SolanaPlatform } from "@xertraplatform/wormhole-sdk-solana";
 
 const allPlatformCtrs = [SolanaPlatform, EvmPlatform];
 

@@ -1,6 +1,6 @@
 import { describe } from "@jest/globals";
-import { platform } from "@wormhole-foundation/sdk-base";
-import { mocks } from "@wormhole-foundation/sdk-definitions/testing";
+import { platform } from "@xertraplatform/wormhole-sdk-base";
+import { mocks } from "@xertraplatform/wormhole-sdk-definitions/testing";
 import { Wormhole, networkPlatformConfigs } from "./../src/index.js";
 
 const network: "Testnet" = "Testnet";

@@ -1,4 +1,4 @@
-import { circle, encoding } from "@xertra/wormhole-sdk-base";
+import { circle, encoding } from "@xertraplatform/wormhole-sdk-base";
 import {
   serializePayload,
   deserializePayload,

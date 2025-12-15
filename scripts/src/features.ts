@@ -6,21 +6,21 @@ import { SolanaPlatform } from "@xertraplatform/wormhole-sdk-solana";
 import { CosmwasmPlatform } from "@xertraplatform/wormhole-sdk-cosmwasm";
 import { AlgorandPlatform } from "@xertraplatform/wormhole-sdk-algorand";
 
-import "@wormhole-foundation/sdk-evm-core";
-import "@wormhole-foundation/sdk-evm-tokenbridge";
-import "@wormhole-foundation/sdk-evm-cctp";
-import "@wormhole-foundation/sdk-evm-portico";
+import "@xertraplatform/wormhole-sdk-evm-core";
+import "@xertraplatform/wormhole-sdk-evm-tokenbridge";
+import "@xertraplatform/wormhole-sdk-evm-cctp";
+import "@xertraplatform/wormhole-sdk-evm-portico";
 
-import "@wormhole-foundation/sdk-solana-core";
-import "@wormhole-foundation/sdk-solana-tokenbridge";
-import "@wormhole-foundation/sdk-solana-cctp";
+import "@xertraplatform/wormhole-sdk-solana-core";
+import "@xertraplatform/wormhole-sdk-solana-tokenbridge";
+import "@xertraplatform/wormhole-sdk-solana-cctp";
 
-import "@wormhole-foundation/sdk-cosmwasm-core";
-import "@wormhole-foundation/sdk-cosmwasm-tokenbridge";
-import "@wormhole-foundation/sdk-cosmwasm-ibc";
+import "@xertraplatform/wormhole-sdk-cosmwasm-core";
+import "@xertraplatform/wormhole-sdk-cosmwasm-tokenbridge";
+import "@xertraplatform/wormhole-sdk-cosmwasm-ibc";
 
-import "@wormhole-foundation/sdk-algorand-core";
-import "@wormhole-foundation/sdk-algorand-tokenbridge";
+import "@xertraplatform/wormhole-sdk-algorand-core";
+import "@xertraplatform/wormhole-sdk-algorand-tokenbridge";
 
 type SupportedProtocols = Record<string, Record<string, boolean>>;
 

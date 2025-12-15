@@ -2,7 +2,7 @@ import type { Chain} from "@xertraplatform/wormhole-sdk-connect";
 import { Wormhole, platformToChains } from "@xertraplatform/wormhole-sdk-connect";
 import { CosmwasmPlatform } from "@xertraplatform/wormhole-sdk-cosmwasm";
 
-import "@wormhole-foundation/sdk-cosmwasm-ibc";
+import "@xertraplatform/wormhole-sdk-cosmwasm-ibc";
 
 (async function () {
   const wh = new Wormhole("Mainnet", [CosmwasmPlatform]);

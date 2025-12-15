@@ -8,8 +8,8 @@ import { getSuggestedUpdates } from "./foreignAssets";
 import type { TokensConfig } from "../types";
 import { tokenFilePath } from "./utils";
 
-import "@wormhole-foundation/sdk-evm-tokenbridge";
-import "@wormhole-foundation/sdk-solana-tokenbridge";
+import "@xertraplatform/wormhole-sdk-evm-tokenbridge";
+import "@xertraplatform/wormhole-sdk-solana-tokenbridge";
 
 // warning: be careful optimizing the RPC calls in this script, you may 429 yourself
 // slow and steady, or something like that

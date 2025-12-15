@@ -1,4 +1,4 @@
-import { encoding } from "@xertra/wormhole-sdk-base";
+import { encoding } from "@xertraplatform/wormhole-sdk-base";
 import { payloadDiscriminator, deserialize } from "./../src/vaa/index.js";
 import "../src/protocols/tokenBridge/index.js";
 

@@ -52,7 +52,7 @@ import {
   getAccount,
   getAssociatedTokenAddressSync,
 } from '@solana/spl-token';
-import '@wormhole-foundation/sdk-solana-core';
+import '@xertraplatform/wormhole-sdk-solana-core';
 import { registeredTokens } from './consts.js';
 
 import BN from 'bn.js';

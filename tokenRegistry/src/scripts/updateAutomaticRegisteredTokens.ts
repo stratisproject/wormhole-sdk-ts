@@ -7,8 +7,8 @@ import * as fs from "fs";
 import type { TokensConfig } from "../types";
 import { automaticTokensFilePath } from "./utils";
 
-import "@wormhole-foundation/sdk-evm-tokenbridge";
-import "@wormhole-foundation/sdk-solana-tokenbridge";
+import "@xertraplatform/wormhole-sdk-evm-tokenbridge";
+import "@xertraplatform/wormhole-sdk-solana-tokenbridge";
 
 const checkEnvConfig = async (env: Network, tokensConfig: TokensConfig) => {
   const wh = new Wormhole(env, [EvmPlatform, SolanaPlatform]);

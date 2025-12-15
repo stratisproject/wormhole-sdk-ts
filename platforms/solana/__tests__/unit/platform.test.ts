@@ -27,8 +27,8 @@ import {
 
 import { SolanaChains, SolanaPlatform } from './../../src/index.js';
 
-import '@wormhole-foundation/sdk-solana-core';
-import '@wormhole-foundation/sdk-solana-tokenbridge';
+import '@xertraplatform/wormhole-sdk-solana-core';
+import '@xertraplatform/wormhole-sdk-solana-tokenbridge';
 
 const { getDefaultProvider } = jest.requireMock('@solana/web3.js') as {
   getDefaultProvider: jest.Mock;

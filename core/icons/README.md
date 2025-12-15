@@ -9,7 +9,7 @@ This package contains icons for all of the Wormhole connected [chains](https://d
 Install this package
 
 ```bash
-npm install @wormhole-foundation/sdk-icons
+npm install @xertraplatform/wormhole-sdk-icons
 ```
 
 ## Usage

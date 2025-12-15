@@ -7,8 +7,8 @@ import { getSuggestedUpdates } from "./foreignAssets";
 import type { TokensConfig } from "../types";
 import { mergeDeep, tokenFilePath } from "./utils";
 
-import "@wormhole-foundation/sdk-evm-tokenbridge";
-import "@wormhole-foundation/sdk-solana-tokenbridge";
+import "@xertraplatform/wormhole-sdk-evm-tokenbridge";
+import "@xertraplatform/wormhole-sdk-solana-tokenbridge";
 
 const testnetTokens = fs.readFileSync(tokenFilePath("Testnet"), "utf-8");
 const TESTNET_TOKENS = JSON.parse(testnetTokens) as TokensConfig;

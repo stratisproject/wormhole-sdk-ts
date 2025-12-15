@@ -4,8 +4,8 @@ import { DEFAULT_NETWORK, CONFIG, chainToPlatform, chains } from "@xertraplatfor
 
 import { SuiChains, SuiPlatform } from "./../../src/index.js";
 
-import "@wormhole-foundation/sdk-sui-core";
-import "@wormhole-foundation/sdk-sui-tokenbridge";
+import "@xertraplatform/wormhole-sdk-sui-core";
+import "@xertraplatform/wormhole-sdk-sui-tokenbridge";
 import { SuiClient } from "@mysten/sui/client";
 
 const network = DEFAULT_NETWORK;

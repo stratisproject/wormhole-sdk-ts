@@ -36,7 +36,7 @@ import { FEE_TIER, supportedTokens } from './consts.js';
 import { EvmWormholeCore } from '@xertraplatform/wormhole-sdk-evm-core';
 import { EvmTokenBridge } from '@xertraplatform/wormhole-sdk-evm-tokenbridge';
 
-import '@wormhole-foundation/sdk-evm-tokenbridge';
+import '@xertraplatform/wormhole-sdk-evm-tokenbridge';
 
 export class EvmPorticoBridge<
   N extends Network,

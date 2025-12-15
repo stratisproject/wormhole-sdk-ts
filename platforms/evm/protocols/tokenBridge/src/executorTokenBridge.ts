@@ -28,7 +28,7 @@ import {
 } from '@xertraplatform/wormhole-sdk-evm';
 import type { Provider, TransactionRequest } from 'ethers';
 import { Contract } from 'ethers';
-import '@wormhole-foundation/sdk-evm-core';
+import '@xertraplatform/wormhole-sdk-evm-core';
 import { EvmWormholeCore } from '@xertraplatform/wormhole-sdk-evm-core';
 import {
   relayInstructionsLayout,

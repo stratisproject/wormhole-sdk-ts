@@ -1,4 +1,4 @@
-import type { Network } from "@xertra/wormhole-sdk-connect";
+import type { Network } from "@xertraplatform/wormhole-sdk-connect";
 
 // Path for tokens that are acceptable to the Automatic Token Bridge
 export const automaticTokensFilePath = (env: Network) => `src/tokens/${env}AutomaticTokens.json`;

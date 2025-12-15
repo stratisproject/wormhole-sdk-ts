@@ -29,7 +29,7 @@ import {
   SuiPlatform,
   SuiUnsignedTransaction,
 } from "@xertraplatform/wormhole-sdk-sui";
-import "@wormhole-foundation/sdk-sui-core";
+import "@xertraplatform/wormhole-sdk-sui-core";
 import { getTokenCoinType } from "./utils.js";
 
 export interface TokenInfo {
