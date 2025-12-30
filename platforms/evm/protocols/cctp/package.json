@@ -1,6 +1,6 @@
 {
   "name": "@xertraplatform/wormhole-sdk-evm-cctp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stratisproject/wormhole-sdk-ts.git"
@@ -53,9 +53,9 @@
     "prettier": "prettier --write ./src"
   },
   "dependencies": {
-    "@xertraplatform/wormhole-sdk-connect": "1.0.3",
-    "@xertraplatform/wormhole-sdk-evm": "1.0.3",
-    "@xertraplatform/wormhole-sdk-evm-core": "1.0.3",
+    "@xertraplatform/wormhole-sdk-connect": "1.0.4",
+    "@xertraplatform/wormhole-sdk-evm": "1.0.4",
+    "@xertraplatform/wormhole-sdk-evm-core": "1.0.4",
     "ethers": "^6.5.1"
   },
   "type": "module",

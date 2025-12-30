@@ -1,6 +1,6 @@
 {
   "name": "@xertraplatform/wormhole-sdk-algorand-tokenbridge",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stratisproject/wormhole-sdk-ts.git"
@@ -45,9 +45,9 @@
     "prettier": "prettier --write ./src"
   },
   "dependencies": {
-    "@xertraplatform/wormhole-sdk-connect": "1.0.3",
-    "@xertraplatform/wormhole-sdk-algorand": "1.0.3",
-    "@xertraplatform/wormhole-sdk-algorand-core": "1.0.3"
+    "@xertraplatform/wormhole-sdk-connect": "1.0.4",
+    "@xertraplatform/wormhole-sdk-algorand": "1.0.4",
+    "@xertraplatform/wormhole-sdk-algorand-core": "1.0.4"
   },
   "type": "module",
   "exports": {
