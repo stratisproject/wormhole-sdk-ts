@@ -6,8 +6,8 @@ import type { Chain } from "../chains.js";
 export const nftBridgeContracts = [[
   "Mainnet", [
     ["Solana",    "WnFt12ZrnzZrFZkt2xsNsaNWoQribnuQ5B5FrDbwDhD"],
-    ["Ethereum",  "0x6FFd7EdE62328b3Af38FCD61461Bbfc52F5651fE"],
-    ["Bsc",       "0x5a58505a96D1dbf8dF91cB21B54419FC36e93fdE"],
+    ["Ethereum",  "0x52F33369152bDB50006dc068b65C85449BEFB9EA"],
+    ["Bsc",       "0x52F33369152bDB50006dc068b65C85449BEFB9EA"],
     ["Polygon",   "0x90BBd86a6Fe93D3bc3ed6335935447E75fAb7fCf"],
     ["Avalanche", "0xf7B6737Ca9c4e08aE573F75A97B73D7a813f5De5"],
     ["Fantom",    "0xA9c7119aBDa80d4a4E0C06C8F4d8cF5893234535"],
@@ -18,6 +18,7 @@ export const nftBridgeContracts = [[
     ["Arbitrum",  "0x3dD14D553cFD986EAC8e3bddF629d82073e188c8"],
     ["Base",      "0xDA3adC6621B2677BEf9aD26598e6939CF0D92f88"],
     ["Optimism",  "0xfE8cD454b4A1CA468B57D79c0cc77Ef5B6f64585"],
+    ["Xertra",    "0xB4322307E407682E5d4c813C9a93C0ef6505cd6C"],
   ]], [
   "Testnet", [
     ["Solana",          "2rHhojZ7hpu1zA91nvZmT8TqWWvMcKmmNBCr2mKTtMq4"],

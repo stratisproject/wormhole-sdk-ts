@@ -14,7 +14,7 @@ export type WormholeConfig<N extends Network = Network, P extends Platform = Pla
 
 export const CONFIG = {
   Mainnet: {
-    api: "https://api.wormholescan.io",
+    api: "https://api.wormhole.xertra.com",
     circleAPI: circle.circleAPI("Mainnet"),
     executorAPI: executor.executorAPI("Mainnet"),
     chains: buildConfig("Mainnet"),

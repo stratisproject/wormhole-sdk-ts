@@ -19,6 +19,7 @@ export enum ConsistencyLevels {
 // is completed, the transaction is considered safe
 const safeThresholds = [
   ["Ethereum", 32], // number of rounds in an epoch
+  ["Xertra", 32], // number of rounds in an epoch
 ] as const satisfies MapLevel<Chain, number>;
 export const safeThreshold = constMap(safeThresholds);
 
@@ -77,6 +78,7 @@ const finalityThresholds = [
   ["Stacks",    240], // tied to BTC finality
   ["Moca",      0],
   ["MegaETH",   4096],
+  ["Xertra",    72],
   // Testnets
   ["Sepolia", 72],
   ["ArbitrumSepolia", 4096],

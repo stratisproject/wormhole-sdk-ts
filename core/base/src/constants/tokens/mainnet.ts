@@ -33,249 +33,30 @@ const mainnetTokenEntries = [
         },
       ],
       [
-        "WBTC",
-        {
-          symbol: "WBTC",
-          decimals: 8,
-          address: "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
-        },
-      ],
-      [
-        "USDT",
-        {
-          symbol: "USDT",
-          decimals: 6,
-          address: "0xdac17f958d2ee523a2206206994597c13d831ec7",
-        },
-      ],
-      [
-        "DAI",
-        {
-          symbol: "DAI",
-          decimals: 18,
-          address: "0x6b175474e89094c44da98b954eedeac495271d0f",
-        },
-      ],
-      [
-        "BUSD",
-        {
-          symbol: "BUSD",
-          decimals: 18,
-          address: "0x4fabb145d64652a948d72533023f6e7a623c7c53",
-        },
-      ],
-      [
-        "WMATIC",
-        {
-          symbol: "WMATIC",
-          decimals: 18,
-          address: "0x7c9f4C87d911613Fe9ca58b579f737911AAD2D43",
-          original: "Polygon",
-        },
-      ],
-      [
         "WBNB",
         {
           symbol: "WBNB",
           decimals: 18,
-          address: "0x418D75f65a02b3D53B2418FB8E1fe493759c7605",
+          address: "0x4C3ce32556a3D0276b0599846df7870f8F61229d",
           original: "Bsc",
         },
       ],
+      // [
+      //   "USDCbnb",
+      //   {
+      //     symbol: "USDC",
+      //     decimals: 18,
+      //     address: "0x7cd167B101D2808Cfd2C45d17b2E7EA9F46b74B6",
+      //     original: "Bsc",
+      //   },
+      // ],
       [
-        "USDCbnb",
+        "WSTRAX",
         {
-          symbol: "USDC",
+          symbol: "WSTRAX",
           decimals: 18,
-          address: "0x7cd167B101D2808Cfd2C45d17b2E7EA9F46b74B6",
-          original: "Bsc",
-        },
-      ],
-      [
-        "WAVAX",
-        {
-          symbol: "WAVAX",
-          decimals: 18,
-          address: "0x85f138bfEE4ef8e540890CFb48F620571d67Eda3",
-          original: "Avalanche",
-        },
-      ],
-      [
-        "USDCavax",
-        {
-          symbol: "USDC",
-          decimals: 6,
-          address: "0x39EbF69137D98FB7659Ef8D4ea21ec26394389d7",
-          original: "Avalanche",
-        },
-      ],
-      [
-        "WFTM",
-        {
-          symbol: "WFTM",
-          decimals: 18,
-          address: "0x4cD2690d86284e044cb63E60F1EB218a825a7e92",
-          original: "Fantom",
-        },
-      ],
-      [
-        "CELO",
-        {
-          symbol: "CELO",
-          decimals: 18,
-          address: "0x3294395e62F4eB6aF3f1Fcf89f5602D90Fb3Ef69",
-          original: "Celo",
-        },
-      ],
-      [
-        "WGLMR",
-        {
-          symbol: "WGLMR",
-          decimals: 18,
-          address: "0x93d3696A9F879b331f40CB5059e37015423A3Bd0",
-          original: "Moonbeam",
-        },
-      ],
-      [
-        "WSOL",
-        {
-          symbol: "WSOL",
-          decimals: 9,
-          address: "0xD31a59c85aE9D8edEFeC411D448f90841571b89c",
-          original: "Solana",
-        },
-      ],
-      [
-        "USDCsol",
-        {
-          symbol: "USDC",
-          decimals: 6,
-          address: "0x41f7B8b9b897276b7AAE926a9016935280b44E97",
-          original: "Solana",
-        },
-      ],
-      [
-        "SUI",
-        {
-          symbol: "SUI",
-          decimals: 9,
-          address: "0x84074EA631dEc7a4edcD5303d164D5dEa4c653D6",
-          original: "Sui",
-        },
-      ],
-      [
-        "APT",
-        {
-          symbol: "APT",
-          decimals: 8,
-          address: "0x8CDf7AF57E4c8B930e1B23c477c22f076530585e",
-          original: "Aptos",
-        },
-      ],
-      [
-        "WETHarbitrum",
-        {
-          symbol: "WETH",
-          decimals: 18,
-          address: "0xb945E3F853B5f8033C8513Cf3cE9F8AD9beBB1c9",
-          original: "Arbitrum",
-        },
-      ],
-      [
-        "USDCarbitrum",
-        {
-          symbol: "USDC",
-          decimals: 6,
-          address: "0xCFc006a32a98031C2338BF9d5ff8ED2c0Cae4a9e",
-          original: "Arbitrum",
-        },
-      ],
-      [
-        "WETHoptimism",
-        {
-          symbol: "WETH",
-          decimals: 18,
-          address: "0x8B5653Ae095529155462eDa8CF664eD96773F557",
-          original: "Optimism",
-        },
-      ],
-      [
-        "WETHbase",
-        {
-          symbol: "WETH",
-          decimals: 18,
-          address: "0x1D4241F7370253C0f12EFC536B7e16E462Fb3526",
-          original: "Base",
-        },
-      ],
-      [
-        "tBTC",
-        {
-          symbol: "tBTC",
-          decimals: 18,
-          address: "0x18084fbA666a33d37592fA2633fD49a74DD93a88",
-        },
-      ],
-      [
-        "tBTCpolygon",
-        {
-          symbol: "tBTC",
-          decimals: 18,
-          address: "0xb4c624dBC50804dA086cf2380cD55dEBC0d22E96",
-          original: "Polygon",
-        },
-      ],
-      [
-        "tBTCoptimism",
-        {
-          symbol: "tBTC",
-          decimals: 18,
-          address: "0xB8d1E0642bFD3744CaBd2ca8830cFabE19b2Ca54",
-          original: "Optimism",
-        },
-      ],
-      [
-        "tBTCarbitrum",
-        {
-          symbol: "tBTC",
-          decimals: 18,
-          address: "0x4F3819A6cfF717BFfE801a75c73A984141c76589",
-          original: "Arbitrum",
-        },
-      ],
-      [
-        "tBTCbase",
-        {
-          symbol: "tBTC",
-          decimals: 18,
-          address: "0x733F28B3e315046Db01dAbC292D6F0F7F26C4551",
-          original: "Base",
-        },
-      ],
-      [
-        "wstETH",
-        {
-          symbol: "wstETH",
-          decimals: 18,
-          address: "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
-        },
-      ],
-      [
-        "WKLAY",
-        {
-          symbol: "WKLAY",
-          decimals: 18,
-          address: "0x9AEA32B459e96C8eF5010f69130bf95fd129ac05",
-          original: "Klaytn",
-        },
-      ],
-      [
-        "PYTH",
-        {
-          symbol: "PYTH",
-          decimals: 6,
-          address: "0xeFc0CED4B3D536103e76a1c4c74F0385C8F4Bdd3",
-          original: "Solana",
+          address: "0xB0769479bd728fD002668275100E5200f0Eb8964",
+          original: "Xertra",
         },
       ],
     ],
@@ -288,7 +69,7 @@ const mainnetTokenEntries = [
         {
           symbol: "WETH",
           decimals: 18,
-          address: "0x4DB5a66E937A9F4473fA95b1cAF1d1E1D62E29EA",
+          address: "0x2dA8C8d154aec922d02755e7477D2c5eA7C29D9f",
           original: "Ethereum",
         },
       ],
@@ -297,62 +78,8 @@ const mainnetTokenEntries = [
         {
           symbol: "USDC",
           decimals: 6,
-          address: "0xB04906e95AB5D797aDA81508115611fee694c2b3",
+          address: "0xd10361b08B2984cAEaFc741598DDCFBD8f729E40",
           original: "Ethereum",
-        },
-      ],
-      [
-        "WBTC",
-        {
-          symbol: "WBTC",
-          decimals: 8,
-          address: "0x43359676E1A3F9FbB5de095333f8e9c1B46dFA44",
-          original: "Ethereum",
-        },
-      ],
-      [
-        "USDT",
-        {
-          symbol: "USDT",
-          decimals: 6,
-          address: "0x524bC91Dc82d6b90EF29F76A3ECAaBAffFD490Bc",
-          original: "Ethereum",
-        },
-      ],
-      [
-        "DAI",
-        {
-          symbol: "DAI",
-          decimals: 18,
-          address: "0x3413a030EF81a3dD5a302F4B4D11d911e12ed337",
-          original: "Ethereum",
-        },
-      ],
-      [
-        "BUSD",
-        {
-          symbol: "BUSD",
-          decimals: 18,
-          address: "0x035de3679E692C471072d1A09bEb9298fBB2BD31",
-          original: "Ethereum",
-        },
-      ],
-      [
-        "WMATIC",
-        {
-          symbol: "WMATIC",
-          decimals: 18,
-          address: "0xc836d8dC361E44DbE64c4862D55BA041F88Ddd39",
-          original: "Polygon",
-        },
-      ],
-      [
-        "USDCpolygon",
-        {
-          symbol: "USDC",
-          decimals: 6,
-          address: "0xe6d82Bbe75041E42E51d755e922cE1BA91af9c4d",
-          original: "Polygon",
         },
       ],
       [
@@ -372,201 +99,14 @@ const mainnetTokenEntries = [
           address: "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
         },
       ],
-      [
-        "USDCbnb",
-        {
-          symbol: "USDC",
-          decimals: 18,
-          address: "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
-        },
-      ],
-      [
-        "WAVAX",
-        {
-          symbol: "WAVAX",
-          decimals: 18,
-          address: "0x96412902aa9aFf61E13f085e70D3152C6ef2a817",
-          original: "Avalanche",
-        },
-      ],
-      [
-        "USDCavax",
-        {
-          symbol: "USDC",
-          decimals: 6,
-          address: "0xc88Dc63bf0c8c8198C97Db0945E3eF25Ca89A8e4",
-          original: "Avalanche",
-        },
-      ],
-      [
-        "WFTM",
-        {
-          symbol: "WFTM",
-          decimals: 18,
-          address: "0xbF8413EE8612E0E4f66Aa63B5ebE27f3C5883d47",
-          original: "Fantom",
-        },
-      ],
-      [
-        "CELO",
-        {
-          symbol: "CELO",
-          decimals: 18,
-          address: "0x2A335e327a55b177f5B40132fEC5D7298aa0D7e6",
-          original: "Celo",
-        },
-      ],
-      [
-        "WGLMR",
-        {
-          symbol: "WGLMR",
-          decimals: 18,
-          address: "0x1C063db3c621BF901FC6C1D03328b08b2F9bbfba",
-          original: "Moonbeam",
-        },
-      ],
-      [
-        "WSOL",
-        {
-          symbol: "WSOL",
-          decimals: 9,
-          address: "0xfA54fF1a158B5189Ebba6ae130CEd6bbd3aEA76e",
-          original: "Solana",
-        },
-      ],
-      [
-        "USDCsol",
-        {
-          symbol: "USDC",
-          decimals: 6,
-          address: "0x91Ca579B0D47E5cfD5D0862c21D5659d39C8eCf0",
-          original: "Solana",
-        },
-      ],
-      [
-        "SUI",
-        {
-          symbol: "SUI",
-          decimals: 9,
-          address: "0x8314f6Bf1B4dd8604A0fC33C84F9AF2fc07AABC8",
-          original: "Sui",
-        },
-      ],
-      [
-        "APT",
-        {
-          symbol: "APT",
-          decimals: 8,
-          address: "0x2Ba98cf7Edd2c5C794e21bc3Dc6973D3C2585eE3",
-          original: "Aptos",
-        },
-      ],
-      [
-        "WETHarbitrum",
-        {
-          symbol: "WETH",
-          decimals: 18,
-          address: "0xaA1eEdABC48D078350ccBdD620bD088848e299E5",
-          original: "Arbitrum",
-        },
-      ],
-      [
-        "USDCarbitrum",
-        {
-          symbol: "USDC",
-          decimals: 6,
-          address: "0x5caa170b465122D15a6D20FD9A804a9613CE7882",
-          original: "Arbitrum",
-        },
-      ],
-      [
-        "WETHoptimism",
-        {
-          symbol: "WETH",
-          decimals: 18,
-          address: "0x94AEc09B5e2CE591e39DC6aa58A3A6E85Ed45265",
-          original: "Optimism",
-        },
-      ],
-      [
-        "USDCoptimism",
-        {
-          symbol: "USDC",
-          decimals: 6,
-          address: "0xa41ae127D04F7ee73B5058E2C60Fb7c7A2D21F79",
-          original: "Optimism",
-        },
-      ],
-      [
-        "WETHbsc",
-        {
-          symbol: "WETH",
-          decimals: 18,
-          address: "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
-        },
-      ],
-      [
-        "WETHbase",
-        {
-          symbol: "WETH",
-          decimals: 18,
-          address: "0x9dc152F4941cE1A138326e70c3600385bf0C22dD",
-          original: "Base",
-        },
-      ],
-      [
-        "USDCbase",
-        {
-          symbol: "USDC",
-          decimals: 6,
-          address: "0x55CaD531c8E303Cab8B3BE4bB4744Db4f896ac81",
-          original: "Base",
-        },
-      ],
-      [
-        "tBTC",
-        {
-          symbol: "tBTC",
-          decimals: 18,
-          address: "0x94c97dd3Bde5bC1406BCe82E7941A6365968521D",
-          original: "Ethereum",
-        },
-      ],
-      [
-        "wstETH",
-        {
-          symbol: "wstETH",
-          decimals: 18,
-          address: "0xad80E1A9B5824234afA9dE1F3bbDb8a994796169",
-          original: "Ethereum",
-        },
-      ],
-      [
-        "WKLAY",
-        {
-          symbol: "WKLAY",
-          decimals: 18,
-          address: "0xEA970e7b7D131Ea36c3051C9Ca11e785462fE00c",
-          original: "Klaytn",
-        },
-      ],
-      [
-        "PYTH",
-        {
-          symbol: "PYTH",
-          decimals: 6,
-          address: "0xb0188B0bb2cD4a6D2744637fC83C94a284B247Da",
-          original: "Solana",
-        },
-      ],
-      [
-        "USDTbsc",
-        {
-          symbol: "USDT",
-          decimals: 18,
-          address: "0x55d398326f99059fF775485246999027B3197955",
-        },
-      ],
+      // [
+      //   "USDCbnb",
+      //   {
+      //     symbol: "USDC",
+      //     decimals: 18,
+      //     address: "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+      //   },
+      // ],
     ],
   ],
   [
@@ -4305,6 +3845,54 @@ const mainnetTokenEntries = [
           address: "0x4200000000000000000000000000000000000006"
         }
       ]
+    ]
+  ], [
+    "Xertra",
+    [
+      [
+        "STRAX",
+        {
+          symbol: "STRAX",
+          decimals: 18,
+          address: "native",
+          wrappedKey: "WSTRAX",
+        }
+      ],
+      [
+        "WSTRAX",
+        {
+          symbol: "WSTRAX",
+          decimals: 18,
+          address: "0xeA705D2DbD8DE7Dc70Db7B531D0F620d9CeE9d18"
+        }
+      ],
+      [
+        "WETH",
+        {
+          symbol: "WETH",
+          decimals: 18,
+          address: "0xc398Cc4828E7ce677B357c8f94B6792Cb5538c03",
+          original: "Ethereum",
+        },
+      ],
+      [
+        "WBNB",
+        {
+          symbol: "WBNB",
+          decimals: 18,
+          address: "0xE6d9419BFE31992a3aA4763B1e86Faf384c91697",
+          original: "Bsc",
+        },
+      ],
+      [
+        "USDCeth",
+        {
+          symbol: "USDC",
+          decimals: 6,
+          address: "0x959A50Db9B9c78990698cA621d7a0bA7F1d6f2D6",
+          original: "Ethereum",
+        },
+      ],
     ]
   ]
 ] as const satisfies MapLevel<Chain, MapLevel<TokenSymbol, TokenConst>>;

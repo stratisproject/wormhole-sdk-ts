@@ -6,8 +6,8 @@ import type { Chain } from "../chains.js";
 export const tokenBridgeContracts = [[
   "Mainnet", [
     ["Solana",    "wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb"],
-    ["Ethereum",  "0x3ee18B2214AFF97000D974cf647E7C347E8fa585"],
-    ["Bsc",       "0xB6F6D86a8f9879A9c87f643768d9efc38c1Da6E7"],
+    ["Ethereum",  "0xEDf0f8d602C44D52BC5c7d53439542493Ec60C2F"],
+    ["Bsc",       "0xEDf0f8d602C44D52BC5c7d53439542493Ec60C2F"],
     ["Polygon",   "0x5a58505a96D1dbf8dF91cB21B54419FC36e93fdE"],
     ["Avalanche", "0x0e082F06FF657D94310cB8cE8B0D9a04541d8052"],
     ["Algorand",  "842126029"],
@@ -38,6 +38,7 @@ export const tokenBridgeContracts = [[
     ["Fogo",      "wormQuCVWSSmPdjVmEzAWxAXViVyTSWnLyhff5hVYGS"],
     // ["Moca",            "not yet in mainnet"]
     ["MegaETH",   "0xF97B81E513f53c7a6B57Bd0b103a6c295b3096C5"],
+    ["Xertra",    "0xEf5139fA5C2542F32BA0b872541be8f8725C4479"],
   ]], [
   "Testnet", [
     ["Solana",          "DZnkkTmCiFWfYTfT41X3Rd1kDgozqzxWaHqsw6W4x2oe"],

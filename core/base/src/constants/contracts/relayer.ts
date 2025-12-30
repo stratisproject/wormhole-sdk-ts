@@ -5,8 +5,8 @@ import type { Chain } from "../chains.js";
 // prettier-ignore
 export const relayerContracts = [[
   "Mainnet", [
-    ["Ethereum",  "0x27428DD2d3DD32A4D7f7C497eAaa23130d894911"],
-    ["Bsc",       "0x27428DD2d3DD32A4D7f7C497eAaa23130d894911"],
+    ["Ethereum",  "0x901Caf77675064695908f705265e7Ef019C92d5e"],
+    ["Bsc",       "0x052c1dD524cc113DBae17DE74CdE69Bd313827A0"],
     ["Polygon",   "0x27428DD2d3DD32A4D7f7C497eAaa23130d894911"],
     ["Avalanche", "0x27428DD2d3DD32A4D7f7C497eAaa23130d894911"],
     ["Fantom",    "0x27428DD2d3DD32A4D7f7C497eAaa23130d894911"],
@@ -27,6 +27,7 @@ export const relayerContracts = [[
     ["Monad",     "0x27428DD2d3DD32A4D7f7C497eAaa23130d894911"],
     ["Mezo",      "0x27428DD2d3DD32A4D7f7C497eAaa23130d894911"],
     ["Plume",     "0x27428DD2d3DD32A4D7f7C497eAaa23130d894911"],
+    ["Xertra",    "0x502a9485F350B74C1ce8740C73e8b9e0F651F645"],
   ]], [
   "Testnet", [
     ["Ethereum",        "0x28D8F1Be96f97C1387e94A53e00eCcFb4E75175a"],

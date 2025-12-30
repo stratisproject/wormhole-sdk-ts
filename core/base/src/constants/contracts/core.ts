@@ -6,8 +6,8 @@ import type { Chain } from "../chains.js";
 export const coreBridgeContracts = [[
   "Mainnet", [
     ["Solana",    "worm2ZoG2kUd4vFXhvjh93UUH596ayRfgQ2MgjNMTth"],
-    ["Ethereum",  "0x98f3c9e6E3fAce36bAAd05FE09d375Ef1464288B"],
-    ["Bsc",       "0x98f3c9e6E3fAce36bAAd05FE09d375Ef1464288B"],
+    ["Ethereum",  "0x3378932e90Dbf0724EDfd470F5b2eAD2333D89eb"],
+    ["Bsc",       "0x3378932e90Dbf0724EDfd470F5b2eAD2333D89eb"],
     ["Polygon",   "0x7A4B5a56256163F07b2C80A7cA55aBE66c4ec4d7"],
     ["Avalanche", "0x54a8e5f9c4CbA08F9943965859F6c34eAF03E26c"],
     ["Algorand",  "842125965"],
@@ -25,7 +25,7 @@ export const coreBridgeContracts = [[
     ["Base",      "0xbebdb6C8ddC678FfA9f8748f85C815C556Dd8ac6"],
     ["Xlayer",    "0x194B123c5E96B9b2E49763619985790Dc241CAC0"],
     ["Sei",       "sei1gjrrme22cyha4ht2xapn3f08zzw6z3d4uxx6fyy9zd5dyr3yxgzqqncdqn"],
-    ["Wormchain", "wormhole1ufs3tlq4umljk0qfe8k5ya0x6hpavn897u2cnf9k0en9jr7qarqqaqfk2j"],
+    ["Wormchain", "wormhole1ghd753shjuwexxywmgs4xz7x2q732vcnkm6h2pyv9s6ah3hylvrqtm7t3h"],
     ["Neutron",   "neutron16rerygcpahqcxx5t8vjla46ym8ccn7xz7rtc6ju5ujcd36cmc7zs9zrunh"],
     ["Scroll",    "0xbebdb6C8ddC678FfA9f8748f85C815C556Dd8ac6"],
     ["Mantle",    "0xbebdb6C8ddC678FfA9f8748f85C815C556Dd8ac6"],
@@ -44,7 +44,8 @@ export const coreBridgeContracts = [[
     ["Monad",     "0x194B123c5E96B9b2E49763619985790Dc241CAC0"],
     ["Fogo",      "worm2mrQkG1B1KTz37erMfWN8anHkSK24nzca7UD8BB"],
     // ["Moca", "not in mainnet"]
-    ["MegaETH",   "0xaBf89de706B583424328B54dD05a8fC986750Da8"]
+    ["MegaETH",   "0xaBf89de706B583424328B54dD05a8fC986750Da8"],
+    ["Xertra",    "0x15D2DDD056049bF16686fCF13fF621D6d110A735"],
   ]], [
   "Testnet", [
     ["Solana",          "3u8hJUVTA4jH1wYAyUur7FFZVQ8H635K3tSHHF4ssjQ5"],
