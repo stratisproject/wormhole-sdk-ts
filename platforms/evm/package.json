@@ -1,6 +1,6 @@
 {
   "name": "@xertraplatform/wormhole-sdk-evm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stratisproject/wormhole-sdk-ts.git"
@@ -57,7 +57,7 @@
     "nock": "13.3.8"
   },
   "dependencies": {
-    "@xertraplatform/wormhole-sdk-connect": "1.0.2",
+    "@xertraplatform/wormhole-sdk-connect": "1.0.3",
     "ethers": "^6.5.1"
   },
   "type": "module",
