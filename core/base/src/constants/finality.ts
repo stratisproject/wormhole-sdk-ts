@@ -155,6 +155,7 @@ const blockTimeMilliseconds = [
   ["Stacks",           15_000],
   ["Moca",              1_000],
   ["MegaETH",           1_000],
+  ["Xertra",           15_000],
   ["Auroria",          15_000],
 ] as const satisfies MapLevel<Chain, number>;
 
