@@ -1,6 +1,6 @@
 {
   "name": "@xertraplatform/wormhole-sdk-stacks-core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stratisproject/wormhole-sdk-ts.git"
@@ -53,8 +53,8 @@
     "prettier": "prettier --write ./src"
   },
   "dependencies": {
-    "@xertraplatform/wormhole-sdk-connect": "1.0.1",
-    "@xertraplatform/wormhole-sdk-stacks": "1.0.1"
+    "@xertraplatform/wormhole-sdk-connect": "1.0.2",
+    "@xertraplatform/wormhole-sdk-stacks": "1.0.2"
   },
   "type": "module",
   "exports": {

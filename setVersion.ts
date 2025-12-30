@@ -12,7 +12,7 @@ function updateVersionInPackageJson(dirPath: string, version: string) {
         const [k, v] = entry as [string, string];
         // Note: this may be wrong if we start importing
         // packages outside the workspaces in this repo
-        if (k.startsWith("@xertra")) {
+        if (k.startsWith("@xertraplatform")) {
           return [k, `${version}`];
         }
         return [k, v];

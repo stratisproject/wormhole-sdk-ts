@@ -1,6 +1,6 @@
 {
   "name": "@xertraplatform/wormhole-sdk-sui-tokenbridge",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stratisproject/wormhole-sdk-ts.git"
@@ -46,9 +46,9 @@
   },
   "dependencies": {
     "@mysten/sui": "^1.37.2",
-    "@xertraplatform/wormhole-sdk-connect": "1.0.1",
-    "@xertraplatform/wormhole-sdk-sui": "1.0.1",
-    "@xertraplatform/wormhole-sdk-sui-core": "1.0.1"
+    "@xertraplatform/wormhole-sdk-connect": "1.0.2",
+    "@xertraplatform/wormhole-sdk-sui": "1.0.2",
+    "@xertraplatform/wormhole-sdk-sui-core": "1.0.2"
   },
   "type": "module",
   "exports": {

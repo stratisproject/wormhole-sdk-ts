@@ -1,6 +1,6 @@
 {
   "name": "@xertraplatform/wormhole-sdk-solana-core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stratisproject/wormhole-sdk-ts.git"
@@ -45,8 +45,8 @@
     "prettier": "prettier --write ./src"
   },
   "dependencies": {
-    "@xertraplatform/wormhole-sdk-connect": "1.0.1",
-    "@xertraplatform/wormhole-sdk-solana": "1.0.1",
+    "@xertraplatform/wormhole-sdk-connect": "1.0.2",
+    "@xertraplatform/wormhole-sdk-solana": "1.0.2",
     "@coral-xyz/borsh": "0.29.0",
     "@coral-xyz/anchor": "0.29.0",
     "@solana/web3.js": "^1.95.8"
