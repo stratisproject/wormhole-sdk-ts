@@ -107,6 +107,15 @@ const mainnetTokenEntries = [
       //     address: "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
       //   },
       // ],
+      [
+        "WSTRAX",
+        {
+          symbol: "WSTRAX",
+          decimals: 18,
+          address: "0x92ecCa7BEA8DcdB2E5b2F149278577Bbe7D4665D",
+          original: "Xertra",
+        },
+      ],
     ],
   ],
   [
