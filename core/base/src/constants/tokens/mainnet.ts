@@ -41,15 +41,15 @@ const mainnetTokenEntries = [
           original: "Bsc",
         },
       ],
-      // [
-      //   "USDCbnb",
-      //   {
-      //     symbol: "USDC",
-      //     decimals: 18,
-      //     address: "0x7cd167B101D2808Cfd2C45d17b2E7EA9F46b74B6",
-      //     original: "Bsc",
-      //   },
-      // ],
+      [
+        "USDCbnb",
+        {
+          symbol: "USDC",
+          decimals: 18,
+          address: "0x1F2EB7FB6406c2737a4bbcB3DCf584668280dDF3",
+          original: "Bsc",
+        },
+      ],
       [
         "WSTRAX",
         {
@@ -99,14 +99,14 @@ const mainnetTokenEntries = [
           address: "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
         },
       ],
-      // [
-      //   "USDCbnb",
-      //   {
-      //     symbol: "USDC",
-      //     decimals: 18,
-      //     address: "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
-      //   },
-      // ],
+      [
+        "USDCbnb",
+        {
+          symbol: "USDC",
+          decimals: 18,
+          address: "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+        },
+      ],
       [
         "WSTRAX",
         {
@@ -3900,6 +3900,15 @@ const mainnetTokenEntries = [
           decimals: 6,
           address: "0x959A50Db9B9c78990698cA621d7a0bA7F1d6f2D6",
           original: "Ethereum",
+        },
+      ],
+      [
+        "USDCbnb",
+        {
+          symbol: "USDC",
+          decimals: 18,
+          address: "0xaa0e34A393dadAAF661132deA1EDD834c5628e16",
+          original: "Bsc",
         },
       ],
     ]
