@@ -1,6 +1,6 @@
 {
   "name": "@xertraplatform/wormhole-sdk-algorand-core",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stratisproject/wormhole-sdk-ts.git"
@@ -45,8 +45,8 @@
     "prettier": "prettier --write ./src"
   },
   "dependencies": {
-    "@xertraplatform/wormhole-sdk-connect": "1.0.4",
-    "@xertraplatform/wormhole-sdk-algorand": "1.0.4"
+    "@xertraplatform/wormhole-sdk-connect": "1.0.5",
+    "@xertraplatform/wormhole-sdk-algorand": "1.0.5"
   },
   "type": "module",
   "exports": {

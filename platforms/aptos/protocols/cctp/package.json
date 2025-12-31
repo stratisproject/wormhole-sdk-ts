@@ -1,6 +1,6 @@
 {
   "name": "@xertraplatform/wormhole-sdk-aptos-cctp",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stratisproject/wormhole-sdk-ts.git"
@@ -46,8 +46,8 @@
   },
   "dependencies": {
     "@aptos-labs/ts-sdk": "^2.0.0",
-    "@xertraplatform/wormhole-sdk-connect": "1.0.4",
-    "@xertraplatform/wormhole-sdk-aptos": "1.0.4"
+    "@xertraplatform/wormhole-sdk-connect": "1.0.5",
+    "@xertraplatform/wormhole-sdk-aptos": "1.0.5"
   },
   "type": "module",
   "exports": {

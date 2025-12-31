@@ -1,6 +1,6 @@
 {
   "name": "@xertraplatform/wormhole-sdk-cosmwasm-core",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stratisproject/wormhole-sdk-ts.git"
@@ -52,8 +52,8 @@
     "prettier": "prettier --write ./src"
   },
   "dependencies": {
-    "@xertraplatform/wormhole-sdk-connect": "1.0.4",
-    "@xertraplatform/wormhole-sdk-cosmwasm": "1.0.4",
+    "@xertraplatform/wormhole-sdk-connect": "1.0.5",
+    "@xertraplatform/wormhole-sdk-cosmwasm": "1.0.5",
     "@cosmjs/cosmwasm-stargate": "^0.32.0",
     "@cosmjs/stargate": "^0.32.0",
     "@injectivelabs/sdk-ts": "^1.14.13-beta.2"

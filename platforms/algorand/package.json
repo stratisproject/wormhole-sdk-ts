@@ -1,6 +1,6 @@
 {
   "name": "@xertraplatform/wormhole-sdk-algorand",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stratisproject/wormhole-sdk-ts.git"
@@ -96,7 +96,7 @@
     "test": "jest --config ./jest.config.ts"
   },
   "dependencies": {
-    "@xertraplatform/wormhole-sdk-connect": "1.0.4",
+    "@xertraplatform/wormhole-sdk-connect": "1.0.5",
     "algosdk": "2.7.0"
   },
   "type": "module"
