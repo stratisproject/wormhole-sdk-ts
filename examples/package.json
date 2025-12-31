@@ -1,6 +1,6 @@
 {
   "name": "@xertraplatform/wormhole-connect-sdk-examples",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stratisproject/wormhole-sdk-ts.git"
@@ -52,6 +52,6 @@
     "tsx": "^4.7.0"
   },
   "dependencies": {
-    "@xertraplatform/wormhole-sdk": "1.0.5"
+    "@xertraplatform/wormhole-sdk": "1.0.6"
   }
 }

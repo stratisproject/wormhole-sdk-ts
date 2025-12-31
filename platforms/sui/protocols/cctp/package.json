@@ -1,6 +1,6 @@
 {
   "name": "@xertraplatform/wormhole-sdk-sui-cctp",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stratisproject/wormhole-sdk-ts.git"
@@ -46,8 +46,8 @@
   },
   "dependencies": {
     "@mysten/sui": "^1.37.2",
-    "@xertraplatform/wormhole-sdk-connect": "1.0.5",
-    "@xertraplatform/wormhole-sdk-sui": "1.0.5"
+    "@xertraplatform/wormhole-sdk-connect": "1.0.6",
+    "@xertraplatform/wormhole-sdk-sui": "1.0.6"
   },
   "type": "module",
   "exports": {
