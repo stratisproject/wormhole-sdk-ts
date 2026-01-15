@@ -27,7 +27,7 @@ export const safeThreshold = constMap(safeThresholds);
 // Number of blocks before a transaction is considered "final"
 const finalityThresholds = [
   ["Solana",   32],
-  ["Ethereum", 72], // between 64 and 95 blocks; use 72 as a middle ground
+  ["Ethereum", 15], // between 64 and 95 blocks; use 72 as a middle ground
   ["Bsc",      15],
   // Check-pointed to L1 after ~512 blocks
   ["Optimism",  512],
@@ -80,12 +80,12 @@ const finalityThresholds = [
   ["MegaETH",   4096],
   ["Xertra",    72],
   // Testnets
-  ["Sepolia", 72],
+  ["Sepolia", 15],
   ["ArbitrumSepolia", 4096],
   ["BaseSepolia", 512],
   ["OptimismSepolia", 512],
   ["PolygonSepolia", 2],
-  ["Auroria", 72],
+  ["Auroria", 15],
 ] as const satisfies MapLevel<Chain, number>;
 
 /**
