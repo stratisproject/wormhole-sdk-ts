@@ -78,7 +78,7 @@ const finalityThresholds = [
   ["Stacks",    240], // tied to BTC finality
   ["Moca",      0],
   ["MegaETH",   4096],
-  ["Xertra",    72],
+  ["Xertra",    15],
   // Testnets
   ["Sepolia", 15],
   ["ArbitrumSepolia", 4096],
